@@ -1,81 +1,989 @@
-/*
-body {
-  background: #fbfbfb;
-}
-
-.light-bg-button:hover{
-  color: #fbfbfb;
-  background-color: #C99B57;
-}
-
-.light-bg-button {
-  height: 50px;
-  width: 285px;
-  font-size: 18px;
-  font-family: montserrat;
-  border: 2px solid #C99B57;
-  fill: #fbfbfb;
-  display: inline-block;
-  text-decoration: none;
-  text-align: center;
-  color: #C99B57;
-}
-
-footer svg:hover {
-  fill: #C99B57;
-}
+/*Although stylesheet links are in each HTML, ave these here just in case.
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,500&display=swap');
 */
-#logo-iterations img {
-  height: 200px;
-  width: auto;
+
+* {box-sizing: border-box;}
+
+html {
+	margin: 0;
+	padding: 0;
+  font-family: 'Raleway', sans-serif;
+	font-size: 10px;
+	scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: transparent;
 }
 
-footer svg {
-  height: 50px;
-  width: auto;
+body {
+  margin: 0;
+	padding: 0;
+	color: #000;
+	background-color: #FBFBFB;
 }
+
+.container {
+  width: 100%;
+	margin: 0 auto;
+}
+
+article,
+aside,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section {
+  display: block;
+}
+
+header {overflow: hidden;}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+	margin: 2.5rem;
+  border: 0;
+  border-top: 1px solid rgba(0, 0, 0, .1);
+}
+
+p, .text-dark-bg, .text-light-bg, .tag {
+	color: black;
+	font-size: 1.8rem;
+	line-height: 2.6rem;
+}
+
+.text-dark-bg, .backtop, .quick-abtme,
+.btnline, .f-head, .persona-name, .talk {font-weight: 500;}
+
+.sec-title, .darkbg-title, .btnline, .f-head,
+.backtop, .transpbtn, .filledbtn, .persona-name, button,
+h2, h3, h4, h6 {font-family: 'Montserrat', sans-serif;}
+
+h1, .navbar, .moviequote, .talk {font-family: 'Ubuntu', sans-serif;}
+
+.sec-title, .darkbg-title {
+  font-weight: 600;
+  text-align: left;
+}
+
+h1, .darkbg-title, .text-dark-bg,
+.backtop, .quick-abtme, footer {color: #FBFBFB;}
+
+h1 {
+	font-weight: bold;
+	font-size: 2.6rem;
+	line-height: 3.8rem;
+	display: flex;
+	align-items: center;
+}
+
+
+h2 {font-size: 3.6rem;}
+
+h3 {
+  font-size: 3.6rem;
+  text-align: center;
+}
+
+h4 {
+  font-size: 2.8rem;
+  text-align: center;
+}
+
+h6 {
+  font-size: 2.25rem;
+	font-weight: bolder;
+	font-variant: small-caps;
+}
+
+b {
+  font-weight: bolder;
+	font-style: italic;
+}
+
+small, .info-caption {
+  font-size: 1.4rem;
+	line-height: 2.1rem;
+}
+.info-caption {
+	opacity: 0.7;
+	font-style: italic;
+	width: 97%;
+}
+
+a {
+  color: #e2c191;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: #0056b3;
+  transition: 0.3s;
+}
+
+.col-md-6 img {
+	-webkit-filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.1));
+	filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.1));
+}
+
+figure {margin: 5rem 0;}
 
 img {
-  height: 300px;
-  width: auto;
+  vertical-align: middle;
+  border-style: none;
+	width: 100%;
+	height: auto;;
 }
 
-.personaimage {
-  height: auto;
-  width: auto;
+.imgmax {
+	padding-top: 3rem;
+	width: auto !important;
 }
 
-/*
+table {width: 100%;}
+
+.center-align {
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+	text-align: center;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button {cursor: pointer;}
+
+.smallbtn, .medbtn, .lrgbtn {
+	font-size: 1.8rem;
+	height: 5rem;
+	line-height: 5rem;
+}
+
+.smallbtn {width: 22.5rem !important;}
+.medbtn {width: 28.5rem !important;}
+.lrgbtn {width: 30.5rem;}
+
+.transpbtn:hover {
+  background-color: #C99B57;
+  border: 2px solid #C99B57;
+  color: #fff;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.btnline {
+  line-height: 2.2rem;
+  color: #E2C191;
+  text-decoration: none;
+  border: 2px solid #E2C191;
+  background-color: transparent;
+}
+
+.filledbtn {
+	background: #C99B57;
+	border: 2px solid #C99B57;
+	box-sizing: border-box;
+	color: #FFF;
+}
+.filledbtn:hover {
+	background: #E2C191;
+	transition: 0.3s;
+}
+
+/*NAVBAR SETUP W/ HAMBURGER MENU AND ANIMATING X*/
+.navbar {
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 .1rem 1rem 0 rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  z-index: 30;
+}
+
+.navbar ul {
+  list-style: none;
+  overflow: hidden;
+}
+
+.navbar ul a {
+  display: block;
+  border-top: .1rem solid #E2C191;
+  color: #FBFBFB;
+  font-size: 1.8rem;
+  font-weight: 500;
+  padding: 1.5rem;
+  text-align: center;
+  text-decoration: none;
+}
+
+#first-menu-item {border-top: none;}
+
+.navbar ul a:hover {
+  color: #E2C191;
+  background-color: #141414;
+  transition: all .3s ease;
+}
+
+.navbar .logo {
+  float: left;
+  display: block;
+  padding: 1.25rem 0;
+}
+
+.navbar .menu {
+  clear: both;
+  max-height: 0; /*menu essentially doesn't exist*/
+  transition: max-height .3s ease-out; /*this would expand out the menu upon click*/
+}
+
+/*checkbox will now be listed to the right and will be transformed from burger menu to X*/
+.navbar .menu-icon {
+  padding: 3.2rem 0;
+  position: relative;
+  float: right;
+  cursor: pointer;
+}
+
+.navbar .menu-icon .nav-icon {
+  /*this is the child of menu-icon, and will be creating the hamburger icon*/
+  background: #E2C191;
+  display: block;
+  height: .5rem;
+  width: 3.3rem;
+  position: relative;
+  transition: background 0.3s ease-out;
+}
+
+.navbar .menu-icon .nav-icon:before,
+.navbar .menu-icon .nav-icon:after {
+  background: #E2C191;
+  content: '';
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 1.2rem;
+  transition: all .3s ease-out;
+}
+
+.navbar .menu-icon .nav-icon:after {top: -1.2rem;}
+
+.navbar .menu-btn {display: none;}
+
+/*when menu is in CHECKED state, look for next available sibling with class of menu and change its max height*/
+.navbar .menu-btn:checked~.menu {
+  /*because label's "for" matches input's ID, transition can happen*/
+  max-height: 25rem;
+  padding: 0;
+}
+
+button.dropbtn {width: 100%;}
+
+/*Time to animate the hamburger menu*/
+.navbar .menu-btn:checked~.menu-icon .nav-icon {background: transparent;}
+
+.navbar .menu-btn:checked~.menu-icon .nav-icon:before {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+.navbar .menu-btn:checked~.menu-icon .nav-icon:after {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+/*dropdown menu from "Work"*/
+.dropdown {
+  float: initial;
+  overflow: hidden;
+  display: initial;
+}
+
+.dropdown .dropbtn {
+	background-color: inherit;
+  border: none;
+  padding: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background: rgba(20, 20, 20, 0.8);
+  min-width: 25rem;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  border-bottom: 1px solid #c3a77e;
+	padding: 2rem 5rem !important;
+}
+#last-menu-item {border-bottom: none;}
+
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+  color: #E2C191;
+  transition: 0.3s;
+}
+
+.dropdown-content a:hover {
+  transition: 0.3s;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+/*Footer setup*/
+footer {
+  background: #141414;
+  background-image: none;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+	padding: 4rem 0;
+}
+
+.f-head {
+  font-size: 2.4rem;
+}
+
+.f-social {font-size: 3rem;}
+
+.f-social i {
+	color: #FBFBFB;
+  padding: 0.65rem;
+}
+
+.f-social i:hover {
+  transition: 0.3s;
+  color: #E2C191;
+}
+
+.byme {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0;
+}
+.copr {text-align: center;}
+
+.no-mob, img.cars_miscpic {display: none;}
+
+/*these rules are for chevrons*/
+.large-flex, .small-flex {
+	display: flex;
+	border: 1px solid transparent; /*this helps keep "Back to top" in the case study page centered*/
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+.large-flex {flex-grow: 6;}
+.small-flex {flex-grow: 1;}
+
+/*back to top underneath Conclusion section*/
+i.fas.fa-chevron-up.up {color: #C99B57;}
+
+.backtop {
+  font-size: 2rem;
+  line-height: 2.4rem;
+  text-align: center;
+}
+.backtop:hover {color: #E2C191; text-decoration: none; transition: 0.3s;}
+
+.hero-bg, .header-bg {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.hero-bg {
+	background-image: url(../img/header.jpg);
+	height: 60rem;
+}
+
+.header-bg {
+	background-image: url(../img/me.png);
+	background-position: 60% 50%;
+	height: 36rem;
+}
+
+/*for index.html and about.html*/
+.header-words {width: 100%;}
+
+.header-hook {
+	height: 42rem;
+	vertical-align: middle;
+	display: table-cell;
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+	margin: 0 -1.5rem; /*this lets content line up with left & right edges of navbar content*/
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4,
+.col-md-5, .col-md-6, .col-md-7, .col-md-8,
+.col-md-9, .col-md-10, .col-md-12 {
+  position: relative;
+  width: 100%;
+	padding: 0 1.5rem;
+}
+
+/*margins and paddings here so it's easier to call on in HTML*/
+.mb-10 {margin-bottom: 1rem;}
+
+.mb-20 {margin-bottom: 2rem;}
+
+.mb-30 {margin-bottom: 3rem;}
+
+.mb-40 {margin-bottom: 4rem;}
+
+.mb-50 {margin-bottom: 5rem;}
+
+.mt-10 {margin-top: 1rem;}
+
+.mt-20 {margin-top: 2rem;}
+
+.mt-30 {margin-top: 3rem;}
+
+.mt-40 {margin-top: 4rem;}
+
+.mt-50 {margin-top: 5rem;}
+
+.pb-10 {padding-bottom: 1rem;}
+
+.pb-20 {padding-bottom: 2rem;}
+
+.pb-100 {padding-bottom: 10rem;}
+
+.pt-10 {padding-top: 1rem;}
+
+.pt-20 {padding-top: 2rem;}
+
+.pt-30 {padding-top: 3rem;}
+
+.pt-40 {padding-top: 4rem;}
+
+.pt-50 {padding-top: 5rem;}
+
+.pt-60 {padding-top: 6rem;}
+
+.pt-70 {padding-top: 7rem;}
+
+.pt-100 {padding-top: 10rem;}
+
+.ptb-80 {padding: 8rem 0;}
+
+.ptb-50 {padding: 5rem 0;}
+
+/*homepage rules*/
+.hero-hook {
+  height: 70rem;
+  vertical-align: middle;
+  display: table-cell;
+}
+
+.quick-abtme {
+	font-size: 1.6rem;
+	line-height: 2.5rem;
+	padding: 3rem 0;
+}
+
+
+i.fas.downar.fa-chevron-down {
+	color: #debe8f;
+	display: block;
+	font-size: 3.5rem;
+	margin-top: 2rem;
+	padding: 0.5rem 1rem;
+	text-align: center;
+}
+
+#myname {
+	color: #EBD5B5;
+	font-weight: 700;
+	letter-spacing: 1px;
+}
+
+.divequal {
+	display: block;
+	height: auto;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.caseinfo {align-items: center;}
+
+.projectinfo {
+	font-size: 1.8rem;
+	line-height: 2.6rem;
+}
+
+.bg-darker, .bg-lighter {
+  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+	position: relative;
+}
+
+.bg-darker {background-color: #F4F4F4;}
+
+.case1 {z-index: 5;}
+.case2 {z-index: 4;}
+.case3 {z-index: 3;}
+
+/*Project/case study specific rules*/
+.project-header {
+  margin-top: -5rem;
+	width: 100%;
+}
+
+.intro-hook {text-align: center;}
+
+.mobile_semidiv {border: 1px solid #DBDBDB;}
+
+.rightborderdivider {border-right: none;}
+
+.comp-img {
+	filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
+	-webkit-filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
+	width: 100%;
+}
+
+.persona-img {
+	width: 15rem;
+	margin: auto;
+}
+
+.persona-name {
+  font-size: 2.8rem;
+	font-variant: small-caps;
+  color: #141414;
+  text-align: center;
+	margin: 1rem 0;
+}
+
+.persona-demog {
+  text-align: center;
+  color: #141414;
+}
+
+.tag {
+  color: #808589;
+  display: inline-block;
+  text-align: center;
+  width: 45%;
+  margin-bottom: 0.3rem;
+}
+
+.quote {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  color: #141414;
+}
+
+.quote:before, .quote:after {
+	color: rgba(0, 0, 0, 0.25);
+	display: inline;
+	font-size: 10rem;
+	text-align: center;
+}
+
+.quote:before {
+  line-height: inherit;
+  content: "“";
+  float: left;
+  padding-top: 2.5rem;
+	border: 1px solid transparent;
+}
+
+.quote:after {
+  line-height: 11.7rem;
+  content: "”";
+  float: right;
+  margin-top: -4.5rem;
+  margin-right: -2.5rem;
+}
+
+.persona-details {
+  width: 85%;
+  margin: auto;
+}
+
+/*.p-0 and .m-0 are corrective implementations to horizontal srcolling/overflow of wireframe images*/
+.p-0 {padding: 0;}
+.m-0 {margin: 0;}
+
+.bg-dark {background: #141414;}
+
+.wireframebg {
+	background-size: cover;
+	padding: 15rem 0;
+}
+
+.wf-sketch {background: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.1)), url(../img/cloudmind/wireframes/sketches.png); background-size: cover;}
+
+.wf-digital {background: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.1)), url(../img/cloudmind/wireframes/wireframes.png); background-size: cover;}
+
+.colors-selected {
+  text-align: center;
+  display: inline-block;
+  margin: 0 1rem;
+}
+
 .colorbox {
-  width: 90px;
-  height: 40px;
-  border: 1px solid #808589;
-  border-radius: 5px;
-  box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, 0.1);
+	border: 0.1rem solid #808589;
+	box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
+	border-radius: 0.5rem;
+	height: 3.5rem;
+	width: 7.5rem;
 }
 
-#primary1 {
-  background: #B3E8F8;
+.b3 {background: #B3E8F8;}
+.o9 {background: #094AB2;}
+.o1 {background: #01397A;}
+.e6 {background: #E67600;}
+.f8 {background: #F8D9B8;}
+.fb {background: #FBEAD9;}
+.ff {background: #FFF1D0;}
+.fe {background: #FEFBF3;}
+
+#jose-sans {font-family: 'Josefin Sans', sans-serif;}
+#aleg-sans {font-family: 'Alegreya Sans', sans-serif;}
+
+.ideation_img {
+	border: 1px solid rgba(0,0,0,0.1);
+	border-radius: 0.5rem;
 }
-#primary2 {
-  background: #094ab2;
+
+.hifi-mockups {padding: 0 1.5rem;}
+
+.conclusion {padding-bottom: 15rem;}
+
+
+/*about me page rules*/
+#leftbgimg, #rightbgimg {background-image: none;}
+
+.breakarea {background-color: rgba(20, 20, 20, 0.85);}
+
+.minispace, .moviequote {display: inline-flex;}
+
+.minispace {
+	width: 10%;
+	flex-grow: 1;
 }
-#primary3 {
-  background: #01397A;
+
+.moviequote {
+	color: #EBDCAD;
+	font-size: 2.4rem;
+	line-height: 3.2rem;
+	padding: 5rem 0.5rem;
+	align-items: center;
+	text-align: center;
+
 }
-#secondary1 {
-  background: #E67600;
+
+/*CONTACT page*/
+textarea {resize: none;}
+
+.fullbody {padding: 10rem 0;}
+
+.fullbody .row {padding-top: 5rem;}
+
+.talk {
+	color: #E2C191;
+	font-size: 3.6rem;
+	letter-spacing: 0.15em;
+	text-align: center;
 }
-#secondary2 {
-  background: #F8D9B8;
+
+
+.contact-statement {
+	font-size: 1.9rem;
+	line-height: 3.4rem;
 }
-#secondary3 {
-  background: #FBEAD9;
+
+.form-input {
+	border: 1px solid rgba(0, 0, 0, 0.3);
+  display: block;
+	font-size: 1.8rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
+	width: 30.5rem;
+	height: 5rem;
 }
-#secondary4 {
-  background: #FFF1D0;
+
+textarea.form-input {height: 20rem;}
+
+.no-desk {
+	display: block;
+	width: 100%;
 }
-#secondary5 {
-  background: #FEFBF3;
+
+/*RESPONSIVE DESIGN (queries here)*/
+/*the bits of code in this query were more convenient to leave as is*/
+@media all and (max-width: 767px) {
+
+	.mob-spaceout {margin-top: 3.5rem;}
+
+	.copr {padding-top: 3rem;}
+
+	.wireframebg button {display: none;}
+
+	.smallersubheader {font-size: 2.2rem;}
+
+	h1,	.form-input, .submission {width: 100%;}
+
+	.projectinfo {padding-top: 1.5rem;}
+
+  .btncenter {text-align: center;}
+
+	.btncenter a {
+		text-align: center;
+		line-height: 5rem;
+		height: 5rem;
+	}
 }
-*/
+
+@media all and (min-width: 576px) {
+  .container{
+    max-width: 90%; /*was originally 540px*/
+  }
+}
+
+@media all and (min-width: 768px) {
+	.col-md-1 {
+		-ms-flex: 0 0 8.333333%;
+		flex: 0 0 8.333333%;
+		max-width: 8.333333%
+	}
+
+	.col-md-2 {
+		-ms-flex: 0 0 16.666667%;
+		flex: 0 0 16.666667%;
+		max-width: 16.666667%;
+	}
+
+	.col-md-3 {
+		-ms-flex: 0 0 25%;
+		flex: 0 0 25%;
+		max-width: 25%;
+	}
+
+	.col-md-4 {
+		-ms-flex: 0 0 33.333333%;
+		flex: 0 0 33.333333%;
+		max-width: 33.333333%;
+	}
+
+	.col-md-5 {
+		-ms-flex: 0 0 41.6666667%;
+		flex: 0 0 41.6666667%;
+		max-width: 41.6666667%;
+	}
+
+	.col-md-6 {
+		-ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+	}
+
+	.col-md-7 {
+		-ms-flex: 0 0 58.333333%;
+		flex: 0 0 58.333333%;
+		max-width: 58.333333%;
+	}
+
+	.col-md-8 {
+		-ms-flex: 0 0 66.666667%;
+		flex: 0 0 66.666667%;
+		max-width: 66.666667%;
+	}
+
+	.col-md-9 {
+		-ms-flex: 0 0 75%;
+		flex: 0 0 75%;
+		max-width: 75%;
+	}
+
+	.col-md-10 {
+		-ms-flex: 0 0 83.333333%;
+		flex: 0 0 83.333333%;
+		max-width: 83.333333%;
+	}
+
+	.col-md-12 {
+		-ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+
+  .navbar li {float: left;}
+
+  .navbar li a {
+    border-top: none;
+    padding: 2.5rem 2rem;
+  }
+
+  .navbar .menu {
+    clear: none;
+    float: right;
+    max-height: none;
+  }
+
+  .navbar .menu-icon {display: none;}
+
+	footer {background-image: url(../img/footer_graphic.svg);}
+
+	.container {max-width: 72rem;}
+
+	.no-desk {display: none;}
+
+	.no-mob {
+	  display: block;
+	  width: 100%;
+	}
+
+	h1 {
+	  font-size: 4.5rem;
+	  line-height: 6rem;
+	}
+
+	.hero-bg {height: 80rem;}
+	.hero-hook {height: 87rem;}
+
+	.quick-abtme {
+	  font-size: 2.4rem;
+	  line-height: 4.2rem;
+	}
+
+	i.fas.downar.fa-chevron-down {display: none;}
+
+	.divequal {
+	  height: 47rem;
+	  display: table-cell;
+		text-align: left;
+	}
+
+	.projectinfo {
+		margin: 3rem 0;
+		max-width: 46rem;
+	}
+
+	.imgmax {
+		max-height: 31rem;
+		padding-top: 0;
+		width: auto;
+	}
+
+	.project-header {margin-top: -14rem;}
+
+	.rightborderdivider {border-right: 1px solid #DBDBDB;}
+
+	.persona-img {width: 20rem;}
+
+	.colorbox {
+		height: 4rem;
+		width: 9rem;
+	}
+
+	.header-bg {
+		background-position: center;
+		height: 60rem;
+	}
+
+	.header-hook {height: 67rem;}
+
+	.moviequote {
+	  font-size: 3.6rem;
+	  line-height: 5rem;
+		flex-grow: 2;
+		padding: 5rem 0;
+	}
+
+	.fullbody .row {padding: 20% 0;}
+
+	.talk {
+		font-size: 4rem;
+		text-align: left;
+	}
+
+	.contact-statement {
+		max-width: 45rem;
+		text-align: left;
+	}
+
+	img.cars_miscpic {
+		display: block;
+	  float: left;
+	  width: 20rem;
+	  margin-top: -20rem;
+		-webkit-filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
+		filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
+	}
+}
+
+@media all and (min-width: 992px) {
+  .container {max-width: 96rem;}
+
+	.header-words {width: 60%;}
+
+	h2 {font-size: 5rem;}
+
+	.projectinfo {
+	  font-size: 2.2rem;
+	  line-height: 3.4rem;
+	}
+
+	.imgmax {max-height: 47rem;}
+
+	.floatrightform {float: right;}
+
+	.contact-statement {
+		font-size: 2.2rem;
+		line-height: 3.8rem;
+	}
+
+	.talk {font-size: 5rem;}
+}
+
+@media all and (min-width: 1100px) {
+	#leftbgimg {
+	  background-image: url(../img/imgfeatures.png);
+	  background-size: 20rem;
+	  background-repeat: no-repeat;
+	  background-position: left;
+	}
+
+	#rightbgimg {
+	  background-image: url(../img/masjid.jpg);
+	  background-size: 20rem;
+	  background-repeat: no-repeat;
+	  background-position: right;
+	}
+}
+
+@media all and (min-width: 1200px) {
+  .container {max-width: 114rem;}
+	.persona-details {width: 72%;}
+	.project-header {margin-top: -17rem;}
+}
+
+/*including this again at the end maintains structural integrity. It only works when written this way*/
+.container {
+  width: 100%;
+  padding-right: 3.5rem;
+  padding-left: 3.5rem;
+}

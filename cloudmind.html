@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>CloudMind</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@500&family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+	<nav class="navbar">
+		<div class="container">
+			<a href="index.html" class="logo"><img src="img/mylogo.svg" alt="logo"></a>
+			<input class="menu-btn" type="checkbox" id="menu-btn"/> <!--checkbox, will allow for hamburger click-->
+			<label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>	<!--this will be turned into the 3 lines that make up the hamburger menu-->
+			<ul class="menu">
+				<li><a href="about.html" id="first-menu-item">About</a></li>
+				<li>
+					<div class="dropdown">
+						<button class="dropbtn">
+							<a href="javascript:void(0)" style="color: #E2C191;">Work</a>
+							<!--for later ref: can use href="" onclick="return false;" so that only the dropdown appears when tapping on mobile-->
+						</button>
+						<div class="dropdown-content">
+							<a href="#">Pencrumbs</a>
+							<a href="cloudmind.html" style="color: #E2C191; background: black;">CloudMind</a>
+							<a href="#" id="last-menu-item">BusyBus</a>
+						</div>
+					</div>
+				</li>
+				<li><a href="https://drive.google.com/file/d/1zzb851rQfB7nCjQuwvqakvlmZVW_i326/view" target="_blank">Resume</a></li>
+				<!--<li><a href="art.html">Art</a></li>-->	<!--work on this page later on-->
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<section class="pt-50">
+		<div class="container">
+			<h3 class="pt-100 mb-20" id="top">CloudMind</h3>
+			<h4 class="mb-30 smallersubheader">“Your world, anywhere in the world.”</h4>
+			<div class="row">
+				<div class="col-md-2"></div>
+				<div class="col-md-8 mb-30">
+					<p class="intro-hook">CloudMind is a new cloud-based storage service that empowers its users to take their world wherever they go with peace of mind. Includes more available storage space, account security, a catch-all file organization
+						system, and more robust content creation and manipulation controls on an easygoing and intuitive design.</p>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+		</div>
+		<img src="img/cloudmind/header.png" class="project-header" alt="CloudMind on devices">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 center-align">
+					<button class="btnline medbtn transpbtn mob-spaceout" value="view desktop prototype"
+						onclick="window.open('https://www.figma.com/proto/PUrAIetlR3mpWtJHz7Y3Sx/CloudMind?node-id=8%3A1&viewport=730%2C492%2C0.10904872417449951&scaling=min-zoom', '_blank')">View
+						Desktop Prototype</button>
+				</div>
+				<div class="col-md-6 center-align">
+					<button class="btnline medbtn transpbtn mob-spaceout" value="view mobile prototype"
+						onclick="window.open('https://www.figma.com/proto/PUrAIetlR3mpWtJHz7Y3Sx/CloudMind?node-id=1%3A4054&viewport=730%2C492%2C0.33420658111572266&scaling=scale-down', '_blank')">View
+						Mobile Prototype</button>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+	<section class="container pt-50">	<!--this encapsulates the entire first half up to wf&tsting-->
+		<!--quick details section-->
+		<section class="row">
+			<div class="col-md-4 rightborderdivider">
+				<h6 class="mb-20">duration</h6>
+				<p>Oct 2019 - Jan 2020</p>
+				<hr>
+				<h6 class="mb-20">roles</h6>
+				<p>Research & Discovery,<br>
+					Information Architecture & Ideation,<br>
+					Interactive Design & Testing,<br>
+					Visual Design</p>
+				<hr>
+				<h6 class="mb-20">tools</h6>
+				<p>Google Forms, Figma, inVision</p>
+				<div class="mobile_semidiv mb-40 mt-40 no-desk"></div>
+			</div>
+			<div class="col-md-8">
+				<h6 class="mb-20">problem</h6>
+				<p>A client of mine was excited about potential in the cloud storage market and had a list of features they would like to include in the end product. It was up to me to cement a foundation for this project through <b>user
+						research and discovery</b>, followed by <b>ideation and testing</b>, then applying <b>visual design principles and retesting</b> to develop a fresh competing product.</p>
+				<hr>
+				<h6 class="mb-20">solution</h6>
+				<p>CloudMind was developed on large and small screens to compete in the market while also maintaining its individuality. CloudMind’s branding plays into that idea. Blue is often used to represent calmness, trust and
+					security. Orange inspires energy and creativity. This solution bridges the gap between idea and end product and in the process provide a viable user-focused alternative.</p>
+			</div>
+		</section>
+		<!--user insights portion-->
+		<section class="row pt-100">
+			<div class="col-md-1"></div>
+			<section class="col-md-10">
+				<h4 class="sec-title mb-30">User Insights</h4>
+				<p class="mb-20">All cloud storage (CS) users use these services on their smartphones and 75% of them also use the services on their PCs. Users highlighted the following features as important to have:</p>
+				<ul class="text-light-bg mb-20">
+					<li>&#8226; Uploading files from device(s) (93.8%)</li>
+					<li>&#8226; Saving content found on the web (68.8%)</li>
+					<li>&#8226; Sharing items/folders with others (62.5%)</li>
+					<li>&#8226; Organizing content (50%)</li>
+					<li>&#8226; Real-time collaboration (43.8%)</li>
+				</ul>
+				<p>On the flipside, folks have experienced the greatest amount of frustration in terms of lack of storage space, expensive subscriptions, and difficulty organizing content, among others.</p>
+				<figure><img src="img/cloudmind/graph.svg" alt="paint points graph"></figure>
+				<p>To attract new customers, this service would need a good amount of free storage space, built-in security features (encryption, passwords and expiring links), cross-platform accessibility, and more intuitive file creation
+					and synchronization processes. Greater emphasis would be placed on a CS design for personal and work use based on users’ preferences.</p>
+			</section>
+		</section>
+		<!--competitive analysis portion-->
+		<section>
+			<div class="row pt-100">
+				<div class="col-md-1"></div>
+				<div class="col-md-10">
+					<h4 class="sec-title mb-30">Competitive Analysis</h4>
+				</div>
+			</div>
+			<div class="row mb-30">
+				<div class="col-md-1"></div>
+				<div class="col-md-4">
+					<img src="img/cloudmind/comp_analysis/gd.png" class="comp-img mb-20" alt="Google Drive">
+				</div>
+				<p class="col-md-6"><b>Google Drive</b> is the most well-known cloud storage brand given its affiliation with Google. It offers 15GB of storage to start, a full content creation suite, third-party app integration, and a great variety of
+					plans with benefits. However, the higher-end storage plans are too expensive, and Google has been scrutinized for privacy concerns.</p>
+			</div>
+			<div class="row mb-30">
+				<div class="col-md-1"></div>
+				<div class="col-md-4">
+					<img src="img/cloudmind/comp_analysis/db.png" class="comp-img mb-20" alt="Dropbox">
+				</div>
+				<p class="col-md-6"><b>Dropbox</b> offers file-sharing with expiring links and/or password protection, general file encryption, Microsoft Office access, and paid plans automatically generate offline versions of your uploaded files for
+					convenience. However, there are limited plan options, clunky sharing and organization mechanics, poor app integration, and only 2GB of free starting storage.</p>
+			</div>
+			<div class="row">
+				<div class="col-md-1"></div>
+				<div class="col-md-4">
+					<img src="img/cloudmind/comp_analysis/od.png" class="comp-img mb-20" alt="OneDrive">
+				</div>
+				<p class="col-md-6"><b>OneDrive</b>, a Microsoft product, integrates seamlessly with the Windows OS and offers students modest discounts on their plans. However, it does not integrate well with non-Microsoft apps, only provides 5GB of free
+					starting storage, and users aren’t guaranteed security and encryption unless under a business plan. Lower-end plans only offer storage space, meaning you would have to buy Microsoft Office separately.</p>
+			</div>
+			<div class="pt-30 center-align"><button class="btnline medbtn transpbtn" value="competitive analysis" onclick="window.open('https://drive.google.com/drive/folders/1yBbcUv3R4UBb6Hz39GUecZzXe-790uOV', '_blank')">View Full Analysis</button></div>
+		</section>
+		<!--user personas portion-->
+		<section>
+			<div class="row pt-100">
+				<div class="col-md-12">
+					<h4 class="sec-title mb-30">Personas</h4>
+					<p>All of the research data gathered up to this point is just that: data. It’s important to remember that this service is being developed for people to use, and thus I created two distinct user personas in order to humanize
+						that data as a reminder to approach the rest of the design process with empathy.</p>
+				</div>
+			</div>
+			<div class="row mt-30">
+				<div class="col-md-6 rightborderdivider">
+					<section class="persona-details">
+						<div class="center-align"><img src="img/cloudmind/user_personas/naomi.png" class="persona-img" alt="Naomi Chan"></div>
+						<h4 class="persona-name">Naomi Chan</h4>
+						<p class="persona-demog mb-30">Social Media Manager<br>Age 25 | Phoenix, AZ</p>
+						<h6 class="mb-10">motivations</h6>
+						<p class="mb-30">Naomi hopes to become a full-time travel blogger and influencer, and is already on track with her own website featuring stories and photos of her many adventures. She wants to be able to store all of
+							these files in the cloud to access them from her phone or laptop. She also hopes to use a service that has a detailed categorization system since her current service isn’t so efficient.</p>
+						<h6 class="mb-10">frustrations</h6>
+						<ul class="text-light-bg mb-30">
+							<li>&#8226; Not enough storage space</li>
+							<li>&#8226; Limited organization options</li>
+							<li>&#8226; Poor upload and sync processes</li>
+						</ul>
+						<p class="quote mb-30">I <b>love</b> sharing my experiences around the world with my audience.</p>
+						<ul class="tags">
+							<li class="tag">#traveler</li>
+							<li class="tag">#travelblogger</li>
+							<li class="tag">#outgoing</li>
+							<li class="tag">#extroverted</li>
+							<li class="tag">#friendly</li>
+							<li class="tag">#adventurer</li>
+						</ul>
+					</section>
+					<div class="mobile_semidiv mb-40 mt-40 no-desk"></div>
+				</div>
+				<div class="col-md-6">
+					<section class="persona-details">
+						<div class="center-align"><img src="img/cloudmind/user_personas/tamara.png" class="persona-img" alt="Tamara Bell"></div>
+						<h4 class="persona-name">Tamara Bell</h4>
+						<p class="persona-demog mb-30">Teacher<br>Age 29 | New York, NY</p>
+						<h6 class="mb-10">motivations</h6>
+						<p class="mb-30">Tamara is passionate about educating young minds and preparing them for the future. She works closely with other teachers to craft quality lesson plans and (when appropriate) supplementary material. She uses Google
+							Drive as it gives the most free storage space, but is looking for something that offers a larger storage space at a more modest price than the current competition.</p>
+						<h6 class="mb-10">frustrations</h6>
+						<ul class="text-light-bg mb-30">
+							<li>&#8226; Concern for lack of security</li>
+							<li>&#8226; Not enough categorization options</li>
+							<li>&#8226; Clunky sharing mechanics</li>
+						</ul>
+						<p class="quote mb-30">As I like to tell my students: collaboration is <b>the key</b> to success!</p>
+						<ul class="tags">
+							<li class="tag">#teacher</li>
+							<li class="tag">#educator</li>
+							<li class="tag">#organized</li>
+							<li class="tag">#teamplayer</li>
+							<li class="tag">#friendly</li>
+							<li class="tag">#collaborative</li>
+						</ul>
+					</section>
+				</div>
+			</div>
+		</section>
+		<!--user stories and flows; image is right below this portion-->
+		<section class="row pt-100">
+			<div class="col-md-12">
+				<h4 class="sec-title mb-30">User Stories and Flows</h4>
+				<p>Before drafting designs, it’s important to know what functionalities to design for. User stories tell us what needs to be done. Thinking of the user insights and research, I compiled a list of twenty user stories that
+					were important in developing a minimum viable product. We now know what to do, but how should those tasks be done? What is required to get from point A to point B? Enter user flows. User flows help visualize that journey from where one is
+					to where one wishes to be by the end of a task (or series of tasks). I designed flows that demonstrate the steps needed to upload a file to the cloud, create a new file, organize files, and link to other social accounts.</p><br>
+				<div class="pt-30 center-align">
+					<button class="btnline medbtn transpbtn" value="user stories and flows" onclick="window.open('https://www.figma.com/file/PUrAIetlR3mpWtJHz7Y3Sx/CloudMind?node-id=360%3A0', '_blank')">View All Stories and Flows</button>
+				</div>
+			</div>
+		</section>
+	</section>
+
+	<img src="img/cloudmind/userflows_sketched.png" alt="user flow sketches">
+	<!--wireframe sketching and testing portion-->
+	<section class="bg-dark ptb-80">
+		<div class="container">
+			<h4 class="darkbg-title mb-30">Wireframes and Testing</h4>
+			<p class="text-dark-bg mb-10">This is where the big picture starts coming together. Knowing what I want this app to do, how to do it, and for whom, I began sketching out ideas for what the final product could look like. Sketching with pen and
+				paper is
+				essential to a smoother design process; it’s better to make mistakes now to save time and money later.
+				<br><br>
+				What looks good and practical may not necessarily be so. To gain an understanding of what worked well, what didn’t, and what changes can be made, I conducted two user tests. Both users were in the same age range as my user
+				personas to maintain consistency. They felt comfortable with navigating the prototype. However, the following points were noted based on these tests and on feedback from the leader designer:</p><br><br>
+			<ul class="text-dark-bg">
+				<li>&#8226; The “New” button felt misleading in that the test participant assumed they could also upload from there</li>
+				<li>&#8226; Consider changing the display of images and info on homepage from column to Z-Pattern</li>
+				<li>&#8226; Instead of choosing between a template or “going blank,” show blank template in selection pop-up</li>
+			</ul>
+			<div class="center-align no-desk">
+				<!--smaller screen size button-->
+				<button class="btnline medbtn transpbtn mob-spaceout" value="view sketches" onclick="window.open('https://drive.google.com/drive/folders/18QD-iyH12fksLjuLMA5SxcTtRl8kz9Z2', '_blank')">View Sketches</button>
+			</div>
+			<div class="center-align no-desk">
+				<!--smaller screen size button-->
+				<button class="btnline medbtn transpbtn mob-spaceout" value="view wireframes" onclick="window.open('https://www.figma.com/file/n2DGLcU0d7uX3ccMWwxFIB/10.8-CloudMind-Wireframes-official?node-id=601%3A0', '_blank')">View Wireframes</button>
+			</div>
+		</div>
+	</section>
+	<!--images of wireframes with larger screen overlaid buttons-->
+	<section class="row m-0">
+		<div class="col-md-6 p-0">
+			<div class="center-align wireframebg wf-sketch">
+				<button class="btnline medbtn filledbtn" value="view sketches" onclick="window.open('https://drive.google.com/drive/folders/18QD-iyH12fksLjuLMA5SxcTtRl8kz9Z2', '_blank')">View Sketches</button>
+			</div>
+		</div>
+		<div class="col-md-6 p-0">
+			<div class="center-align wireframebg wf-digital">
+				<button class="btnline medbtn filledbtn" value="view wireframes" onclick="window.open('https://www.figma.com/file/n2DGLcU0d7uX3ccMWwxFIB/10.8-CloudMind-Wireframes-official?node-id=601%3A0', '_blank')">View Wireframes</button>
+			</div>
+		</div>
+	</section>
+	<!--branding and styling portion-->
+	<section class="container pt-100">
+		<h4 class="sec-title mb-30">Branding</h4>
+		<p>To develop this brand, I created a wordmap and from that exercise I began developing potential logo ideas. I noted that other competitors’ logos have some sort of cloud in their logo, which inspired some of my logo ideas. I
+			also wanted to include something that conveys collaboration, hence some of my ideas showing open dots connected with lines. The logo sketches then informed the brand name. Blue was a recurring color among other competitors’ brands, symbolizing
+			trust, calmness, and security, and so I experimented with shades of blue during the coloring process. To communicate the idea of creation and collaboration, both high-energy activities, I implemented variations of orange.
+			<br><br>
+			I settled on CloudMind as the brand name. The Josefin Sans type was chosen for the brand as it felt bold and modern without being over-the-top. Alegreya Sans functions as the complement due to its greater versatility. During
+			this phase of the branding process, I also designed a new logo that I eventually decided on. I then updated it to be simpler and easier to scale down to smaller resolutions.</p>
+		<div class="row mt-30">
+			<div class="col-md-4">
+				<img src="img/cloudmind/id_ideation.png" class="ideation_img" alt="branding ideation">
+			</div>
+			<div class="col-md-8 mt-20">
+				<h6 class="mb-20">colors</h6>
+				<div class="colors-selected pb-10">
+					<div class="b3 colorbox"></div>
+					<p>B3E8F8</p>
+				</div>
+				<div class="colors-selected pb-10">
+					<div class="o9 colorbox"></div>
+					<p>094AB2</p>
+				</div>
+				<div class="colors-selected pb-10">
+					<div class="o1 colorbox"></div>
+					<p>01397A</p>
+				</div>
+				<div class="mb-10">
+					<div class="colors-selected">
+						<div class="e6 colorbox"></div>
+						<p>E67600</p>
+					</div>
+					<div class="colors-selected">
+						<div class="f8 colorbox"></div>
+						<p>F8D9B8</p>
+					</div>
+					<div class="colors-selected">
+						<div class="fb colorbox"></div>
+						<p>FBEAD9</p>
+					</div>
+					<div class="colors-selected">
+						<div class="ff colorbox"></div>
+						<p>FFF1D0</p>
+					</div>
+					<div class="colors-selected">
+						<div class="fe colorbox"></div>
+						<p>FEFBF3</p>
+					</div>
+				</div>
+				<p class="info-caption">Blues are used for most buttons and suggestive/hyperlinked text. Oranges are applied to some buttons or stand-out items.</p>
+				<h6 class="mb-20 mt-30">typography</h6>
+				<table class="text-light-bg mb-20">
+					<tr>
+						<td>Branding -<br><span id="jose-sans">Josefin Sans</span></td>
+						<td>Complement -<br><span id="aleg-sans">Alegreya Sans</span></td>
+					</tr>
+				</table>
+			</div>
+			<div class="col-md-12 mb-30 center-align">
+				<button class="btnline medbtn transpbtn mob-spaceout" value="style guide" onclick="window.open('https://www.figma.com/proto/PUrAIetlR3mpWtJHz7Y3Sx/CloudMind?node-id=162%3A0&viewport=687%2C50%2C0.06005783751606941&scaling=min-zoom', '_blank')">View Style
+					Guide</button>
+			</div>
+			<div class="col-md-12 center-align">
+				<img src="img/cloudmind/logos.png" class="mb-10" alt="logo iterations">
+				<p class="info-caption">Just before starting mockups, I played around with the ‘mind’ in CloudMind while wanting to include connected dots to signify sharing.</p>
+			</div>
+		</div>
+	</section>
+	<!--hifi mockups and retesting portion-->
+	<section class="container pb-100 pt-100">
+		<div class="row hifi-mockups">
+			<h4 class="sec-title mb-30">Mockups and Testing</h4>
+			<p>Time for a fresh coat of paint! The high fidelity mockups underwent the greatest number of iterations as I sought insights and feedback from leader designers. I designed these mockups for desktop and mobile platforms, then tested the
+				desktop version as I felt that the feedback would also inform any tweaks that could be made to the mobile version. They can be viewed <a href="https://www.figma.com/file/EWYVdMZyYSGbrJ6Bmm8Myu/10.14---HiFi-Mockups?node-id=468%3A0"
+					target="_blank"><b>here</b></a>.
+				<br><br>
+				I opted to diversify my test participant demographic, including folks that are middle-aged. I tested three participants and asked them to describe what they liked, and what they found confusing or frustrating as they
+				completed three tasks: sign up for an account, create a new document, and recovering an account password. The users liked the layout of the homepage, and their feedback pointed to two fixable discrepancies: make the “Forgot Password” link
+				more pronounced (like a button), and give the user control over the confirmation window that shows after requesting a password reset link (different users read at different paces).
+				<br><br>
+				I also performed preference tests on three specific things in my design: the layout of icons in the portion of the desktop homepage outlining CloudMind’s features, the background of the login and signup overlays on
+				mobile, and the placement of the upload button on the mobile dashboard. All results were split even, and all came down to personal preferences as opposed to any easily identifiable trend(s). I opted to keep everything as is.</p>
+			<!--keep htis section of code if you want the buttons to change around when in mobile mode. If you choose to re-include, be sure to add 'no-mob' class to the 2 buttons below this blocked out code.
+			<div class="no-desk center-align">
+				<button class="btnline medbtn transpbtn" value="view desktop prototype" onclick="window.open('https://www.figma.com/proto/PUrAIetlR3mpWtJHz7Y3Sx/CloudMind?node-id=8%3A1&viewport=730%2C492%2C0.10904872417449951&scaling=min-zoom', '_blank')">View Desktop
+					Prototype</button>
+			</div>
+			<br>
+			<div class="no-desk center-align">
+				<button class="btnline medbtn transpbtn" value="view mobile prototype" onclick="window.open('https://www.figma.com/proto/PUrAIetlR3mpWtJHz7Y3Sx/CloudMind?node-id=1%3A4054&viewport=730%2C492%2C0.33420658111572266&scaling=scale-down', '_blank')">View Mobile
+					Prototype</button>
+			</div>
+			-->
+			<div class="col-md-6 mt-50 mb-20 center-align">
+				<button class="btnline medbtn transpbtn mb-30" value="view desktop prototype"
+					onclick="window.open('https://www.figma.com/proto/PUrAIetlR3mpWtJHz7Y3Sx/CloudMind?node-id=8%3A1&viewport=730%2C492%2C0.10904872417449951&scaling=min-zoom', '_blank')">View Desktop Prototype</button>
+				<img src="img/cloudmind/desktopmockup.png" alt="desktop mockups">
+			</div>
+			<div class="col-md-6 mt-50 center-align">
+				<button class="btnline medbtn transpbtn mb-30" value="view mobile prototype"
+					onclick="window.open('https://www.figma.com/proto/PUrAIetlR3mpWtJHz7Y3Sx/CloudMind?node-id=1%3A4054&viewport=730%2C492%2C0.33420658111572266&scaling=scale-down', '_blank')">View Mobile Prototype</button>
+				<img src="img/cloudmind/mobilemockup.png" alt="mobile mockups">
+			</div>
+		</div>
+	</section>
+	<!--conclusion section-->
+	<section class="bg-dark">
+		<div class="container conclusion ptb-80">
+			<div class="row">
+				<div class="col-md-12">
+					<h4 class="darkbg-title mb-30">Conclusion</h4>
+					<p class="text-dark-bg mb-10">Looking back at this project’s progression I found that I struggled with sizing, specifically with fonts and buttons. While working on a canvas, frame, or artboard, one spends so much time zooming in and out
+						that it
+						can distort their sense of sizing. My experience with developing the high fidelity mockup cemented how vital the iterative design and feedback process is. My biggest challenge came during the branding phase for the simple fact that we
+						tend to take the brands we see for granted without knowing what goes on behind the scenes. During that process I also learned that sometimes your best or most fitting ideas may not come when you need them, but while you apply a
+						metacognitive approach to design, you may begin to uncover new and innovative concepts.
+						<br><br>The design choices throughout CloudMind’s development felt validated in participants’ feelings during the user tests; it was reflected in their generally positive response to the layout and colors. The most valuable takeaway
+						was that it takes a village (or at least another teammate) to arrive at a cleaner and well thought-out design; without constant guidance and feedback CloudMind would not look or feel as clean as it does.</p>
+				</div>
+				<div class="large-flex"></div>
+				<div class="mt-50 small-flex center-align">
+					<a class="backtop" href="#top"> <i class="fas fa-chevron-up up"></i><div>Back to top</div></a>
+				</div>
+				<div class="large-flex"></div>
+			</div>
+		</div>
+	</section>
+	<!--this is whitespace between conclusion and footer. Don't delete this code just in case you want it back)
+	<section class="container">
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-9"><br><br>
+			</div>
+		</div>
+	</section>-->
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4 center-align">
+					<div class="f-head mb-30">Let’s connect!</div>
+					<div class="f-social">
+						<a href="mailto:ayoubience@gmail.com"><i class="far fa-envelope"></i></a>
+						<a href="https://www.linkedin.com/in/aayoub93/" target="_blank"><i class="fab fa-linkedin"></i></a>
+						<a href="https://github.com/aayoub93" target="_blank"><i class="fab fa-github"></i></a>
+						<a href="https://www.instagram.com/ayoubience/" target="_blank"><i class="fab fa-instagram"></i></a>
+					</div>
+				</div>
+				<div class="col-md-4 byme">
+					<small class="copr">&#169; 2020 Ayoubience<br>Designed by Ahmed Ayoub</small>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+
+</html>
