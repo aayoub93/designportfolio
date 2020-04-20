@@ -978,7 +978,7 @@ textarea.form-input {height: 20rem;}
 @media all and (min-width: 1200px) {
   .container {max-width: 114rem;}
 	.persona-details {width: 72%;}
-	.project-header {margin-top: -17rem;}
+	.project-header {margin-top: -16rem;}
 }
 
 /*including this again at the end maintains structural integrity. It only works when written this way*/
