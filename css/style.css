@@ -1,51 +1,280 @@
-/*
-body {
-  background: #fbfbfb;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.light-bg-button:hover{
+body {
+  background: #fbfbfb;
+  font-size: 18px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  margin: 0 auto;
+  width: 100%;
+}
+
+p {line-height: 26px;}
+.caption {line-height: 21px;}
+
+
+/*GENERAL BUTTON PROPERTIES AND SETUP*/
+.button {
+  position: relative;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  height: 50px;
+  text-align: center;
+  vertical-align: center;
+  border:2px solid;
+}
+.button:hover {
+  color: #fbfbfb;
+  transition: all 0.3s ease 0s;
+}
+
+
+/*HEADER SETUP*/
+header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  width: 100%;
+  background: rgba(20, 20, 20, 0.8);
+  padding: 0 8%;
+  z-index: 10;
+}
+
+header a, .dropbtn {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #fbfbfb;
+  background: none;
+  border: none;
+  padding: 0px 20px;
+}
+
+.logo, .dropbtn {cursor: pointer;}
+
+.dropbtn {
+ height: 90px;
+ style: none;
+}
+.dropbtn:hover, .btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 0.3s ease 0s;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+ position: relative;
+ display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+ display: none;
+ position: absolute;
+ min-width: 130px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ z-index: 3;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+ color: #fbfbfb;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;
+ background-color: rgba(20, 20, 20, 0.8);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: rgba(20, 20, 20, 0.0);} /*can change opacity to highlight the 'Work' container*/
+
+.navlinks a, header h3 {
+ transition: all 0.3s ease 0s;
+ text-decoration: none;
+ padding: 10px 20px;
+}
+.navlinks a:hover, .dropbtn:hover {color: #E2C191;}
+
+
+
+/*ALL TEXT SETUP HERE*/
+.text {
+  line-height: 26px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 400;
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+}
+
+h1, h3, h5, .light-bg-button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.introheader, .homeintrotext {
+  padding: 0 9.5%;
+  width: 525px;
+  height: auto;
+}
+
+h4 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+h5 {
+  font-weight: bold;
+}
+
+.catchphrase {
+  font-weight: 400;
+  text-align: center;
+}
+
+.personaquote h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 100px;
+  color: rgba(0, 0, 0, 0.25);
+}
+
+.persona-hashtags {
+  color: #808589;
+  line-height: 26px;
+}
+
+.homeintrotext, footer p {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+
+/*IMAGES AND IMAGERY SETUP*/
+.double-flex {
+  display: inline-flex;
+}
+
+#hero-img {
+  width: 100%;
+  height: auto;
+}
+
+.ca-image {
+  width: 33%;
+  height: auto;
+}
+
+.wf-image {
+  width: 100%;
+  height: auto;
+}
+
+.image-wrap {
+  max-height: 557px;
+  overflow: hidden;
+}
+
+.image-wrap img {
+  width: 250%;
+  height: auto;
+  transform: translate(-10%, -33%);
+}
+
+.personaimage {
+  height: 150px;
+  width: auto;
+}
+
+#me-hero {
+  width: 100%;
+  height: auto;
+}
+#me-hero-extend {display: none;}
+
+
+/*BUTTONS SETUP*/
+.light-bg-button {
+  height: 50px;
+  width: 285px;
+  font-weight: 500;
+  border: 2px solid #C99B57;
+  display: flex;
+  vertical-align: middle;
+  color: #C99B57;
+}
+
+.light-bg-button:hover, .btnoverimg {
   color: #fbfbfb;
   background-color: #C99B57;
 }
 
-.light-bg-button {
-  height: 50px;
-  width: 285px;
-  font-size: 18px;
-  font-family: montserrat;
-  border: 2px solid #C99B57;
-  fill: #fbfbfb;
-  display: inline-block;
-  text-decoration: none;
-  text-align: center;
-  color: #C99B57;
+.smallbtn {width: 225px;}
+.mediumbtn {width: 285px;}
+.largebtn {width: 305px;}
+
+.lightbtn {color: #E2C191;}
+.lightbtn:hover {
+  background-color: #E2C191;
+  border-color: #E2C191;
 }
 
-footer svg:hover {
-  fill: #C99B57;
-}
-*/
-#logo-iterations img {
-  height: 200px;
-  width: auto;
+.darkbtn {color: #C99B57;}
+.darkbtn:hover, .lightdarkbtn {
+  background-color: #C99B57;
+  border-color: #C99B57;
 }
 
-footer svg {
-  height: 50px;
-  width: auto;
-}
-
-img {
-  width: 75%;
-  height: auto;
-}
-
-.personaimage {
-  height: auto;
-  width: auto;
-}
+.lightdarkbtn {color: #fbfbfb;}
+.lightdarkbtn:hover {background-color: #E2C191;}
 
 /*
+#herohomebtn {border-color: #E2C191;}
+#herohomebtn a {color: #E2C191;}
+#herohomebtn:hover {background-color: #E2C191;}
+
+.bluebutton1 {
+  position: relative;
+  display:inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #E2C191;
+  text-align: center;
+  vertical-align: center;
+  height: 50px;
+  width: 225px;
+  border:2px solid #E2C191;
+}
+.bluebutton1:hover {
+  color: #fbfbfb;
+  background-color: #E2C191;
+  transition: 0.3s;
+}
+*/
+
+/*BRANDING - COLORS SETUP*/
 .colorbox {
   width: 90px;
   height: 40px;
@@ -54,6 +283,11 @@ img {
   box-shadow: 2px 2px 7px 0 rgba(0, 0, 0, 0.1);
 }
 
+.primarycolors .colors, .secondarycolors .colors {
+  display: inline-block;
+}
+
+/*CloudMind color boxes filled in with brand colors*/
 #primary1 {
   background: #B3E8F8;
 }
@@ -78,4 +312,91 @@ img {
 #secondary5 {
   background: #FEFBF3;
 }
-*/
+
+.backtotop {
+  text-align: center;
+}
+
+.navtotop {
+  color: #fbfbfb;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  text-decoration: none;
+  text-align: center;
+  background-color: blue;
+}
+
+/*FOOTER SETUP*/
+footer {
+  color: #fbfbfb;
+  background-color: #141414;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+  padding: 0 8%;
+}
+footer h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+footer p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+}
+
+.centerfooter, p {
+  z-index: 3;
+}
+#left-deco {
+  height: 100%;
+  width: auto;
+}
+
+footer svg {
+  height: 32px;
+  width: auto;
+  fill: #fbfbfb;
+  padding: 0 15px;
+}
+footer svg:hover {
+  transition: all 0.3s ease 0s;
+  fill: #E2C191;
+}
+
+
+/*************************************************/
+/*MEDIA QUERIES*/
+
+@media only screen and (min-width: 800px) {
+  /*.image-wrap {
+    max-height: 850px;
+  }
+  .image-wrap img {
+    height: 100%;
+    transform: translateY(-45%);
+  }*/
+
+  .personaimage {
+    height: 300px;
+    width: auto;
+  }
+}
+
+
+@media only screen and (min-width: 930px) {
+  .image-wrap {
+    max-height: 850px;
+  }
+  .image-wrap img {
+    width: 100%;
+    transform: translateY(-30%);
+  }
+}
