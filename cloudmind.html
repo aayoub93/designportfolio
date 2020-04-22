@@ -22,14 +22,14 @@
 				<li><a href="about.html" id="first-menu-item">About</a></li>
 				<li>
 					<div class="dropdown">
-						<button class="dropbtn">
+						<div class="dropbtn">
 							<a href="javascript:void(0)" style="color: #E2C191;">Work</a>
 							<!--for later ref: can use href="" onclick="return false;" so that only the dropdown appears when tapping on mobile-->
-						</button>
+						</div>
 						<div class="dropdown-content">
-							<a href="#">Pencrumbs</a>
-							<a href="cloudmind.html" style="color: #E2C191; background: black;">CloudMind</a>
-							<a href="#" id="last-menu-item">BusyBus</a>
+							<a href="pencrumbs.html">Pencrumbs</a>
+							<a href="cloudmind.html" id="last-menu-item" style="color: #E2C191; background: black;">CloudMind</a>
+							<!--<a href="#" id="last-menu-item">BusyBus</a>--> <!--re-enable when case study made ready-->
 						</div>
 					</div>
 				</li>
@@ -53,7 +53,7 @@
 				<div class="col-md-2"></div>
 			</div>
 		</div>
-		<img src="img/cloudmind/header.png" class="project-header" alt="CloudMind on devices">
+		<img src="img/cloudmind/header_v2.png" class="project-header" id="cloudmindheader" alt="CloudMind on devices">
 		<div class="container">
 			<div class="row">
 				<div class="col-md-6 center-align">
@@ -70,8 +70,7 @@
 		</div>
 	</section>
 
-
-	<section class="container pt-50">	<!--this encapsulates the entire first half up to wf&tsting-->
+	<section class="container pt-50">	<!--this encapsulates the entire first half up to cloudmind&tsting-->
 		<!--quick details section-->
 		<section class="row">
 			<div class="col-md-4 rightborderdivider">
@@ -105,11 +104,11 @@
 				<h4 class="sec-title mb-30">User Insights</h4>
 				<p class="mb-20">All cloud storage (CS) users use these services on their smartphones and 75% of them also use the services on their PCs. Users highlighted the following features as important to have:</p>
 				<ul class="text-light-bg mb-20">
-					<li>&#8226; Uploading files from device(s) (93.8%)</li>
-					<li>&#8226; Saving content found on the web (68.8%)</li>
-					<li>&#8226; Sharing items/folders with others (62.5%)</li>
-					<li>&#8226; Organizing content (50%)</li>
-					<li>&#8226; Real-time collaboration (43.8%)</li>
+					<li>Uploading files from device(s) (93.8%)</li>
+					<li>Saving content found on the web (68.8%)</li>
+					<li>Sharing items/folders with others (62.5%)</li>
+					<li>Organizing content (50%)</li>
+					<li>Real-time collaboration (43.8%)</li>
 				</ul>
 				<p>On the flipside, folks have experienced the greatest amount of frustration in terms of lack of storage space, expensive subscriptions, and difficulty organizing content, among others.</p>
 				<figure><img src="img/cloudmind/graph.svg" alt="paint points graph"></figure>
@@ -162,7 +161,7 @@
 			</div>
 			<div class="row mt-30">
 				<div class="col-md-6 rightborderdivider">
-					<section class="persona-details">
+					<section class="persona-details bifold">
 						<div class="center-align"><img src="img/cloudmind/user_personas/naomi.png" class="persona-img" alt="Naomi Chan"></div>
 						<h4 class="persona-name">Naomi Chan</h4>
 						<p class="persona-demog mb-30">Social Media Manager<br>Age 25 | Phoenix, AZ</p>
@@ -171,9 +170,9 @@
 							these files in the cloud to access them from her phone or laptop. She also hopes to use a service that has a detailed categorization system since her current service isn’t so efficient.</p>
 						<h6 class="mb-10">frustrations</h6>
 						<ul class="text-light-bg mb-30">
-							<li>&#8226; Not enough storage space</li>
-							<li>&#8226; Limited organization options</li>
-							<li>&#8226; Poor upload and sync processes</li>
+							<li>Not enough storage space</li>
+							<li>Limited organization options</li>
+							<li>Poor upload and sync processes</li>
 						</ul>
 						<p class="quote mb-30">I <b>love</b> sharing my experiences around the world with my audience.</p>
 						<ul class="tags">
@@ -188,7 +187,7 @@
 					<div class="mobile_semidiv mb-40 mt-40 no-desk"></div>
 				</div>
 				<div class="col-md-6">
-					<section class="persona-details">
+					<section class="persona-details bifold">
 						<div class="center-align"><img src="img/cloudmind/user_personas/tamara.png" class="persona-img" alt="Tamara Bell"></div>
 						<h4 class="persona-name">Tamara Bell</h4>
 						<p class="persona-demog mb-30">Teacher<br>Age 29 | New York, NY</p>
@@ -197,9 +196,9 @@
 							Drive as it gives the most free storage space, but is looking for something that offers a larger storage space at a more modest price than the current competition.</p>
 						<h6 class="mb-10">frustrations</h6>
 						<ul class="text-light-bg mb-30">
-							<li>&#8226; Concern for lack of security</li>
-							<li>&#8226; Not enough categorization options</li>
-							<li>&#8226; Clunky sharing mechanics</li>
+							<li>Concern for lack of security</li>
+							<li>Not enough categorization options</li>
+							<li>Clunky sharing mechanics</li>
 						</ul>
 						<p class="quote mb-30">As I like to tell my students: collaboration is <b>the key</b> to success!</p>
 						<ul class="tags">
@@ -240,9 +239,9 @@
 				What looks good and practical may not necessarily be so. To gain an understanding of what worked well, what didn’t, and what changes can be made, I conducted two user tests. Both users were in the same age range as my user
 				personas to maintain consistency. They felt comfortable with navigating the prototype. However, the following points were noted based on these tests and on feedback from the leader designer:</p><br><br>
 			<ul class="text-dark-bg">
-				<li>&#8226; The “New” button felt misleading in that the test participant assumed they could also upload from there</li>
-				<li>&#8226; Consider changing the display of images and info on homepage from column to Z-Pattern</li>
-				<li>&#8226; Instead of choosing between a template or “going blank,” show blank template in selection pop-up</li>
+				<li>The “New” button felt misleading in that the test participant assumed they could also upload from there</li>
+				<li>Consider changing the display of images and info on homepage from column to Z-Pattern</li>
+				<li>Instead of choosing between a template or “going blank,” show blank template in selection pop-up</li>
 			</ul>
 			<div class="center-align no-desk">
 				<!--smaller screen size button-->
@@ -257,12 +256,12 @@
 	<!--images of wireframes with larger screen overlaid buttons-->
 	<section class="row m-0">
 		<div class="col-md-6 p-0">
-			<div class="center-align wireframebg wf-sketch">
+			<div class="center-align wireframebg" id="cloudmind-sketch">
 				<button class="btnline medbtn filledbtn" value="view sketches" onclick="window.open('https://drive.google.com/drive/folders/18QD-iyH12fksLjuLMA5SxcTtRl8kz9Z2', '_blank')">View Sketches</button>
 			</div>
 		</div>
 		<div class="col-md-6 p-0">
-			<div class="center-align wireframebg wf-digital">
+			<div class="center-align wireframebg" id="cloudmind-digital">
 				<button class="btnline medbtn filledbtn" value="view wireframes" onclick="window.open('https://www.figma.com/file/n2DGLcU0d7uX3ccMWwxFIB/10.8-CloudMind-Wireframes-official?node-id=601%3A0', '_blank')">View Wireframes</button>
 			</div>
 		</div>
@@ -349,17 +348,6 @@
 				<br><br>
 				I also performed preference tests on three specific things in my design: the layout of icons in the portion of the desktop homepage outlining CloudMind’s features, the background of the login and signup overlays on
 				mobile, and the placement of the upload button on the mobile dashboard. All results were split even, and all came down to personal preferences as opposed to any easily identifiable trend(s). I opted to keep everything as is.</p>
-			<!--keep htis section of code if you want the buttons to change around when in mobile mode. If you choose to re-include, be sure to add 'no-mob' class to the 2 buttons below this blocked out code.
-			<div class="no-desk center-align">
-				<button class="btnline medbtn transpbtn" value="view desktop prototype" onclick="window.open('https://www.figma.com/proto/PUrAIetlR3mpWtJHz7Y3Sx/CloudMind?node-id=8%3A1&viewport=730%2C492%2C0.10904872417449951&scaling=min-zoom', '_blank')">View Desktop
-					Prototype</button>
-			</div>
-			<br>
-			<div class="no-desk center-align">
-				<button class="btnline medbtn transpbtn" value="view mobile prototype" onclick="window.open('https://www.figma.com/proto/PUrAIetlR3mpWtJHz7Y3Sx/CloudMind?node-id=1%3A4054&viewport=730%2C492%2C0.33420658111572266&scaling=scale-down', '_blank')">View Mobile
-					Prototype</button>
-			</div>
-			-->
 			<div class="col-md-6 mt-50 mb-20 center-align">
 				<button class="btnline medbtn transpbtn mb-30" value="view desktop prototype"
 					onclick="window.open('https://www.figma.com/proto/PUrAIetlR3mpWtJHz7Y3Sx/CloudMind?node-id=8%3A1&viewport=730%2C492%2C0.10904872417449951&scaling=min-zoom', '_blank')">View Desktop Prototype</button>
@@ -388,7 +376,7 @@
 				</div>
 				<div class="large-flex"></div>
 				<div class="mt-50 small-flex center-align">
-					<a class="backtop" href="#top"> <i class="fas fa-chevron-up up"></i><div>Back to top</div></a>
+					<a class="backtop text-dark-bg" href="#top"> <i class="fas fa-chevron-up up"></i><div>Back to top</div></a>
 				</div>
 				<div class="large-flex"></div>
 			</div>

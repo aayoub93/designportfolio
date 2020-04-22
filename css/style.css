@@ -41,6 +41,8 @@ section {
   display: block;
 }
 
+section li {list-style-type: disc; list-style-position: inside;}
+
 header {overflow: hidden;}
 
 hr {
@@ -52,14 +54,14 @@ hr {
   border-top: 1px solid rgba(0, 0, 0, .1);
 }
 
-p, .text-dark-bg, .text-light-bg, .tag {
+p, .text-dark-bg, .text-light-bg, .tag, h5 {
 	color: black;
 	font-size: 1.8rem;
 	line-height: 2.6rem;
 }
 
 .text-dark-bg, .backtop, .quick-abtme,
-.btnline, .f-head, .persona-name, .talk {font-weight: 500;}
+.btnline, .f-head, .persona-name, .talk, h5 {font-weight: 500;}
 
 .sec-title, .darkbg-title, .btnline, .f-head,
 .backtop, .transpbtn, .filledbtn, .persona-name, button,
@@ -73,7 +75,7 @@ h1, .navbar, .moviequote, .talk {font-family: 'Ubuntu', sans-serif;}
 }
 
 h1, .darkbg-title, .text-dark-bg,
-.backtop, .quick-abtme, footer {color: #FBFBFB;}
+.quick-abtme, footer {color: #FBFBFB;}
 
 h1 {
 	font-weight: bold;
@@ -133,7 +135,7 @@ a:hover {
 	filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.1));
 }
 
-figure {margin: 5rem 0;}
+figure {margin: 4rem 0;}
 
 img {
   vertical-align: middle;
@@ -435,6 +437,7 @@ i.fas.fa-chevron-up.up {color: #C99B57;}
 	margin: 0 -1.5rem; /*this lets content line up with left & right edges of navbar content*/
 }
 
+.trifold,
 .col-md-1, .col-md-2, .col-md-3, .col-md-4,
 .col-md-5, .col-md-6, .col-md-7, .col-md-8,
 .col-md-9, .col-md-10, .col-md-12 {
@@ -467,6 +470,8 @@ i.fas.fa-chevron-up.up {color: #C99B57;}
 .pb-10 {padding-bottom: 1rem;}
 
 .pb-20 {padding-bottom: 2rem;}
+
+.pb-30 {padding-bottom: 3rem;}
 
 .pb-100 {padding-bottom: 10rem;}
 
@@ -548,13 +553,15 @@ i.fas.downar.fa-chevron-down {
 .project-header {
   margin-top: -5rem;
 	width: 100%;
+	display: block;
 }
 
 .intro-hook {text-align: center;}
 
 .mobile_semidiv {border: 1px solid #DBDBDB;}
 
-.rightborderdivider {border-right: none;}
+.rightborderdivider, .trifold {border-right: none;}
+.unbordered-fold {border-right: none !important;}
 
 .comp-img {
 	filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
@@ -633,9 +640,11 @@ i.fas.downar.fa-chevron-down {
 	padding: 15rem 0;
 }
 
-.wf-sketch {background: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.1)), url(../img/cloudmind/wireframes/sketches.png); background-size: cover;}
+#cloudmind-sketch {background: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.1)), url(../img/cloudmind/wireframes/sketches.png); background-size: cover;}
+#cloudmind-digital {background: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.1)), url(../img/cloudmind/wireframes/wireframes.png); background-size: cover;}
 
-.wf-digital {background: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.1)), url(../img/cloudmind/wireframes/wireframes.png); background-size: cover;}
+#pencrumbs-sketch {background: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.1)), url(../img/pencrumbs/wireframes/sketches.png); background-size: cover;}
+#pencrumbs-digital {background: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.1)), url(../img/pencrumbs/wireframes/wireframes.png); background-size: cover;}
 
 .colors-selected {
   text-align: center;
@@ -660,8 +669,21 @@ i.fas.downar.fa-chevron-down {
 .ff {background: #FFF1D0;}
 .fe {background: #FEFBF3;}
 
-#jose-sans {font-family: 'Josefin Sans', sans-serif;}
-#aleg-sans {font-family: 'Alegreya Sans', sans-serif;}
+.pc1 {background: #2A0447;}
+.pc2 {background: #4B1670;}
+.pc3 {background: #8223C7;}
+.pc4 {background: #C39CEE;}
+.pc5 {background: #F8F1FF;}
+.sc1 {background: #10781A;}
+.sc2 {background: #07D21B;}
+.sc3 {background: #DFFFE2;}
+.sc4 {background: #FEFFF6;}
+
+#jose-sans {font-family: 'Josefin Sans', sans-serif; font-size: 2.2rem;}
+#aleg-sans {font-family: 'Alegreya Sans', sans-serif; font-size: 2.2rem;}
+
+#play-disp {font-family: 'Playfair Display', sans-serif; font-size: 2.2rem;}
+#lato {font-family: 'Lato', sans-serif; font-size: 2.2rem;}
 
 .ideation_img {
 	border: 1px solid rgba(0,0,0,0.1);
@@ -888,7 +910,7 @@ textarea.form-input {height: 20rem;}
 		width: auto;
 	}
 
-	.project-header {margin-top: -14rem;}
+	#cloudmindheader {margin-top: -14rem;}
 
 	.rightborderdivider {border-right: 1px solid #DBDBDB;}
 
@@ -935,8 +957,8 @@ textarea.form-input {height: 20rem;}
 	}
 }
 
-@media all and (min-width: 992px) {
-  .container {max-width: 96rem;}
+@media all and (min-width: 1000px) {
+  .container {max-width: 94rem;}
 
 	.header-words {width: 60%;}
 
@@ -949,6 +971,12 @@ textarea.form-input {height: 20rem;}
 
 	.imgmax {max-height: 47rem;}
 
+	.project-header {
+		width: 70%;
+		margin: auto;
+		text-align: center;
+	}
+
 	.floatrightform {float: right;}
 
 	.contact-statement {
@@ -957,6 +985,15 @@ textarea.form-input {height: 20rem;}
 	}
 
 	.talk {font-size: 5rem;}
+
+	.trifold {
+		-ms-flex: 0 0 33.333333%;
+		flex: 0 0 33.333333%;
+		max-width: 33.333333%;
+		border-right: 1px solid #DBDBDB;
+	}
+
+	.trifold .persona-details {width: 90%;}
 }
 
 @media all and (min-width: 1100px) {
@@ -976,9 +1013,9 @@ textarea.form-input {height: 20rem;}
 }
 
 @media all and (min-width: 1200px) {
-  .container {max-width: 114rem;}
-	.persona-details {width: 72%;}
-	.project-header {margin-top: -16rem;}
+  .container {max-width: 115rem;}
+	.persona-details.bifold {width: 72%;}
+	#cloudmindheader {margin-top: -16rem;}
 }
 
 /*including this again at the end maintains structural integrity. It only works when written this way*/
