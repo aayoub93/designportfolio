@@ -165,7 +165,10 @@ textarea {
   font-size: inherit;
 }
 
-button {cursor: pointer;}
+button, input.submission {
+	cursor: pointer;
+	border: 2px solid #E2C191;
+}
 
 .smallbtn, .medbtn, .lrgbtn {
 	font-size: 1.8rem;
@@ -1016,6 +1019,7 @@ textarea.form-input {height: 20rem;}
   .container {max-width: 115rem;}
 	.persona-details.bifold {width: 72%;}
 	#cloudmindheader {margin-top: -16rem;}
+	.form-input {width: 40rem;}
 }
 
 /*including this again at the end maintains structural integrity. It only works when written this way*/
