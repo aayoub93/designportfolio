@@ -59,9 +59,10 @@
 				</div>
 				<div class="col-md-6"> <!--class center-align messed up alignment here-->
 					<div class="floatrightform">
-						<form method="post" action="send_form_email.php">
+						<form method="POST" action="https://formspree.io/xnqbebov">
 							<input class="form-input" type="text" name="name" placeholder="My name is...">
 							<input class="form-input" type="text" name="email" placeholder="My email is...">
+							<input type="hidden" name="_subject" value="let's talk!" />
 							<textarea class="form-input" type="text" name="message" placeholder="Hi Ahmed..."></textarea>
 							<input type="submit" class="submission btnline form-input transpbtn" value="Submit">
 							<!--<button class="submission btnline lrgbtn transpbtn" type="submit">Submit</button>-->
