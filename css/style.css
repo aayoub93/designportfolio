@@ -527,6 +527,41 @@ i.fas.downar.fa-chevron-down {
 	letter-spacing: 1px;
 }
 
+@keyframes fadeInUp {
+    from {transform: translate3d(0,1.5rem,0);}
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {transform: translate3d(0,1.5rem,0);}
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+
+.animated {
+    animation-duration: 0.75s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0.75s;
+    -webkit-animation-fill-mode: both
+}
+
+.delayed {animation-delay: 1s;}
+
+.delayed2 {animation-delay: 2s;}
+
+.animatedFadeInUp {opacity: 0}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
 .divequal {
 	display: block;
 	height: auto;
