@@ -476,6 +476,8 @@ i.fas.fa-chevron-up.up {color: #C99B57;}
 
 .pb-30 {padding-bottom: 3rem;}
 
+.pb-50 {padding-bottom: 5rem;}
+
 .pb-100 {padding-bottom: 10rem;}
 
 .pt-10 {padding-top: 1rem;}
@@ -697,7 +699,7 @@ i.fas.downar.fa-chevron-down {
 	height: 3.5rem;
 	width: 7.5rem;
 }
-
+/*CloudMind colors*/
 .b3 {background: #B3E8F8;}
 .o9 {background: #094AB2;}
 .o1 {background: #01397A;}
@@ -706,7 +708,7 @@ i.fas.downar.fa-chevron-down {
 .fb {background: #FBEAD9;}
 .ff {background: #FFF1D0;}
 .fe {background: #FEFBF3;}
-
+/*Pencrumbs colors*/
 .pc1 {background: #2A0447;}
 .pc2 {background: #4B1670;}
 .pc3 {background: #8223C7;}
@@ -716,6 +718,14 @@ i.fas.downar.fa-chevron-down {
 .sc2 {background: #07D21B;}
 .sc3 {background: #DFFFE2;}
 .sc4 {background: #FEFFF6;}
+/*BusyBus colors*/
+.bbpc1 {background: #074C9C;}
+.bbpc2 {background: #095AB8;}
+.bbpc3 {background: #D8F1F6;}
+.bbsc1 {background: #B38B29;}
+.bbsc2 {background: #FFCD54;}
+.bbsc3 {background: #FAEED2;}
+.bbsc4 {background: #FFF5DB;}
 
 #jose-sans {font-family: 'Josefin Sans', sans-serif; font-size: 2.2rem;}
 #aleg-sans {font-family: 'Alegreya Sans', sans-serif; font-size: 2.2rem;}
@@ -723,9 +733,22 @@ i.fas.downar.fa-chevron-down {
 #play-disp {font-family: 'Playfair Display', sans-serif; font-size: 2.2rem;}
 #lato {font-family: 'Lato', sans-serif; font-size: 2.2rem;}
 
+@font-face {
+	font-family: "Highway Gothic";
+	src: url("fonts/HWYGOTH.TTF");
+}
+#high-goth {font-family: 'Highway Gothic', sans-serif; font-size: 2.2rem;}
+#overpass {font-family: 'Overpass', sans-serif; font-size: 2.2rem;}
+#oswald {font-family: 'Oswald', sans-serif; font-size: 2.2rem;}
+
 .ideation_img {
 	border: 1px solid rgba(0,0,0,0.1);
 	border-radius: 0.5rem;
+}
+
+.busybusmockup {
+	max-width: 375px !important;
+	height: auto !important;
 }
 
 .hifi-mockups {padding: 0 1.5rem;}
@@ -959,6 +982,10 @@ textarea.form-input {height: 20rem;}
 		width: 9rem;
 	}
 
+	.busybusbtn {padding-top: 5rem;}
+
+	.solologo {max-height: 20rem; width: auto;}
+
 	.header-bg {
 		background-position: center;
 		height: 60rem;
@@ -993,6 +1020,10 @@ textarea.form-input {height: 20rem;}
 		-webkit-filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
 		filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
 	}
+}
+
+@media all and (min-width: 768px) and (max-width: 999px) {
+	.shrinkabit {width: 25rem !important;}
 }
 
 @media all and (min-width: 1000px) {
