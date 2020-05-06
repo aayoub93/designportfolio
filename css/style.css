@@ -146,7 +146,8 @@ img {
 
 .imgmax {
 	padding-top: 3rem;
-	/*width: auto !important; /*disabling this made the homepage not overflow on mobile*/
+	max-height: 28rem;
+	width: auto;
 }
 
 table {width: 100%;}
@@ -555,6 +556,8 @@ i.fas.downar.fa-chevron-down {
 .delayed {animation-delay: 1s;}
 
 .delayed2 {animation-delay: 2s;}
+
+.delayed2-1 {animation-delay: 2.25s;}
 
 .animatedFadeInUp {opacity: 0}
 
@@ -966,9 +969,8 @@ textarea.form-input {height: 20rem;}
 	}
 
 	.imgmax {
-		max-height: 31rem;
+		max-height: 33rem;
 		padding-top: 0;
-		width: auto;
 	}
 
 	#cloudmindheader {margin-top: -14rem;}
@@ -1045,6 +1047,8 @@ textarea.form-input {height: 20rem;}
 		margin: auto;
 		text-align: center;
 	}
+
+	.no-desk-late {display: none;}
 
 	.floatrightform {float: right;}
 
