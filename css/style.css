@@ -935,7 +935,7 @@ textarea.form-input {height: 20rem;}
   top: 0;
   width: 100vw;
   height: 100vh;
-  overflow: hidden; /*consider deleting*/
+  overflow: auto; /*consider deleting*/
   background-color: rgba(0,0,0, 0.95);
 }
 /*clicking outside in the black areas will close overlay*/
@@ -983,7 +983,7 @@ textarea.form-input {height: 20rem;}
 /* Next & previous buttons */
 .prev,
 .next {
-	background: rgba(0,0,0,0.8);
+	background: rgba(0,0,0,0.6);
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -1056,13 +1056,18 @@ textarea.form-input {height: 20rem;}
   }
 }
 
+@media all and (min-width: 568px) and (max-width: 767px) {
+	.modal {padding-top: 7rem; padding-bottom: 10rem;}
+	.modal-content {width: 75%;}
+	.captiontext {bottom: -6rem;}
+}
+
 @media all and (min-width: 768px) {
 
 	/*ART PAGE refiguring*/
 	.modal {
 		padding-top: 10rem;
 	}
-	/*tile images setup*/
 	.tile {
 		width: calc(50% - 2rem);
 		margin: 1rem;
