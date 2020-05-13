@@ -20,6 +20,14 @@
 	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Overpass:wght@600&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<!--this style below is to ensure Highway Gothic is pulled and used properly. It isn't being called in style.css-->
+	<style type="text/css">
+		@font-face {
+			font-family: "Highway Gothic";
+			src: url("fonts/HWYGOTH.TTF");
+		}
+		#high-goth {font-family: 'Highway Gothic', sans-serif; font-size: 2.2rem;}
+	</style>
 </head>
 
 <body>
@@ -44,7 +52,17 @@
 					</div>
 				</li>
 				<li><a href="https://drive.google.com/file/d/1zzb851rQfB7nCjQuwvqakvlmZVW_i326/view" target="_blank">Resume</a></li>
-				<!--<li><a href="art.html">Art</a></li>-->	<!--work on this page later on-->
+				<li>
+					<div class="dropdown">
+						<div class="dropbtn">
+							<a href="javascript:void(0)">Art</a>
+						</div>
+						<div class="dropdown-content shorter-drop">
+							<a href="art.html">Images</a>
+							<a href="art.html#poetry" id="last-menu-item">Poetry</a>
+						</div>
+					</div>
+				</li>
 				<li><a href="contact.html">Contact</a></li>
 			</ul>
 		</div>
@@ -71,9 +89,9 @@
 						Prototype</button>
 				</div>
 				<div class="col-md-6 center-align busybusbtn">
-					<button class="btnline medbtn transpbtn mob-spaceout" value="view live on github"
+					<button class="btnline medbtn transpbtn mob-spaceout" value="view demo on github"
 						onclick="window.open('https://aayoub93.github.io/frontend-challenge/', '_blank')">View
-						Live on GitHub</button>
+						Demo on GitHub</button>
 				</div>
 			</div>
 		</div>
@@ -274,9 +292,9 @@ In designing the BusyBus logo, I utilized the front portion of the bus icon I dr
 							code on GitHub</button>
 					</div>
 					<div class="col-md-6 center-align">
-						<button class="btnline medbtn transpbtn mob-spaceout shrinkabit" value="view live"
+						<button class="btnline medbtn transpbtn mob-spaceout shrinkabit" value="view demo"
 							onclick="window.open('https://aayoub93.github.io/frontend-challenge/', '_blank')">View
-							Live on GitHub</button>
+							Demo on GitHub</button>
 					</div>
 				</div>
 			</div>
@@ -319,6 +337,7 @@ In designing the BusyBus logo, I utilized the front portion of the bus icon I dr
 			</div>
 		</div>
 	</footer>
+	<script src="zenscroll.js"></script>
 
 </body>
 

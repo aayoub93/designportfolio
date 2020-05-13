@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164207580-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-164207580-1');
+	</script>
+	<title>Art - Ahmed Ayoub</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/png" href="img/favicon_transparent.png">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+	<nav class="navbar">
+		<div class="container">
+			<a href="index.html" class="logo"><img src="img/brandlogo.svg" alt="logo"></a>
+			<input class="menu-btn" type="checkbox" id="menu-btn"/>
+			<!--checkbox, will allow for hamburger click-->
+			<label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+			<!--this will be turned into the 3 lines that make up the hamburger menu-->
+			<ul class="menu">
+				<li><a href="about.html" id="first-menu-item">About</a></li>
+				<li>
+					<div class="dropdown">
+						<div class="dropbtn">
+							<a href="javascript:void(0)">Work</a>
+						</div>
+						<div class="dropdown-content">
+							<a href="pencrumbs.html">Pencrumbs</a>
+							<a href="cloudmind.html">CloudMind</a>
+							<a href="busybus.html" id="last-menu-item">BusyBus</a>
+						</div>
+					</div>
+				</li>
+				<li><a href="https://drive.google.com/file/d/1zzb851rQfB7nCjQuwvqakvlmZVW_i326/view" target="_blank">Resume</a></li>
+				<li>
+					<div class="dropdown">
+						<div class="dropbtn">
+							<a href="javascript:void(0)"style="color: #E2C191;">Art</a>
+						</div>
+						<div class="dropdown-content shorter-drop">
+							<a href="art.html">Images</a>
+							<a href="art.html#poetry" id="last-menu-item">Poetry</a>
+						</div>
+					</div>
+				</li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+
+  <header id="top">
+    <div class="header-art">
+      <div class="container">
+        <div class="header-words">
+          <div class="header-hook">
+            <h1 class="animated animatedFadeInUp fadeInUp">"A picture is a poem without words." - Horace</h1>
+            <p class="no-mob quick-abtme animated animatedFadeInUp fadeInUp delayed">Here are some of my snapshots between NYC and Egypt.</p>
+            <div class="btncenter">
+              <button class="instabtn btnline medbtn transpbtn animated animatedFadeInUp fadeInUp delayed2" value="View Instagram" onclick="window.open('https://www.instagram.com/ayoubience/', '_blank')">See More on Instagram</button>
+            </div>
+            <div class="large-flex no-desk"></div>
+            <div class="small-flex"><a href="#images"><i class="fas downar fa-chevron-down animated animatedFadeInUp fadeInUp delayed2-1"></i></a></div>
+            <div class="large-flex no-desk"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="wrapper container pt-100 pb-100">
+    <a class="tile col-md-4-v2" onclick="openModal();currentSlide(1)">
+      <img src="photos/DSC_0896.jpg" alt="Central Park fall scenery" class="tile__media">
+      <span class="tile__content">Central Park foliage</span>
+    </a>
+    <a class="tile col-md-4-v2" onclick="openModal();currentSlide(2)">
+      <img src="photos/DSC_0900_Original.jpg" alt="duck bathing" class="tile__media">
+      <span class="tile__content">Bathing in a lake</span>
+    </a>
+    <a class="tile col-md-4-v2" onclick="openModal();currentSlide(3)">
+      <img src="photos/DSC_0905_Original.jpg" alt="duck swimming about" class="tile__media">
+      <span class="tile__content">Swimming about</span>
+    </a>
+    <a class="tile col-md-4-v2" onclick="openModal();currentSlide(4)">
+      <img src="photos/cairo_nostalgia.jpg" alt="Old Cairo" class="tile__media">
+      <span class="tile__content">El Moez Street, Old Cairo</span>
+    </a>
+    <a class="tile col-md-4-v2" onclick="openModal();currentSlide(5)">
+      <img src="photos/DSC_1123.jpg" alt="View of Cairo" class="tile__media">
+      <span class="tile__content">A golden hour view of Cairo from Muhammad Ali Mosque</span>
+    </a>
+    <a class="tile col-md-4-v2" onclick="openModal();currentSlide(6)">
+      <img src="photos/DSC_1092.jpg" alt="Nile River" class="tile__media">
+      <span class="tile__content">The Nile River, dusk atop the Cairo Tower</span>
+    </a>
+    <a class="tile col-md-4-v2" onclick="openModal();currentSlide(7)">
+      <img src="photos/IMG_0189.jpg" alt="Nazar Mirrors" class="tile__media">
+      <span class="tile__content">Nazar (evil eye) mirrors</span>
+    </a>
+    <a class="tile col-md-4-v2" onclick="openModal();currentSlide(8)">
+      <img src="photos/lovelocks.jpg" alt="Love Locks" class="tile__media">
+      <span class="tile__content">Love Locks, Brooklyn Bridge</span>
+    </a>
+    <a class="tile col-md-4-v2" onclick="openModal();currentSlide(9)">
+      <img src="photos/IMG_1630.jpeg" alt="Shipyard in Alexandria" class="tile__media">
+      <span class="tile__content">Shipyard in the Bahary neighborhood (بحري) of Alexandria, Egypt</span>
+    </a>
+	 </section>
+
+	 <div id="myModal" class="modal">
+		<div class="closebg" onclick="closeModal()"&times;></div>
+	  <span class="close" onclick="closeModal()">&times;</span>
+	  <div class="modal-content">
+	    <div class="mySlides">
+	      <p class="captiontext">Central Park foliage</p>
+	      <img src="photos/DSC_0896.jpg">
+	    </div>
+	    <div class="mySlides">
+	      <p class="captiontext">Bathing in a lake</p>
+	      <img src="photos/DSC_0900_Original.jpg">
+	    </div>
+	    <div class="mySlides">
+	      <p class="captiontext">Swimming about</p>
+	      <img src="photos/DSC_0905_Original.jpg">
+	    </div>
+	    <div class="mySlides">
+	      <p class="captiontext">El Moez Street, Old Cairo</p>
+	      <img src="photos/cairo_nostalgia_refactor.png">
+	    </div>
+			<div class="mySlides">
+				<p class="captiontext">A golden hour view of Cairo from Muhammad Ali Mosque</p>
+				<img src="photos/DSC_1123.jpg">
+			</div>
+			<div class="mySlides">
+				<p class="captiontext">The Nile River, dusk atop the Cairo Tower</p>
+				<img src="photos/DSC_1092.jpg">
+			</div>
+			<div class="mySlides">
+				<p class="captiontext">Nazar (evil eye) mirrors</p>
+				<img src="photos/IMG_0189.jpg">
+			</div>
+			<div class="mySlides">
+				<p class="captiontext">Love Locks, Brooklyn Bridge</p>
+				<img src="photos/lovelocks.jpg">
+			</div>
+			<div class="mySlides">
+				<p class="captiontext">Shipyard in the Bahary neighborhood (بحري) of Alexandria, Egypt</p>
+				<img src="photos/IMG_1630.jpeg">
+			</div>
+
+	    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+			<div class="previews-column">
+				<img class="demo" src="photos/DSC_0896.jpg" onclick="currentSlide(1)" alt="Central Park foliage">
+			</div>
+			<div class="previews-column">
+				<img class="demo" src="photos/DSC_0900_Original.jpg" onclick="currentSlide(2)" alt="Bathing in a lake">
+			</div>
+			<div class="previews-column">
+				<img class="demo" src="photos/DSC_0905_Original.jpg" onclick="currentSlide(3)" alt="Swimming about">
+			</div>
+			<div class="previews-column centerimg">
+				<img class="demo" src="photos/cairo_nostalgia.jpg" onclick="currentSlide(4)" alt="El Moez Street, Old Cairo">
+			</div>
+			<div class="previews-column">
+				<img class="demo" src="photos/DSC_1123.jpg" onclick="currentSlide(5)" alt="A golden hour view of Cairo from Muhammad Ali Mosque">
+			</div>
+			<div class="previews-column">
+				<img class="demo" src="photos/DSC_1092.jpg" onclick="currentSlide(6)" alt="The Nile River, dusk atop the Cairo Tower">
+			</div>
+			<div class="previews-column">
+				<img class="demo" src="photos/IMG_0189.jpg" onclick="currentSlide(7)" alt="Nazar (evil eye) mirrors">
+			</div>
+			<div class="previews-column">
+				<img class="demo" src="photos/lovelocks.jpg" onclick="currentSlide(8)" alt="Love Locks, Brooklyn Bridge">
+			</div>
+			<div class="previews-column">
+				<img class="demo" src="photos/IMG_1630.jpeg" onclick="currentSlide(9)" alt="Shipyard in the Bahary neighborhood (بحري) of Alexandria, Egypt">
+			</div>
+	  </div>
+	</div>
+
+	<header id="poetry">
+	  <div class="poetry-header">
+	    <div class="container">
+	      <div class="header-words">
+	        <div class="header-hook-short">
+	          <h1 class="animated animatedFadeInUp fadeInUp">"Poetry is emotion put into measure." – Thomas Hardy</h1>
+	          <p class="quick-abtme animated animatedFadeInUp fadeInUp delayed">Below are some of my poems and haiku.</p>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</header>
+
+	<section class="container pt-100">
+		<div class="row">
+			<div class="col-md-7"> <!--here you removed class "rightborderdivider"-->
+				<section class="bifold">
+					<h6 class="mb-30">senses</h6>
+					<p>
+						I wish orchids would grow on the streams of tears you've<br>
+						shed over the years,<br>
+						If only to see how beautiful you have always been.<br>
+						<br>
+						I wish you could see the light of the moon as I gaze into your eyes,<br>
+						darker than black,<br>
+						If only to realize how profound your insight has always been.<br>
+						<br>
+						I wish everything you touched turned into platinum,<br>
+						If only to understand how invaluable you are,<br>
+						How you've touched and enriched so many lives.
+					</p>
+				</section>
+				<div class="mobile_semidiv mb-40 mt-40 no-desk"></div>
+			</div>
+			<div class="col-md-5">
+				<section class="bifold">
+					<h6 class="mb-30">everyone's a critic</h6>
+					<p>
+						What people criticize is a<br>
+						reflection of their unrealized dreams;<br>
+						So dear writer, keep writing,<br>
+						keep filming, director,<br>
+						keep rocking out, musician,<br>
+						keep drawing, artist,<br>
+						move like water, dancer,<br>
+						<br>
+						Breathe life with your art.
+					</p>
+				</section>
+			</div>
+		</div>
+	</section>
+	<div class="container">
+		<div class="mobile_semidiv mb-40 mt-40 no-desk"></div>
+	</div>
+	<section class="container pb-100 haiku">
+		<div class="row">
+			<section class="col-md-4">
+				<h6 class="mb-30">oscillation</h6>
+				<img src="photos/haiku/IMG_8020.JPG" class="persona-img" alt="Empire State Building">
+				<p class="mt-30">
+					Empire State fading;<br>
+					a sign that nothing lasts.<br>
+					Good or bad, look up.
+				</p>
+			</section>
+			<div class="mobile_semidiv mb-40 mt-40 no-desk"></div>
+			<section class="col-md-4">
+				<h6 class="mb-30">precipice</h6>
+				<img src="photos\haiku\wsp_arch_night.jpg" class="persona-img" alt="Empire State Building">
+				<p class="mt-30">
+					I stand at the edge<br>
+					of adventure, of the unknown,<br>
+					unsure of myself.
+				</p>
+			</section>
+			<div class="mobile_semidiv mb-40 mt-40 no-desk"></div>
+			<section class="col-md-4">
+				<h6 class="mb-30">illumination</h6>
+				<img src="photos/haiku/IMG_0998.JPG" class="persona-img" alt="Empire State Building">
+				<p class="mt-30">
+					White light at the end --<br>
+					Even if you are alone,<br>
+					Press on towards hope.
+				</p>
+			</section>
+		</div>
+	</section>
+	<!--back to top button-->
+	<div class="pb-100">
+		<div class="large-flex"></div>
+		<div class="mt-50 small-flex center-align">
+			<a class="backtop text-light-bg" href="#top"><i class="fas fa-chevron-up up"></i><div>Back to top</div></a>
+		</div>
+		<div class="large-flex"></div>
+	</div>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4"></div>
+				<div class="col-md-4 center-align">
+					<div class="f-head mb-30">Let’s connect!</div>
+					<div class="f-social">
+						<a href="contact.html"><i class="far fa-envelope"></i></a>
+						<a href="https://www.linkedin.com/in/aayoub93/" target="_blank"><i class="fab fa-linkedin"></i></a>
+						<a href="https://github.com/aayoub93" target="_blank"><i class="fab fa-github"></i></a>
+						<a href="https://www.instagram.com/ayoubience/" target="_blank"><i class="fab fa-instagram"></i></a>
+					</div>
+				</div>
+				<div class="col-md-4 byme">
+					<small class="copr">&#169; 2020 Ayoubience<br>Designed by Ahmed Ayoub</small>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/modaloverlayv2.js"></script>
+	<script src="zenscroll.js"></script>
+
+</body>
+
+</html>

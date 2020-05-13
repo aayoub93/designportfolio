@@ -12,6 +12,7 @@ html {
   font-family: 'Raleway', sans-serif;
 	font-size: 10px;
 	scroll-behavior: smooth;
+	-webkit-overflow-scrolling: touch;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: transparent;
 }
@@ -326,7 +327,7 @@ button.dropbtn {width: 100%;}
   display: none;
   position: absolute;
   background: rgba(20, 20, 20, 0.8);
-  min-width: 25rem;
+  min-width: 75%;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -407,7 +408,7 @@ i.fas.fa-chevron-up.up {color: #C99B57;}
 }
 .backtop:hover {color: #E2C191; text-decoration: none; transition: 0.3s;}
 
-.hero-bg, .header-bg {
+.hero-bg, .header-bg, .header-art, .poetry-header {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -424,14 +425,17 @@ i.fas.fa-chevron-up.up {color: #C99B57;}
 	height: 36rem;
 }
 
-/*for index.html and about.html*/
 .header-words {width: 100%;}
 
-.header-hook {
+.header-hook, .header-hook-short {
 	height: 42rem;
 	vertical-align: middle;
 	display: table-cell;
 }
+
+.header-hook-short {height: 30rem;}
+
+.header-hook-short p {padding-bottom: 0;}
 
 .row {
   display: -ms-flexbox;
@@ -818,9 +822,212 @@ textarea.form-input {height: 20rem;}
 	width: 100%;
 }
 
+/*ART PAGE*/
+.header-art {
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../photos/DSC_1123_cover.jpg);
+	background-position: 60% 50%;
+	height: 40rem;
+}
+.header-art .header-hook {height: 47rem;}
+
+.instabtn {margin-top: 3rem;}
+
+.tile {
+  width: 100%;
+  height: 300px;
+	margin: 0.5rem auto;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  float: left;
+	cursor: pointer;
+}
+
+.tile.col-md-4-v2 {
+	border: 0.5rem solid transparent;
+	padding: 0.5rem; /*subject to change to 1rem*/
+}
+.tile::after {
+  content: "";
+  position: absolute;
+  display: block;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0.5s, opacity 0.5s;
+  transition: visibility 0.5s, opacity 0.5s;
+}
+
+.tile:hover::after,
+.tile:focus::after {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tile__media {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.tile:hover .tile__media,
+.tile:focus .tile__media {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.tile__content {
+  top: 50%;
+  right: 0;
+  left: 0;
+	line-height: 3.6rem;
+	padding: 2rem;
+  position: absolute;
+  z-index: 1;
+  visibility: hidden;
+  opacity: 0;
+  color: #FBFBFB;
+  font-size: 1.8rem;
+  -webkit-transition: visibility 0.5s, opacity 0.5s;
+  transition: visibility 0.5s, opacity 0.5s;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.tile:hover .tile__content,
+.tile:focus .tile__content {
+  visibility: visible;
+  opacity: 1;
+}
+
+.wrapper .tile__content {text-align: center;}
+
+.wrapper::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100;
+  padding-top: 15rem;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /*consider deleting*/
+  background-color: rgba(0,0,0, 0.95);
+}
+/*clicking outside in the black areas will close overlay*/
+.closebg {
+	background: transparent;
+	position: absolute;
+	width: 100%;
+	height: calc(100% - 10rem);
+	z-index: 1;
+}
+/* Modal Content */
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 80%;
+  max-width: 105rem;
+	z-index: 3;
+}
+
+.tallpic {max-width: 46.665rem;} /*consider deleting*/
+/* The Close Button */
+.close {
+  color: #FBFBFB;
+  position: fixed;
+  top: 5%;
+  right: 4%;
+  font-size: 6rem;
+  font-weight: 500;
+}
+
+.close:hover,
+.close:focus {
+  color: #E2C191;
+  text-decoration: none;
+	transition: 0.3s;
+  cursor: pointer;
+}
+
+.mySlides {
+  display: none;
+	position: relative;
+	text-align: center;
+}
+/* Next & previous buttons */
+.prev,
+.next {
+	background: rgba(0,0,0,0.8);
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 2rem 0.75rem;
+	padding-left: 0.6rem;
+  margin-top: -3rem;
+  color: #FBFBFB;
+  font-size: 1.4rem;
+  transition: 0.5s ease;
+  user-select: none;
+  -webkit-user-select: none;
+}
+/* Position the "next button" to the right */
+.next {right: 0;}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #E2C191;
+	color: #141414;
+}
+/* Modal photo captions */
+.captiontext {
+	background: rgba(0, 0, 0, 0.6);
+	bottom: -8rem;
+  color: #FBFBFB;
+  font-size: 1.4rem;
+	font-weight: 500;
+  padding: 0.75rem 1rem;
+  position: absolute;
+	width: 100%;
+}
+
+.poetry-header {
+	background-image: url(../photos/bw/IMG_0096.jpg);
+	height: 30rem;
+}
+
+.haiku {text-align: center;}
+
 /*RESPONSIVE DESIGN (queries here)*/
 /*the bits of code in this query were more convenient to leave as is*/
 @media all and (max-width: 767px) {
+	.previews-column {display: none;}
 
 	.mob-spaceout {margin-top: 3.5rem;}
 
@@ -850,6 +1057,63 @@ textarea.form-input {height: 20rem;}
 }
 
 @media all and (min-width: 768px) {
+
+	/*ART PAGE refiguring*/
+	.modal {
+		padding-top: 10rem;
+	}
+	/*tile images setup*/
+	.tile {
+		width: calc(50% - 2rem);
+		margin: 1rem;
+	}
+	.tile__content {font-size: 2.2rem;}
+	.instabtn {margin-top: 0;}
+	/*Left and right buttons*/
+	.prev,
+	.next {
+	  font-weight: bold;
+	  font-size: 2rem;
+		margin-top: -5rem;
+		padding: 3rem 1rem;
+	}
+	/* Modal photo captions */
+	.captiontext {
+		bottom: 0;
+	  font-size: 1.6rem;
+	  padding: 1rem 2rem;
+	}
+	/*setting up preview images below main one in overlay form*/
+	.previews-column {
+	  float: left;
+	  width: 11.75%;
+		padding: 0 0.5rem;
+		margin: 3rem 0;
+	}
+	.centerimg {
+		display: block;
+		text-align: center;
+		width: 6%;
+		max-height: 72px;
+		overflow: hidden;
+	}
+
+	.demo {
+	  opacity: 0.7;
+	}
+
+	.active,
+	.demo:hover {
+		cursor: pointer;
+	  opacity: 1;
+		transition: 0.5s;
+	}
+
+	.close {font-size: 7rem; font-weight: normal;}
+
+	.haiku {padding-top: 10rem;}
+
+	/*General column rules refiguring*/
 	.col-md-1 {
 		-ms-flex: 0 0 8.333333%;
 		flex: 0 0 8.333333%;
@@ -916,6 +1180,7 @@ textarea.form-input {height: 20rem;}
 		max-width: 100%;
 	}
 
+	/*Navbar refiguring*/
   .navbar li {float: left;}
 
   .navbar li a {
@@ -930,6 +1195,9 @@ textarea.form-input {height: 20rem;}
   }
 
   .navbar .menu-icon {display: none;}
+
+	.dropdown-content {min-width: 25rem;}
+	.shorter-drop {min-width: 15rem !important;}
 
 	footer {background-image: url(../img/footer_graphic.svg);}
 
@@ -973,6 +1241,8 @@ textarea.form-input {height: 20rem;}
 		padding-top: 0;
 	}
 
+	#cloudmindhook {margin-bottom: 1rem;}
+
 	#cloudmindheader {margin-top: -14rem;}
 
 	.rightborderdivider {border-right: 1px solid #DBDBDB;}
@@ -988,12 +1258,14 @@ textarea.form-input {height: 20rem;}
 
 	.solologo {max-height: 20rem; width: auto;}
 
-	.header-bg {
+	.header-bg, .header-art, .poetry-header {
 		background-position: center;
 		height: 60rem;
 	}
 
-	.header-hook {height: 67rem;}
+	.poetry-header, .header-hook-short {height: 50rem;}
+
+	.header-hook {height: 67rem !important;}
 
 	.moviequote {
 	  font-size: 3.6rem;
@@ -1029,6 +1301,14 @@ textarea.form-input {height: 20rem;}
 }
 
 @media all and (min-width: 1000px) {
+	.col-md-4-v2 {
+		-ms-flex: 0 0 33.333333%;
+		flex: 0 0 33.333333%;
+		max-width: 33.333333%;
+	} /*this is specific to photos in the Art page. Lets you have 3 per row*/
+
+	.tile.col-md-4-v2 {margin: 0;} /*this lets you have 3 images in a row*/
+
   .container {max-width: 94rem;}
 
 	.header-words {width: 60%;}
@@ -1090,6 +1370,7 @@ textarea.form-input {height: 20rem;}
 	.persona-details.bifold {width: 72%;}
 	#cloudmindheader {margin-top: -16rem;}
 	.form-input {width: 40rem;}
+	.poetry-header {background-position: 0% 59%;}
 }
 
 /*including this again at the end maintains structural integrity. It only works when written this way*/
