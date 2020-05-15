@@ -185,7 +185,7 @@ button, input.submission {
 .transpbtn:hover {
   background-color: #C99B57;
   border: 2px solid #C99B57;
-  color: #fff;
+  color: #FBFBFB;
   transition: 0.3s;
   text-decoration: none;
 }
@@ -202,11 +202,12 @@ button, input.submission {
 	background: #C99B57;
 	border: 2px solid #C99B57;
 	box-sizing: border-box;
-	color: #FFF;
+	color: #FBFBFB;
 }
 .filledbtn:hover {
 	background: #E2C191;
 	transition: 0.3s;
+	color: #FFF;
 }
 
 /*NAVBAR SETUP W/ HAMBURGER MENU AND ANIMATING X*/
@@ -543,9 +544,9 @@ i.fas.downar.fa-chevron-down {
 }
 
 @-webkit-keyframes fadeInUp {
-    from {transform: translate3d(0,1.5rem,0);}
+    from {-webkit-transform: translate3d(0,1.5rem,0);}
     to {
-        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
         opacity: 1;
     }
 }
@@ -554,7 +555,7 @@ i.fas.downar.fa-chevron-down {
     animation-duration: 0.75s;
     animation-fill-mode: both;
     -webkit-animation-duration: 0.75s;
-    -webkit-animation-fill-mode: both
+    -webkit-animation-fill-mode: both;
 }
 
 .delayed {animation-delay: 1s;}
@@ -563,7 +564,7 @@ i.fas.downar.fa-chevron-down {
 
 .delayed2-1 {animation-delay: 2.25s;}
 
-.animatedFadeInUp {opacity: 0}
+.animatedFadeInUp {opacity: 0;}
 
 .fadeInUp {
     opacity: 0;
@@ -749,8 +750,15 @@ i.fas.downar.fa-chevron-down {
 #oswald {font-family: 'Oswald', sans-serif; font-size: 2.2rem;}
 
 .ideation_img {
-	border: 1px solid rgba(0,0,0,0.1);
+	border: 1px solid rgba(226, 193, 145, 0.66);
 	border-radius: 0.5rem;
+	cursor: pointer;
+}
+
+.ideation_img:hover {
+	border: 1px solid #C99B57;
+	transition: 0.3s;
+	-webkit-transition: 0.3s;
 }
 
 .busybusmockup {
@@ -942,8 +950,10 @@ textarea.form-input {height: 20rem;}
 .closebg {
 	background: transparent;
 	position: absolute;
+	top: 0;
 	width: 100%;
-	height: calc(100% - 10rem);
+	/*height: calc(100% - 10rem);*/
+	height: 100%;
 	z-index: 1;
 }
 /* Modal Content */
@@ -965,6 +975,7 @@ textarea.form-input {height: 20rem;}
   right: 4%;
   font-size: 6rem;
   font-weight: 500;
+	z-index: 3;
 }
 
 .close:hover,
@@ -1023,6 +1034,15 @@ textarea.form-input {height: 20rem;}
 }
 
 .haiku {text-align: center;}
+
+.haiku img {
+	border-radius: 0.2rem;
+	filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
+	-webkit-filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
+}
+
+/*adding this in for branding ideations*/
+.modal-content.forbranding {max-width: 80rem;}
 
 /*RESPONSIVE DESIGN (queries here)*/
 /*the bits of code in this query were more convenient to leave as is*/
@@ -1104,7 +1124,7 @@ textarea.form-input {height: 20rem;}
 	}
 
 	.demo {
-	  opacity: 0.7;
+	  opacity: 0.6;
 	}
 
 	.active,
@@ -1252,6 +1272,8 @@ textarea.form-input {height: 20rem;}
 
 	.rightborderdivider {border-right: 1px solid #DBDBDB;}
 
+	.nomobile-pad {padding-left: 3rem;}
+
 	.persona-img {width: 20rem;}
 
 	.colorbox {
@@ -1315,6 +1337,7 @@ textarea.form-input {height: 20rem;}
 	.tile.col-md-4-v2 {margin: 0;} /*this lets you have 3 images in a row*/
 
   .container {max-width: 94rem;}
+	.narrowcontent {max-width: 84rem !important;}
 
 	.header-words {width: 60%;}
 
@@ -1331,6 +1354,8 @@ textarea.form-input {height: 20rem;}
 		width: 70%;
 		margin: auto;
 		text-align: center;
+		max-width: 115rem;
+		height: auto;
 	}
 
 	.no-desk-late {display: none;}
@@ -1370,8 +1395,9 @@ textarea.form-input {height: 20rem;}
 	}
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 1300px) {
   .container {max-width: 115rem;}
+	.narrowcontent {max-width: 94rem !important;}
 	.persona-details.bifold {width: 72%;}
 	#cloudmindheader {margin-top: -16rem;}
 	.form-input {width: 40rem;}

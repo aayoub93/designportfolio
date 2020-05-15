@@ -98,7 +98,7 @@
 	</section>
 
 
-	<section class="container pt-50">	<!--this encapsulates the entire first half up to wf&tsting-->
+	<section class="container narrowcontent pt-50">	<!--this encapsulates the entire first half up to wf&tsting-->
 		<!--quick details section-->
 		<section class="row">
 			<div class="col-md-4 rightborderdivider">
@@ -107,24 +107,26 @@
 				<hr>
 				<h6 class="mb-20">roles</h6>
 				<p>Research & Discovery,<br>
-					Information Architecture & Ideation,<br>
+					Info Architecture & Ideation,<br>
 					Interactive Design & Testing,<br>
 					Visual Design,<br>
 				Frontend Development</p>
 				<hr>
 				<h6 class="mb-20">tools</h6>
-				<p>Google Forms, Figma, Atom, Git</p>
+				<p>Google Forms, Figma, Atom, Git/GitHub</p>
 				<div class="mobile_semidiv mb-40 mt-40 no-desk"></div>
 			</div>
-			<div class="col-md-8">
+			<div class="col-md-8 nomobile-pad">
 				<h6 class="mb-20">problem</h6>
-				<p>Transit officials have identified a problem they would like to solve. Due to expansion, numerous bus routes have been recently added and many of those routes stop at the same bus stop. Riders want to know what the next arriving bus is and how much time they have to get to the bus stop. Riders and residents are frustrated and want to know <b>where their bus is</b>, <b>when it arrives</b>, <b>and how long until it departs</b>.</p>
+				<p>Transit officials identified a problem they would like to solve. Due to expansion, numerous bus routes were recently added and many of those routes stop at the same bus stop. Riders want to know what the next arriving bus is and how much time they have to get to the bus stop. Riders and residents are frustrated and want to know <b>where their bus is</b>, <b>when it arrives</b>, <b>and how long until it departs</b>.</p>
 				<hr>
 				<h6 class="mb-20">solution</h6>
 				<p>BusyBus was developed with the aim of providing residents and commuters with a technological solution that provides a more seamless and hassle-free public transportation experience. By combining basic <b>design principles</b> with an <b>intuitive layout</b>, BusyBus’ interface lets users know in real-time when their desired buses will arrive. Users will also be informed of which routes are inactive.</p>
 			</div>
 		</section>
-		<!--user insights portion-->
+	</section>
+	<!--user insights portion-->
+	<section class="container narrowcontent">
 		<section class="row pt-100 pb-100">
 			<div class="col-md-1"></div>
 			<section class="col-md-10">
@@ -137,7 +139,7 @@
 	</section>
 	<!--competitive analysis portion-->
 	<section class="bg-dark ptb-80">
-		<div class="container">
+		<div class="container narrowcontent">
 			<h4 class="darkbg-title mb-30">Competitive Analysis</h4>
 			<div class="row mb-30">
 				<div class="col-md-4">
@@ -155,7 +157,7 @@
 		</div>
 	</section>
 
-	<section class="container pb-100">
+	<section class="container pb-100 narrowcontent">
 		<!--user stories and flows; image is right below this portion-->
 		<section class="row pt-100">
 			<div class="col-md-1"></div>
@@ -173,7 +175,7 @@
 
 	<!--wireframe sketching and testing portion-->
 	<section class="bg-dark ptb-80">
-		<div class="container">
+		<div class="container narrowcontent">
 			<h4 class="darkbg-title mb-30">Ideation and Testing</h4>
 			<p class="text-dark-bg mb-10">Time to sketch and test! Using a templated worksheet, I sketched out three screens that follow my previously established user flow and performed usability testing on this paper prototype with three subjects. I also wanted to experiment with including other forms of transportation for users who may want to explore those options, similar to Google Maps and Transit. They were each asked to select and confirm a bus route of their choice. They each had varying levels of technological proficiency, allowing for broader perspectives on what could be improved. I noted the following points of feedback:</p><br><br>
 			<ul class="text-dark-bg">
@@ -189,15 +191,29 @@
 		<img src="img/busybus/sketches.png" alt="sketches">
 	</div>
 	<!--branding and styling portion-->
-	<section class="container pt-100">
+	<section class="container pt-100 narrowcontent">
 		<h4 class="sec-title mb-30">Branding</h4>
 		<p>What’s in an identity? I wanted to convey to users that they can trust and be excited about getting places. I therefore used shades of blue as my primary color palette (blue denotes trust and security) and variations of yellow for my secondary palette to emphasize enthusiasm. I used a combination of Highway Gothic for my brand type and Oswald as its complement. Highway Gothic is used for US highway signs, and thus felt appropriate to use for this transportation app. I applied this type to the search field text, route numbers, and the times' numerical displays. All other text used Oswald with 5% letter spacing.
 			<br><br>
 In designing the BusyBus logo, I utilized the front portion of the bus icon I drafted for the selection button in the app, and the BusyBus title in Highway Gothic. The word "busy" can be associated with "buzzing about," moving fast from one point to another to get a task done. This train of thought led me to include three triangles tailing the bus to symbolize its forward movement towards its destination. However, when it came time to code, the Overpass type functioned as a very close alternative to Highway Gothic.</p>
 		<div class="row mt-30">
-			<div class="col-md-4">
+			<a class="col-md-4" onclick="openModal();currentSlide(1)">
 				<img src="img/busybus/id_ideation.png" class="ideation_img" alt="branding ideation">
+				<span class="tile__content">Branding Ideation</span>
+			</a>
+		 <div id="myModal" class="modal">
+			<div class="closebg" onclick="closeModal()"&times;></div>
+			<span class="close" onclick="closeModal()">&times;</span>
+			<div class="modal-content forbranding">
+				<div class="mySlides">
+					<img src="img/busybus/id_ideation.png">
+				</div>
 			</div>
+			<div class="previews-column">
+				<div class="demo"></div>
+			</div>
+		</div>
+
 			<div class="col-md-8 mt-20">
 				<h6 class="mb-20">colors</h6>
 				<div class="colors-selected pb-10">
@@ -232,14 +248,14 @@ In designing the BusyBus logo, I utilized the front portion of the bus icon I dr
 				</div>
 				<p class="info-caption">Blues are used for containers, large buttons, and some icons. Yellows are applied to text and smaller icons.</p>
 				<h6 class="mb-20 mt-30">typography</h6>
-				<table class="text-light-bg mb-20">
+				<table class="text-light-bg">
 					<tr>
 						<td>Branding -<br><span id="high-goth">Highway Gothic</span><br><span id="overpass">Overpass</span></td>
 						<td>Complement -<br><span id="oswald">Oswald</span></td>
 					</tr>
 				</table>
 			</div>
-			<div class="col-md-12 mb-30 center-align">
+			<div class="col-md-12 mt-50 mb-50 center-align">
 				<button class="btnline medbtn transpbtn mob-spaceout" value="style guide" onclick="window.open('https://www.figma.com/proto/R2HRSjDUpyvaOUqejTT66A/BusyBus?node-id=6%3A424&viewport=763%2C121%2C0.12856562435626984&scaling=min-zoom', '_blank')">View Style
 					Guide</button>
 			</div>
@@ -250,7 +266,7 @@ In designing the BusyBus logo, I utilized the front portion of the bus icon I dr
 		</div>
 	</section>
 	<!--hifi Visual Design portion-->
-	<section class="container pb-100 pt-100">
+	<section class="container pb-100 pt-100 narrowcontent">
 		<div class="row hifi-mockups">
 			<h4 class="sec-title mb-30">Visual Design</h4>
 			<p class="mb-20">When creating this visual prototype, I combined the subway and train buttons into 1 for simplicity. On my paper prototype, I reserved space for the route name to be next to the route number, but I quickly realized it won’t be feasible here. I therefore placed the route name under the number, and above the stop name I opted for defaulting to a darker background with lighter text, rather than the usual dark text over a light background. Some aspects of my sketches did not translate as well to the visual design counterpart as I anticipated, and thus the design underwent a second iteration. Some points of feedback from other designers were as follows:</p>
@@ -269,22 +285,22 @@ In designing the BusyBus logo, I utilized the front portion of the bus icon I dr
 				</div>
 			</div>
 			<div class="col-md-6 mt-50 mb-20 center-align">
-				<p class="info-caption mb-30">Iteration 1</p>
+				<p class="info-caption mb-20">Iteration 1</p>
 				<img src="img/busybus/landing_screen_v1.png" class="busybusmockup" alt="iteration 1">
 			</div>
 			<div class="col-md-6 mt-50 center-align">
-				<p class="info-caption mb-30">Iteration 2</p>
+				<p class="info-caption mb-20">Iteration 2</p>
 				<img src="img/busybus/landing_screen_v2.png" class="busybusmockup" alt="iteration 2">
 			</div>
 		</div>
 	</section>
 	<!--frontend development section-->
-	<section class="container pb-50">
+	<section class="container pb-50 narrowcontent">
 		<section class="row pt-50">
 			<div class="col-md-1"></div>
 			<div class="col-md-10">
 				<h4 class="sec-title mb-30">Frontend Development</h4>
-				<p class="mb-20">I wanted to see how well my design would translate into code. Using Atom, I coded the HTML and CSS for BusyBus' homepage. When looking back to the design in Figma, it was noted that the setting icon bled into the map, making it difficult to spot. In the frontend rendition, I altered the color and look of the icon, coloring it dark blue, with a light blue background, dark blue outline, and drop shadow. I felt that it was unnecessary to label the bus, rail, and taxi buttons, as they were self-explanatory. The bus route data provided was also restructured to display based on direction, with reroutes and out of service lines shown towards the bottom of the list. I added in a cap on the page width to see how everything would expand from mobile to tablet to desktop widths.</p>
+				<p class="mb-30">I wanted to see how well my design would translate into code. Using Atom, I coded the HTML and CSS for BusyBus' homepage. When looking back to the design in Figma, it was noted that the setting icon bled into the map, making it difficult to spot. In the frontend rendition, I altered the color and look of the icon, coloring it dark blue, with a light blue background, dark blue outline, and drop shadow. I felt that it was unnecessary to label the bus, rail, and taxi buttons, as they were self-explanatory. The bus route data provided was also restructured to display based on direction, with reroutes and out of service lines shown towards the bottom of the list. I added in a cap on the page width to see how everything would expand from mobile to tablet to desktop widths.</p>
 				<div class="row">
 					<div class="col-md-6 center-align">
 						<button class="btnline medbtn transpbtn mob-spaceout shrinkabit" value="view code"
@@ -301,7 +317,7 @@ In designing the BusyBus logo, I utilized the front portion of the bus icon I dr
 		</section>
 	</section>
 	<!--conclusion section-->
-	<section class="container ptb-80 conclusion">
+	<section class="container ptb-80 conclusion narrowcontent">
 		<div class="row">
 			<div class="col-md-1"></div>
 			<div class="col-md-10">
@@ -338,6 +354,8 @@ In designing the BusyBus logo, I utilized the front portion of the bus icon I dr
 		</div>
 	</footer>
 	<script src="zenscroll.js"></script>
+	<script src="js/modaloverlayv2.js"></script>
+
 
 </body>
 

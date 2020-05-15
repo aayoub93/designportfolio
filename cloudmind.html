@@ -90,7 +90,7 @@
 		</div>
 	</section>
 
-	<section class="container pt-50">	<!--this encapsulates the entire first half up to cloudmind&tsting-->
+	<section class="container narrowcontent pt-50">	<!--this encapsulates the entire first half up to cloudmind&tsting-->
 		<!--quick details section-->
 		<section class="row">
 			<div class="col-md-4 rightborderdivider">
@@ -99,7 +99,7 @@
 				<hr>
 				<h6 class="mb-20">roles</h6>
 				<p>Research & Discovery,<br>
-					Information Architecture & Ideation,<br>
+					Info Architecture & Ideation,<br>
 					Interactive Design & Testing,<br>
 					Visual Design</p>
 				<hr>
@@ -107,7 +107,7 @@
 				<p>Google Forms, Figma, inVision</p>
 				<div class="mobile_semidiv mb-40 mt-40 no-desk"></div>
 			</div>
-			<div class="col-md-8">
+			<div class="col-md-8 nomobile-pad">
 				<h6 class="mb-20">problem</h6>
 				<p>A client of mine was excited about potential in the cloud storage market and had a list of features they would like to include in the end product. It was up to me to cement a foundation for this project through <b>user
 						research and discovery</b>, followed by <b>ideation and testing</b>, then applying <b>visual design principles and retesting</b> to develop a fresh competing product.</p>
@@ -117,7 +117,9 @@
 					security. Orange inspires energy and creativity. This solution bridges the gap between idea and end product and in the process provide a viable user-focused alternative.</p>
 			</div>
 		</section>
-		<!--user insights portion-->
+	</section>
+	<!--user insights portion-->
+	<section class="container narrowcontent">
 		<section class="row pt-100">
 			<div class="col-md-1"></div>
 			<section class="col-md-10">
@@ -136,8 +138,9 @@
 					and synchronization processes. Greater emphasis would be placed on a CS design for personal and work use based on users’ preferences.</p>
 			</section>
 		</section>
+	</section>
 		<!--competitive analysis portion-->
-		<section>
+		<section class="container">
 			<div class="row pt-100">
 				<div class="col-md-1"></div>
 				<div class="col-md-10">
@@ -171,7 +174,7 @@
 			<div class="pt-30 center-align"><button class="btnline medbtn transpbtn" value="competitive analysis" onclick="window.open('https://drive.google.com/drive/folders/1yBbcUv3R4UBb6Hz39GUecZzXe-790uOV', '_blank')">View Full Analysis</button></div>
 		</section>
 		<!--user personas portion-->
-		<section>
+		<section class="container">
 			<div class="row pt-100">
 				<div class="col-md-1"></div>
 				<div class="col-md-10">
@@ -235,6 +238,7 @@
 			</div>
 		</section>
 		<!--user stories and flows; image is right below this portion-->
+		<section class="container narrowcontent">
 		<section class="row pt-100">
 			<div class="col-md-1"></div>
 			<div class="col-md-10">
@@ -252,7 +256,7 @@
 	<img src="img/cloudmind/userflows_sketched.png" alt="user flow sketches">
 	<!--wireframe sketching and testing portion-->
 	<section class="bg-dark ptb-80">
-		<div class="container">
+		<div class="container narrowcontent">
 			<h4 class="darkbg-title mb-30">Wireframes and Testing</h4>
 			<p class="text-dark-bg mb-10">This is where the big picture starts coming together. Knowing what I want this app to do, how to do it, and for whom, I began sketching out ideas for what the final product could look like. Sketching with pen and
 				paper is
@@ -261,9 +265,9 @@
 				What looks good and practical may not necessarily be so. To gain an understanding of what worked well, what didn’t, and what changes can be made, I conducted two user tests. Both users were in the same age range as my user
 				personas to maintain consistency. They felt comfortable with navigating the prototype. However, the following points were noted based on these tests and on feedback from the leader designer:</p><br><br>
 			<ul class="text-dark-bg">
-				<li>The “New” button felt misleading in that the test participant assumed they could also upload from there</li>
+				<li>"New" button felt misleading in that the test participant assumed they could also upload from there</li>
 				<li>Consider changing the display of images and info on homepage from column to Z-Pattern</li>
-				<li>Instead of choosing between a template or “going blank,” show blank template in selection pop-up</li>
+				<li>Instead of choosing between a template or "going blank," show blank template in selection pop-up</li>
 			</ul>
 			<div class="center-align no-desk">
 				<!--smaller screen size button-->
@@ -289,7 +293,7 @@
 		</div>
 	</section>
 	<!--branding and styling portion-->
-	<section class="container pt-100">
+	<section class="container narrowcontent pt-100">
 		<h4 class="sec-title mb-30">Branding</h4>
 		<p>To develop this brand, I created a wordmap and from that exercise I began developing potential logo ideas. I noted that other competitors’ logos have some sort of cloud in their logo, which inspired some of my logo ideas. I
 			also wanted to include something that conveys collaboration, hence some of my ideas showing open dots connected with lines. The logo sketches then informed the brand name. Blue was a recurring color among other competitors’ brands, symbolizing
@@ -298,10 +302,24 @@
 			I settled on CloudMind as the brand name. The Josefin Sans type was chosen for the brand as it felt bold and modern without being over-the-top. Alegreya Sans functions as the complement due to its greater versatility. During
 			this phase of the branding process, I also designed a new logo that I eventually decided on. I then updated it to be simpler and easier to scale down to smaller resolutions.</p>
 		<div class="row mt-30">
-			<div class="col-md-4">
+			<a class="col-md-4" onclick="openModal();currentSlide(1)">
 				<img src="img/cloudmind/id_ideation.png" class="ideation_img" alt="branding ideation">
+				<span class="tile__content">Branding Ideation</span>
+			</a>
+		 <div id="myModal" class="modal">
+			<div class="closebg" onclick="closeModal()"&times;></div>
+			<span class="close" onclick="closeModal()">&times;</span>
+			<div class="modal-content forbranding">
+				<div class="mySlides">
+					<img src="img/cloudmind/id_ideation.png">
+				</div>
 			</div>
-			<div class="col-md-8 mt-20">
+			<div class="previews-column">
+				<div class="demo"></div>
+			</div>
+		</div>
+
+			<div class="col-md-8">
 				<h6 class="mb-20">colors</h6>
 				<div class="colors-selected pb-10">
 					<div class="b3 colorbox"></div>
@@ -346,7 +364,7 @@
 					</tr>
 				</table>
 			</div>
-			<div class="col-md-12 mb-30 center-align">
+			<div class="col-md-12 mt-50 mb-50 center-align">
 				<button class="btnline medbtn transpbtn mob-spaceout" value="style guide" onclick="window.open('https://www.figma.com/proto/PUrAIetlR3mpWtJHz7Y3Sx/CloudMind?node-id=162%3A0&viewport=687%2C50%2C0.06005783751606941&scaling=min-zoom', '_blank')">View Style
 					Guide</button>
 			</div>
@@ -357,14 +375,14 @@
 		</div>
 	</section>
 	<!--hifi mockups and retesting portion-->
-	<section class="container pb-100 pt-100">
+	<section class="container narrowcontent pb-100 pt-100">
 		<div class="row hifi-mockups">
 			<h4 class="sec-title mb-30">Mockups and Testing</h4>
 			<p>Time for a fresh coat of paint! The high fidelity mockups underwent the greatest number of iterations as I sought insights and feedback from leader designers. I designed these mockups for desktop and mobile platforms, then tested the
 				desktop version as I felt that the feedback would also inform any tweaks that could be made to the mobile version. They can be viewed <a href="https://www.figma.com/file/EWYVdMZyYSGbrJ6Bmm8Myu/10.14---HiFi-Mockups?node-id=468%3A0"
 					target="_blank"><b>here</b></a>.
 				<br><br>
-				I opted to diversify my test participant demographic, including folks that are middle-aged. I tested three participants and asked them to describe what they liked, and what they found confusing or frustrating as they
+				I opted to diversify my test participant demographic, including folks that are middle-aged. I tested three participants via Figma and inVision and asked them to describe what they liked, and what they found confusing or frustrating as they
 				completed three tasks: sign up for an account, create a new document, and recovering an account password. The users liked the layout of the homepage, and their feedback pointed to two fixable discrepancies: make the “Forgot Password” link
 				more pronounced (like a button), and give the user control over the confirmation window that shows after requesting a password reset link (different users read at different paces).
 				<br><br>
@@ -384,7 +402,7 @@
 	</section>
 	<!--conclusion section-->
 	<section class="bg-dark">
-		<div class="container conclusion ptb-80">
+		<div class="container conclusion ptb-80 narrowcontent">
 			<div class="row">
 				<div class="col-md-1"></div>
 				<div class="col-md-10">
@@ -395,7 +413,7 @@
 						tend to take the brands we see for granted without knowing what goes on behind the scenes. During that process I also learned that sometimes your best or most fitting ideas may not come when you need them, but while you apply a
 						metacognitive approach to design, you may begin to uncover new and innovative concepts.
 						<br><br>The design choices throughout CloudMind’s development felt validated in participants’ feelings during the user tests; it was reflected in their generally positive response to the layout and colors. The most valuable takeaway
-						was that it takes a village (or at least another teammate) to arrive at a cleaner and well thought-out design; without constant guidance and feedback CloudMind would not look or feel as clean as it does.</p>
+						was that it takes a village (or at least another teammate) to iterate and arrive at a cleaner and well thought-out design; without constant guidance and feedback CloudMind would not look or feel as clean as it does.</p>
 				</div>
 				<div class="col-md-1"></div>
 				<div class="large-flex"></div>
@@ -435,6 +453,8 @@
 		</div>
 	</footer>
 	<script src="zenscroll.js"></script>
+	<script src="js/modaloverlayv2.js"></script>
+
 
 </body>
 
