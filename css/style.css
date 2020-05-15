@@ -694,18 +694,22 @@ i.fas.downar.fa-chevron-down {
 #pencrumbs-sketch {background: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.1)), url(../img/pencrumbs/wireframes/sketches.png); background-size: cover;}
 #pencrumbs-digital {background: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.1)), url(../img/pencrumbs/wireframes/wireframes.png); background-size: cover;}
 
+.brandings {margin-top: 2rem;}
+
 .colors-selected {
   text-align: center;
   display: inline-block;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
 }
+
+.colors-selected p {font-size: 1.2rem;}
 
 .colorbox {
 	border: 0.1rem solid #808589;
 	box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.1);
 	border-radius: 0.5rem;
-	height: 3.5rem;
-	width: 7.5rem;
+	height: 4rem;
+	width: 6rem;
 }
 /*CloudMind colors*/
 .b3 {background: #B3E8F8;}
@@ -1070,6 +1074,10 @@ textarea.form-input {height: 20rem;}
 	}
 }
 
+@media all and (min-width: 500px) {
+	.colors-selected {margin: 0 0.75rem;}
+}
+
 @media all and (min-width: 576px) {
   .container{
     max-width: 90%; /*was originally 540px*/
@@ -1080,6 +1088,8 @@ textarea.form-input {height: 20rem;}
 	.modal {padding-top: 7rem; padding-bottom: 8rem;}
 	.modal-content {width: 75%;}
 	.captiontext {bottom: -6rem;}
+
+	.ideation_img {max-width: 75%; height: auto;}
 }
 
 @media all and (min-width: 768px) {
@@ -1276,10 +1286,11 @@ textarea.form-input {height: 20rem;}
 
 	.persona-img {width: 20rem;}
 
-	.colorbox {
-		height: 4rem;
-		width: 9rem;
-	}
+	.brandings {margin-top: 0;}
+
+	.colors-selected {margin: 0 1rem;}
+
+	.colorbox {width: 7rem;}
 
 	.busybusbtn {padding-top: 5rem;}
 
@@ -1400,6 +1411,7 @@ textarea.form-input {height: 20rem;}
 	.narrowcontent {max-width: 94rem !important;}
 	.persona-details.bifold {width: 72%;}
 	#cloudmindheader {margin-top: -16rem;}
+	.colorbox {width: 9rem;}
 	.form-input {width: 40rem;}
 	.poetry-header {background-position: 0% 59%;}
 }
