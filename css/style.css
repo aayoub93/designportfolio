@@ -370,7 +370,7 @@ footer {
 
 .f-social i {
 	color: #FBFBFB;
-  padding: 0.65rem;
+  padding: 0.65rem 0.9rem;
 }
 
 .f-social i:hover {
@@ -384,7 +384,7 @@ footer {
 	justify-content: center;
 	margin: 0;
 }
-.copr {text-align: center;}
+.copr {text-align: center; opacity: 0.5;}
 
 .no-mob, img.cars_miscpic {display: none;}
 
@@ -409,7 +409,7 @@ i.fas.fa-chevron-up.up {color: #C99B57;}
 }
 .backtop:hover {color: #E2C191; text-decoration: none; transition: 0.3s;}
 
-.hero-bg, .header-bg, .header-art, .poetry-header {
+.hero-bg, .header-bg, .header-art, .poetry-header, .other-header {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -1039,12 +1039,29 @@ textarea.form-input {height: 20rem;}
 
 .haiku {text-align: center;}
 
-.haiku img {
+.haiku img, iframe {
 	border-radius: 0.2rem;
 	filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
 	-webkit-filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
 }
 
+.other-header {
+	background-image: url(../img/header_resized.jpg);
+	height: 30rem;
+}
+
+.videowrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 aspect ratio */
+	height: 0;
+}
+.videowrapper iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
 /*adding this in for branding ideations*/
 .modal-content.forbranding {max-width: 80rem;}
 
@@ -1301,7 +1318,7 @@ textarea.form-input {height: 20rem;}
 		height: 60rem;
 	}
 
-	.poetry-header, .header-hook-short {height: 50rem;}
+	.poetry-header, .other-header, .header-hook-short {height: 50rem;}
 
 	.header-hook {height: 67rem !important;}
 
