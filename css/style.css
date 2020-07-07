@@ -756,11 +756,13 @@ i.fas.downar.fa-chevron-down {
 .ideation_img {
 	border: 1px solid rgba(226, 193, 145, 0.66);
 	border-radius: 0.5rem;
+	box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.1);
 	cursor: pointer;
 }
 
 .ideation_img:hover {
 	border: 1px solid #C99B57;
+	box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.15);
 	transition: 0.3s;
 	-webkit-transition: 0.3s;
 }
