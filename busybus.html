@@ -34,6 +34,7 @@
 	<nav class="navbar">
 		<div class="container">
 			<a href="index.html" class="logo"><img src="img/brandlogo.svg" alt="logo"></a>
+			<a href="index.html" class="navbar-name"><h1>AHMED AYOUB</h1></a>
 			<input class="menu-btn" type="checkbox" id="menu-btn"/> <!--checkbox, will allow for hamburger click-->
 			<label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>	<!--this will be turned into the 3 lines that make up the hamburger menu-->
 			<ul class="menu">
@@ -58,7 +59,7 @@
 							<a href="javascript:void(0)">Art</a>
 						</div>
 						<div class="dropdown-content shorter-drop">
-							<a href="art.html">Images</a>
+							<a href="art.html">Photos</a>
 							<a href="art.html#poetry">Poetry</a>
 							<a href="art.html#other" id="last-menu-item">Other</a>
 						</div>
@@ -82,22 +83,7 @@
 			</div>
 		</div>
 		<img src="img/busybus/header.png" class="project-header" alt="BusyBus">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 center-align busybusbtn">
-					<button class="btnline medbtn transpbtn mob-spaceout" value="view prototype"
-						onclick="window.open('https://www.figma.com/proto/R2HRSjDUpyvaOUqejTT66A/BusyBus?node-id=8%3A30&viewport=810%2C700%2C0.2200748324394226&scaling=scale-down', '_blank')">View
-						Prototype</button>
-				</div>
-				<div class="col-md-6 center-align busybusbtn">
-					<button class="btnline medbtn transpbtn mob-spaceout" value="view demo on github"
-						onclick="window.open('https://aayoub93.github.io/frontend-challenge/', '_blank')">View
-						Demo on GitHub</button>
-				</div>
-			</div>
-		</div>
 	</section>
-
 
 	<section class="container narrowcontent pt-50">	<!--this encapsulates the entire first half up to wf&tsting-->
 		<!--quick details section-->
@@ -126,15 +112,31 @@
 			</div>
 		</section>
 	</section>
+
+	<div class="container">
+		<div class="row pt-50">
+			<div class="col-md-6 center-align">
+				<button class="btnline medbtn transpbtn" value="view prototype"
+					onclick="window.open('https://www.figma.com/proto/R2HRSjDUpyvaOUqejTT66A/BusyBus?node-id=8%3A30&viewport=810%2C700%2C0.2200748324394226&scaling=scale-down', '_blank')">View
+					Prototype</button>
+			</div>
+			<div class="col-md-6 center-align">
+				<button class="btnline medbtn transpbtn mob-spaceout" value="view demo on github"
+					onclick="window.open('https://aayoub93.github.io/frontend-challenge/', '_blank')">View
+					Demo on GitHub</button>
+			</div>
+		</div>
+	</div>
+
 	<!--user insights portion-->
 	<section class="container narrowcontent">
 		<section class="row pt-100 pb-100">
 			<div class="col-md-1"></div>
 			<section class="col-md-10">
 				<h4 class="sec-title mb-30">User Insights</h4>
-				<p class="mb-20">Through my survey of 32 people, I found that a majority of people do not use the bus as their primary mode of transportation (81.3%), while 18.8% reported that they do. Focusing primarily on bus riders, 50% use it daily while 50% use it a few times a week. The most cited reason for using the bus to get to work (100%). Other common reasons were for convenience, price, running errands, and being unable to drive (50% each). Most bus riders walk no more than 5 minutes from their homes to their stops (83.3%), but time spent actually waiting for the bus varies; 16.7% spend 0-5 minutes, 66.7% spend 6-15 minutes, and 16.7% spend 16-30 minutes waiting. This is where improvements can and must be made; the graph below shows what ways users' experience using public transportation apps can be enhanced:</p>
+				<p class="mb-20">From a survey of 32 people, most people do not use the bus as their primary mode of transportation (81.3%), while 18.8% reported that they do. Focusing primarily on bus riders, 50% use it daily while 50% use it a few times a week, mostly for getting to work (100%). Other common reasons were for convenience, price, running errands, and being unable to drive (50% each). Most riders walk no more than 5 minutes from their homes to their stops (83.3%), but time spent waiting for the bus varies; 16.7% spend 0-5 minutes, 66.7% spend 6-15 minutes, and 16.7% spend 16-30 minutes waiting. This is where improvements can and must be made; the graph below shows what ways users' experience using public transportation apps can be enhanced:</p>
 				<figure><img src="img/busybus/graph.svg" alt="paint points graph"></figure>
-				<p>Based on these findings, bus riders benefit from having real-time updates so they know when to expect buses, but would like to be able to see where their buses are, similar to how apps like Lyft and Uber show their rides on a map. Users also would like to know when to begin heading to their stops, and be notified of any changes in the expected time of their bus. This will reduce the time users have to spend actually waiting for their bus to arrive. In the event of any kind of signal failure, users would also like to have offline access to schedules and routes so they have some idea of when to begin moving. For added convenience, and because not all apps have this feature, adding an in-app payment option will attract more users.</p>
+				<p>Bus riders will benefit from having real-time updates so they know when to expect buses, but would like to be able to see where their buses are, similar to how apps like Lyft and Uber show their rides on a map. Users also wish to know when to begin heading to their stops, and be notified of any changes in the expected time of their bus. This will reduce wait times, diminishing a major pain point. In the event of a signal failure, users would also like offline access to schedules and routes so they have some idea of when to begin moving. For added convenience, and because not all apps have this feature, an in-app payment option will attract more users.</p>
 			</section>
 		</section>
 	</section>
@@ -152,7 +154,7 @@
 				<div class="col-md-4">
 					<img src="img/busybus/comp_analysis/googlemaps.png" class="comp-img mb-20" alt="Google Maps">
 				</div>
-				<p class="col-md-8 text-dark-bg"><a href="https://www.google.com/maps" target="_blank"><b>Google Maps</b></a> is the most widely recognized and used transportation planning service, since it is attached to the Google IP. It is also much more easily accessible wherever you are and on any device. While it does employ color to highlight selected routes, as well as transit iconography (e.g. MTA subway lines and bus routes), the interface itself is more monotone than other competitors. From a technical standpoint, the app also consumes more battery power, and Google has been scrutinized in the past over privacy concerns, harming public trust.</p>
+				<p class="col-md-8 text-dark-bg"><a href="https://www.google.com/maps" target="_blank"><b>Google Maps</b></a> is the most widely recognized and used transportation planning service, since it is attached to the Google IP. It is also much more easily accessible wherever you are and on any device. While it does employ color to highlight selected routes, as well as transit iconography (e.g. MTA subway lines and bus routes), the interface itself is more monotone than other competitors. From a technical standpoint, the app also consumes more battery power.</p>
 			</div>
 			<div class="pt-30 center-align"><button class="btnline medbtn transpbtn" value="competitive analysis" onclick="window.open('https://docs.google.com/document/d/1PTA4Ro5D6TRj7LMf5OoLk3NjxM2TI7ARiB1a2I8BRCE/edit?usp=sharing', '_blank')">View Full Analysis</button></div>
 		</div>
@@ -164,7 +166,7 @@
 			<div class="col-md-1"></div>
 			<div class="col-md-10">
 				<h4 class="sec-title mb-30">User Stories and Flow</h4>
-				<p>So, how can we measure success for BusyBus, taking competitors and user requirements into account? I created a list of 12 user stories that were most important in establishing a minimum viable product, including being able to see real-time updates, notifications or approaching buses, and adding items to a 'Favorites' list. From this list, I created a user flow that integrated as much as possible to test out general functionality.</p>
+				<p>How do we measure success for BusyBus, taking competitors and user requirements into account? I created a list of 12 user stories that were most important in establishing a minimum viable product, including being able to see real-time updates, notifications or approaching buses, and adding items to a 'Favorites' list. From this list, I created a user flow that integrated as much as possible to test out general functionality.</p>
 				<br>
 				<div class="pt-30 pb-30 center-align">
 					<button class="btnline medbtn transpbtn" value="user stories" onclick="window.open('https://docs.google.com/spreadsheets/d/1-K2NFayIthS-URs-aGQ9Rg6eVFt5TT0HhGLJVtQxG3Q/edit?usp=sharing', '_blank')">View All Stories</button>
@@ -178,7 +180,7 @@
 	<section class="bg-dark ptb-80">
 		<div class="container narrowcontent">
 			<h4 class="darkbg-title mb-30">Ideation and Testing</h4>
-			<p class="text-dark-bg mb-10">Time to sketch and test! Using a templated worksheet, I sketched out three screens that follow my previously established user flow and performed usability testing on this paper prototype with three subjects. I also wanted to experiment with including other forms of transportation for users who may want to explore those options, similar to Google Maps and Transit. They were each asked to select and confirm a bus route of their choice. They each had varying levels of technological proficiency, allowing for broader perspectives on what could be improved. I noted the following points of feedback:</p><br><br>
+			<p class="text-dark-bg mb-10">Time to sketch and test! Using a templated worksheet, I sketched out three screens that adhere to my user flow and performed usability testing on this paper prototype with three subjects. I experimented with including other forms of transportation for users who may want to explore those options, similar to Google Maps and Transit. They were each asked to select and confirm a bus route of their choice. They each had varying levels of technological proficiency, allowing for broader perspectives on what could be improved. I noted the following points of feedback:</p><br><br>
 			<ul class="text-dark-bg">
 				<li>Having two train-looking icons confused users; one was intended for rail and the other for subway</li>
 				<li>When opening the app, it should be clearer that you can input your destination</li>
@@ -194,9 +196,9 @@
 	<!--branding and styling portion-->
 	<section class="container pt-100 narrowcontent">
 		<h4 class="sec-title mb-30">Branding</h4>
-		<p>What’s in an identity? I wanted to convey to users that they can trust and be excited about getting places. I therefore used shades of blue as my primary color palette (blue denotes trust and security) and variations of yellow for my secondary palette to emphasize enthusiasm. I used a combination of Highway Gothic for my brand type and Oswald as its complement. Highway Gothic is used for US highway signs, and thus felt appropriate to use for this transportation app. I applied this type to the search field text, route numbers, and the times' numerical displays. All other text used Oswald with 5% letter spacing.
-			<br><br>
-In designing the BusyBus logo, I utilized the front portion of the bus icon I drafted for the selection button in the app, and the BusyBus title in Highway Gothic. The word "busy" can be associated with "buzzing about," moving fast from one point to another to get a task done. This train of thought led me to include three triangles tailing the bus to symbolize its forward movement towards its destination. However, when it came time to code, the Overpass type functioned as a very close alternative to Highway Gothic.</p>
+		<p>What’s in an identity? I wanted to convey to riders that they can trust and be excited about public transportation. I therefore used shades of blue as my primary color palette (blue denotes trust and security) and shades of yellow for my secondary palette to emphasize enthusiasm. I used a combination of Highway Gothic for my brand type and Oswald as its complement. Highway Gothic is used for US highway signs, and thus felt appropriate to use for this project. I applied this type to the search field text, route numbers, and the times' numerical displays. All other text used Oswald with 5% letter spacing.
+		<br><br>
+		In designing the logo, I utilized the front portion of the bus icon I drafted for the selection button in the app. The word "busy" can be associated with "buzzing about," moving from one point to another to get a task done. This train of thought led me to include three triangles tailing the bus to symbolize moving to a destination. However, when it came time to code, the Overpass type functioned as a very close alternative to Highway Gothic. It is available on Google Fonts and so was easier to implement.</p>
 		<div class="row mt-30">
 			<a class="col-md-4 center-align" onclick="openModal();currentSlide(1)">
 				<img src="img/busybus/id_ideation.png" class="ideation_img" alt="branding ideation">
@@ -270,10 +272,10 @@ In designing the BusyBus logo, I utilized the front portion of the bus icon I dr
 	<section class="container pb-100 pt-100 narrowcontent">
 		<div class="row hifi-mockups">
 			<h4 class="sec-title mb-30">Visual Design</h4>
-			<p class="mb-20">When creating this visual prototype, I combined the subway and train buttons into 1 for simplicity. On my paper prototype, I reserved space for the route name to be next to the route number, but I quickly realized it won’t be feasible here. I therefore placed the route name under the number, and above the stop name I opted for defaulting to a darker background with lighter text, rather than the usual dark text over a light background. Some aspects of my sketches did not translate as well to the visual design counterpart as I anticipated, and thus the design underwent a second iteration. Some points of feedback from other designers were as follows:</p>
+			<p class="mb-20">When creating the visual prototype, I combined the subway and train buttons into one button for simplicity. On my sketches, I reserved space for route names to be next to their numbers, but I quickly realized it won’t be feasible here. I therefore placed the route name under the number, and above the stop name I opted for a darker background with lighter text, rather than the usual dark text over a light background. Some aspects of my sketches did not translate as well to the visual design as I anticipated, and thus the design underwent a second iteration. Some points of feedback from other designers were as follows:</p>
 			<ul class="text-light-bg mb-20">
-				<li>Move the search field to the top so that it sticks with the status bar and is more noticeable to users</li>
-				<li>Add labels to the bus, rail, and cab icons so make it more apparent what each of these items are to users</li>
+				<li>Move the search field to the top so it sticks with the status bar and is more noticeable</li>
+				<li>Add labels to the bus, rail, and cab icons to make it clear what these items are to users</li>
 				<li>Reduce the scale of the star/favorite icons, as they aren't super important</li>
 				<li>Add more weight to some of the text; it is difficult to read at 100% zoom</li>
 				<li>Break up bus route 77’s list into individual items as with the rest of the list</li>
@@ -301,7 +303,7 @@ In designing the BusyBus logo, I utilized the front portion of the bus icon I dr
 			<div class="col-md-1"></div>
 			<div class="col-md-10">
 				<h4 class="sec-title mb-30">Frontend Development</h4>
-				<p class="mb-30">I wanted to see how well my design would translate into code. Using Atom, I coded the HTML and CSS for BusyBus' homepage. When looking back to the design in Figma, it was noted that the setting icon bled into the map, making it difficult to spot. In the frontend rendition, I altered the color and look of the icon, coloring it dark blue, with a light blue background, dark blue outline, and drop shadow. I felt that it was unnecessary to label the bus, rail, and taxi buttons, as they were self-explanatory. The bus route data provided was also restructured to display based on direction, with reroutes and out of service lines shown towards the bottom of the list. I added in a cap on the page width to see how everything would expand from mobile to tablet to desktop widths.</p>
+				<p class="mb-30">I wanted to see how well my design would translate into code. Using Atom, I coded the HTML and CSS for BusyBus' homepage. When looking back to the design in Figma, it was noted that the settings icon bled into the map, making it difficult to spot. In the frontend rendition, I altered the color and look of the icon, coloring it dark blue, with a light blue background, dark blue outline, and drop shadow. I felt that it was unnecessary to label the bus, rail, and taxi buttons, as they are self-explanatory. The given route data was also restructured to display based on direction, with reroutes and out of service lines shown at the bottom of the list. I added in a cap on the page width to see how everything would expand from mobile to tablet to desktop widths.</p>
 				<div class="row">
 					<div class="col-md-6 center-align">
 						<button class="btnline medbtn transpbtn mob-spaceout shrinkabit" value="view code"
@@ -323,7 +325,9 @@ In designing the BusyBus logo, I utilized the front portion of the bus icon I dr
 			<div class="col-md-1"></div>
 			<div class="col-md-10">
 				<h4 class="sec-title mb-30">Conclusion</h4>
-				<p class="mb-10">Spacing and font manipulation were among the biggest challenges going into the visual design of BusyBus. This demonstrated the importance and value of iterative feedback. This project felt different from others in that it was very focused on a very specific issue, requiring only one task to be tested. Spacing was also a prevalent issue during frontend development of the landing page, and coding the transit type buttons to invert colors on hover/tap presented an entirely new challenge in itself. It required use of .SVG files that I was able to download from my Figma project and slightly manipulating the source code to allow for color manipulation. For future consideration, I would build in a feature that lets users switch between a dark and light background, giving them more control of their viewing experience. I would also work on further manipulating typography. Ultimately, BusyBus does answer the problem statement by giving users accurate and real-time updates for local routes, assuaging any concerns they have about missing their bus.
+				<p class="mb-10">Spacing and font manipulation were among the biggest challenges going into the visual design of BusyBus. This demonstrated the importance and value of iterative feedback. This project felt different from others in that it was very focused on a very specific issue, requiring only one task to be tested. Spacing was also a challenge during frontend development, and coding the transit type buttons to invert colors on hover/tap presented an entirely new challenge in itself. It required use of .SVG files that I was able to download from my Figma project and slightly manipulating the source code to allow for color manipulation.
+				<br><br>
+				For future consideration, I would build in a feature that lets users switch between dark and light mode, giving them more control of their viewing experience. I would also continue experimenting with typography to see if there are better hierarchies I can apply. Ultimately, BusyBus does answer the problem statement by giving users accurate and real-time updates for local routes, assuaging any concerns they have about missing their bus.
 				</p>
 			</div>
 			<div class="col-md-1"></div>

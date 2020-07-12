@@ -26,6 +26,7 @@
 	<nav class="navbar">
 		<div class="container">
 			<a href="index.html" class="logo"><img src="img/brandlogo.svg" alt="logo"></a>
+			<a href="index.html" class="navbar-name"><h1>AHMED AYOUB</h1></a>
 			<input class="menu-btn" type="checkbox" id="menu-btn"/> <!--checkbox, will allow for hamburger click-->
 			<label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>	<!--this will be turned into the 3 lines that make up the hamburger menu-->
 			<ul class="menu">
@@ -50,7 +51,7 @@
 							<a href="javascript:void(0)">Art</a>
 						</div>
 						<div class="dropdown-content shorter-drop">
-							<a href="art.html">Images</a>
+							<a href="art.html">Photos</a>
 							<a href="art.html#poetry">Poetry</a>
 							<a href="art.html#other" id="last-menu-item">Other</a>
 						</div>
@@ -75,20 +76,6 @@
 			</div>
 		</div>
 		<img src="img/cloudmind/header_v2.png" class="project-header" id="cloudmindheader" alt="CloudMind on devices">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 center-align">
-					<button class="btnline medbtn transpbtn mob-spaceout" value="view desktop prototype"
-						onclick="window.open('https://www.figma.com/proto/PUrAIetlR3mpWtJHz7Y3Sx/CloudMind?node-id=8%3A1&viewport=730%2C492%2C0.10904872417449951&scaling=min-zoom', '_blank')">View
-						Desktop Prototype</button>
-				</div>
-				<div class="col-md-6 center-align">
-					<button class="btnline medbtn transpbtn mob-spaceout" value="view mobile prototype"
-						onclick="window.open('https://www.figma.com/proto/PUrAIetlR3mpWtJHz7Y3Sx/CloudMind?node-id=1%3A4054&viewport=730%2C492%2C0.33420658111572266&scaling=scale-down', '_blank')">View
-						Mobile Prototype</button>
-				</div>
-			</div>
-		</div>
 	</section>
 
 	<section class="container narrowcontent pt-50">	<!--this encapsulates the entire first half up to cloudmind&tsting-->
@@ -119,6 +106,22 @@
 			</div>
 		</section>
 	</section>
+
+	<div class="container">
+		<div class="row pt-50">
+			<div class="col-md-6 center-align">
+				<button class="btnline medbtn transpbtn" value="view desktop prototype"
+					onclick="window.open('https://www.figma.com/proto/PUrAIetlR3mpWtJHz7Y3Sx/CloudMind?node-id=8%3A1&viewport=730%2C492%2C0.10904872417449951&scaling=min-zoom', '_blank')">View
+					Desktop Prototype</button>
+			</div>
+			<div class="col-md-6 center-align">
+				<button class="btnline medbtn transpbtn mob-spaceout" value="view mobile prototype"
+					onclick="window.open('https://www.figma.com/proto/PUrAIetlR3mpWtJHz7Y3Sx/CloudMind?node-id=1%3A4054&viewport=730%2C492%2C0.33420658111572266&scaling=scale-down', '_blank')">View
+					Mobile Prototype</button>
+			</div>
+		</div>
+	</div>
+
 	<!--user insights portion-->
 	<section class="container narrowcontent">
 		<section class="row pt-100 pb-100">
@@ -133,9 +136,9 @@
 					<li>Organizing content (50%)</li>
 					<li>Real-time collaboration (43.8%)</li>
 				</ul>
-				<p>On the flipside, folks have experienced the greatest amount of frustration in terms of lack of storage space, expensive subscriptions, and difficulty organizing content, among others.</p>
+				<p>On the flipside, folks have experienced the most frustration in terms of lack of storage space, expensive subscriptions, and difficulty organizing content, among others.</p>
 				<figure><img src="img/cloudmind/graph.svg" alt="paint points graph"></figure>
-				<p>To attract new customers, this service would need a good amount of free storage space, built-in security features (encryption, passwords and expiring links), cross-platform accessibility, and more intuitive file creation
+				<p>To attract new customers, this new CS service would need a good amount of free storage space, built-in security features (encryption, passwords and expiring links), cross-platform accessibility, and more intuitive file creation
 					and synchronization processes. Greater emphasis would be placed on a CS design for personal and work use based on users’ preferences.</p>
 			</section>
 		</section>
@@ -160,7 +163,7 @@
 					<div class="col-md-4">
 						<img src="img/cloudmind/comp_analysis/od.png" class="comp-img mb-20" alt="OneDrive">
 					</div>
-					<p class="col-md-8 text-dark-bg"><a href="https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage" target="_blank"><b>OneDrive</b></a>, a Microsoft product, integrates seamlessly with the Windows OS and offers students modest discounts on their plans. However, it does not integrate well with non-Microsoft apps, only provides 5GB of free starting storage, and users aren’t guaranteed security and encryption unless under a business plan. Lower-end plans only offer storage space, meaning you would have to buy Microsoft Office separately.</p>
+					<p class="col-md-8 text-dark-bg"><a href="https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage" target="_blank"><b>OneDrive</b></a> integrates seamlessly with the Windows OS and offers students modest discounts on their plans. However, it does not integrate well with non-Microsoft apps, only gives 5GB of free starting storage, and doesn’t guarantee security and encryption unless under a business plan. Lower-end plans only offer storage space, meaning you would have to buy Microsoft Office separately.</p>
 				</div>
 				<div class="pt-30 center-align"><button class="btnline medbtn transpbtn" value="competitive analysis" onclick="window.open('https://drive.google.com/open?id=1ioJ0FsfgZWigwNujcV18pRa5GXA5QS-16-lhiRpW5OI', '_blank')">View Full Analysis</button></div>
 			</div>
@@ -235,9 +238,8 @@
 			<div class="col-md-1"></div>
 			<div class="col-md-10">
 				<h4 class="sec-title mb-30">User Stories and Flows</h4>
-				<p>Before drafting designs, it’s important to know what functionalities to design for. User stories tell us what needs to be done. Thinking of the user insights and research, I compiled a list of twenty user stories that
-					were important in developing a minimum viable product. We now know what to do, but how should those tasks be done? What is required to get from point A to point B? Enter user flows. User flows help visualize that journey from where one is
-					to where one wishes to be by the end of a task (or series of tasks). I designed flows that demonstrate the steps needed to upload a file to the cloud, create a new file, organize files, and link to other social accounts.</p><br>
+				<p>Before drafting designs, it’s important to know what functionalities to design for. User stories tell us what needs to be done. Thinking of the user insights and research, I compiled a list of twenty user stories that were important in developing a minimum viable product. We now know what to do, but how should those tasks be done? Enter user flows. User flows help visualize that journey from point A to point B and everything in between. I designed flows that demonstrate the steps needed to upload a file to the cloud, create a new file, organize files, and link to other social accounts.</p>
+				<br>
 				<div class="pt-30 pb-30 center-align">
 					<button class="btnline medbtn transpbtn" value="user stories and flows" onclick="window.open('https://www.figma.com/file/PUrAIetlR3mpWtJHz7Y3Sx/CloudMind?node-id=360%3A0', '_blank')">View All Stories and Flows</button>
 				</div>
@@ -250,12 +252,11 @@
 	<section class="bg-dark ptb-80">
 		<div class="container narrowcontent">
 			<h4 class="darkbg-title mb-30">Wireframes and Testing</h4>
-			<p class="text-dark-bg mb-10">This is where the big picture starts coming together. Knowing what I want this app to do, how to do it, and for whom, I began sketching out ideas for what the final product could look like. Sketching with pen and
-				paper is
-				essential to a smoother design process; it’s better to make mistakes now to save time and money later.
+			<p class="text-dark-bg mb-10">Now the big picture starts coming together. Knowing what I want this app to do, how to do it, and for whom, I began sketching out ideas for what the final product could look like. Starting with pen and
+				paper is essential to a smoother design process; it’s better to make mistakes now to save time and money later.
 				<br><br>
-				What looks good and practical may not necessarily be so. To gain an understanding of what worked well, what didn’t, and what changes can be made, I conducted two user tests. Both users were in the same age range as my user
-				personas to maintain consistency. They felt comfortable with navigating the prototype. However, the following points were noted based on these tests and on feedback from the leader designer:</p><br><br>
+				What looks good and practical may not always be so. To gain an understanding of what worked well, what didn’t, and what changes can be made, I conducted two tests with users in the same age range as my user
+				personas to maintain consistency. They felt comfortable with navigating the prototype. However, the following points were noted from these tests and feedback from the lead designer:</p><br><br>
 			<ul class="text-dark-bg">
 				<li>"New" button felt misleading in that the test participant assumed they could also upload from there</li>
 				<li>Consider changing the display of images and info on homepage from column to Z-Pattern</li>
@@ -287,11 +288,10 @@
 	<!--branding and styling portion-->
 	<section class="container narrowcontent pt-100">
 		<h4 class="sec-title mb-30">Branding</h4>
-		<p>To develop this brand, I created a wordmap and from that exercise I began developing potential logo ideas. I noted that other competitors’ logos have some sort of cloud in their logo, which inspired some of my logo ideas. I
-			also wanted to include something that conveys collaboration, hence some of my ideas showing open dots connected with lines. The logo sketches then informed the brand name. Blue was a recurring color among other competitors’ brands, symbolizing
-			trust, calmness, and security, and so I experimented with shades of blue during the coloring process. To communicate the idea of creation and collaboration, both high-energy activities, I implemented variations of orange.
+		<p>I created a wordmap and from that began developing potential logo ideas. Other competitors’ logos incorporate a cloud, which inspired some of my ideas. I also wanted to include a visual that conveys collaboration, hence some of my ideas showing open dots being connected. These sketches then informed the brand name. Blue was a recurring color among other competitors’ brands, symbolizing
+			trust, calmness, and security, and so I experimented with shades of blue. To represent creativity and collaboration, both high-energy activities, I used orange.
 			<br><br>
-			I settled on CloudMind as the brand name. The Josefin Sans type was chosen for the brand as it felt bold and modern without being over-the-top. Alegreya Sans functions as the complement due to its greater versatility. During
+			I settled on CloudMind as the brand name. I chose Josefin Sans for the brand as it looks bold and modern. Alegreya Sans functions as the complement due to its greater versatility. During
 			this phase of the branding process, I also designed a new logo that I eventually decided on. I then updated it to be simpler and easier to scale down to smaller resolutions.</p>
 		<div class="row mt-30">
 			<a class="col-md-4 center-align" onclick="openModal();currentSlide(1)">
@@ -366,19 +366,19 @@
 		</div>
 	</section>
 	<!--hifi mockups and retesting portion-->
-	<section class="container narrowcontent pb-100 pt-100">
+	<section class="container narrowcontent pb-50 pt-100">
 		<div class="row hifi-mockups">
 			<h4 class="sec-title mb-30">Mockups and Testing</h4>
-			<p>Time for a fresh coat of paint! The high fidelity mockups underwent the greatest number of iterations as I sought insights and feedback from leader designers. I designed these mockups for desktop and mobile platforms, then tested the
+			<p>Time for a fresh coat of paint! The high fidelity mockups underwent the greatest number of iterations as I sought feedback from lead designers. I designed these mockups for desktop and mobile platforms, then tested the
 				desktop version as I felt that the feedback would also inform any tweaks that could be made to the mobile version. They can be viewed <a href="https://www.figma.com/file/EWYVdMZyYSGbrJ6Bmm8Myu/10.14---HiFi-Mockups?node-id=468%3A0"
 					target="_blank"><b>here</b></a>.
 				<br><br>
-				I opted to diversify my test participant demographic, including folks that are middle-aged. I tested three participants via Figma and inVision and asked them to describe what they liked, and what they found confusing or frustrating as they
-				completed three tasks: sign up for an account, create a new document, and recovering an account password. The users liked the layout of the homepage, and their feedback pointed to two fixable discrepancies: make the “Forgot Password” link
-				more pronounced (like a button), and give the user control over the confirmation window that shows after requesting a password reset link (different users read at different paces).
+				I tested three participants via Figma and inVision and asked them to describe what they liked, and what they found confusing or frustrating as they
+				completed three tasks: sign up for an account, create a new document, and recovering an account password. The users liked the homepage layout, and their feedback pointed to two fixable discrepancies: make the “Forgot Password” link
+				stand out more (like a button), and give the user control over the confirmation window that shows after requesting a password reset link (different users read at different paces).
 				<br><br>
-				I also performed preference tests on three specific things in my design: the layout of icons in the portion of the desktop homepage outlining CloudMind’s features, the background of the login and signup overlays on
-				mobile, and the placement of the upload button on the mobile dashboard. All results were split even, and all came down to personal preferences as opposed to any easily identifiable trend(s). I opted to keep everything as is.</p>
+				I also performed preference tests on three specific elements in my design: the layout CloudMind’s features on the desktop homepage, the background of the login and signup overlays on
+				mobile, and the placement of the upload button on the mobile dashboard. All results were split even, and all came down to personal preferences as opposed to any easily identifiable trend(s). I kept everything as is.</p>
 			<div class="col-md-6 mt-50 mb-20 center-align">
 				<button class="btnline medbtn transpbtn mb-30" value="view desktop prototype"
 					onclick="window.open('https://www.figma.com/proto/PUrAIetlR3mpWtJHz7Y3Sx/CloudMind?node-id=8%3A1&viewport=730%2C492%2C0.10904872417449951&scaling=min-zoom', '_blank')">View Desktop Prototype</button>
@@ -397,12 +397,12 @@
 				<div class="col-md-1"></div>
 				<div class="col-md-10">
 					<h4 class="sec-title mb-30">Conclusion</h4>
-					<p class="mb-10">Looking back at this project’s progression I found that I struggled with sizing, specifically with fonts and buttons. While working on a canvas, frame, or artboard, one spends so much time zooming in and out
+					<p class="mb-10">Looking back at this project’s progression I found that I struggled with sizing, specifically of fonts and buttons. While working on a frame, one spends so much time zooming in and out
 						that it
 						can distort their sense of sizing. My experience with developing the high fidelity mockup cemented how vital the iterative design and feedback process is. My biggest challenge came during the branding phase for the simple fact that we
-						tend to take the brands we see for granted without knowing what goes on behind the scenes. During that process I also learned that sometimes your best or most fitting ideas may not come when you need them, but while you apply a
+						tend to take the brands we see for granted without knowing what goes on behind the scenes. From this I learned that sometimes your best or most fitting ideas may not come when you need them, but while you apply a
 						metacognitive approach to design, you may begin to uncover new and innovative concepts.
-						<br><br>The design choices throughout CloudMind’s development felt validated in participants’ feelings during the user tests; it was reflected in their generally positive response to the layout and colors. The most valuable takeaway
+						<br><br>The design choices throughout CloudMind’s development felt validated in participants’ feelings during the user tests; it was reflected in their overall positive response to the appearance. The most valuable takeaway
 						was that it takes a village (or at least another teammate) to iterate and arrive at a cleaner and well thought-out design; without constant guidance and feedback CloudMind would not look or feel as clean as it does.</p>
 				</div>
 				<div class="col-md-1"></div>

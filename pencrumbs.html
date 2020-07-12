@@ -26,6 +26,7 @@
 	<nav class="navbar">
 		<div class="container">
 			<a href="index.html" class="logo"><img src="img/brandlogo.svg" alt="logo"></a>
+			<a href="index.html" class="navbar-name"><h1>AHMED AYOUB</h1></a>
 			<input class="menu-btn" type="checkbox" id="menu-btn"/> <!--checkbox, will allow for hamburger click-->
 			<label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>	<!--this will be turned into the 3 lines that make up the hamburger menu-->
 			<ul class="menu">
@@ -50,7 +51,7 @@
 							<a href="javascript:void(0)">Art</a>
 						</div>
 						<div class="dropdown-content shorter-drop">
-							<a href="art.html">Images</a>
+							<a href="art.html">Photos</a>
 							<a href="art.html#poetry">Poetry</a>
 							<a href="art.html#other" id="last-menu-item">Other</a>
 						</div>
@@ -74,22 +75,7 @@
 			</div>
 		</div>
 		<img src="img/pencrumbs/header.png" class="project-header" alt="Pencrumbs on devices">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 center-align">
-					<button class="btnline medbtn transpbtn mob-spaceout" value="view desktop prototype"
-						onclick="window.open('https://www.figma.com/proto/vZs7oXudfgYuRpEq3nDWTv/Pencrumbs?node-id=253%3A2562&viewport=1017%2C646%2C0.11109451204538345&scaling=min-zoom', '_blank')">View
-						Desktop Prototype</button>
-				</div>
-				<div class="col-md-6 center-align">
-					<button class="btnline medbtn transpbtn mob-spaceout" value="view mobile prototype"
-						onclick="window.open('https://www.figma.com/proto/vZs7oXudfgYuRpEq3nDWTv/Pencrumbs?node-id=254%3A3791&viewport=657%2C720%2C0.14145170152187347&scaling=scale-down', '_blank')">View
-						Mobile Prototype</button>
-				</div>
-			</div>
-		</div>
 	</section>
-
 
 	<section class="container narrowcontent pt-50">	<!--this encapsulates the entire first half up to wf&tsting-->
 		<!--quick details section-->
@@ -117,13 +103,29 @@
 			</div>
 		</section>
 	</section>
+
+	<div class="container">
+		<div class="row pt-50">
+			<div class="col-md-6 center-align">
+				<button class="btnline medbtn transpbtn" value="view desktop prototype"
+					onclick="window.open('https://www.figma.com/proto/vZs7oXudfgYuRpEq3nDWTv/Pencrumbs?node-id=253%3A2562&viewport=1017%2C646%2C0.11109451204538345&scaling=min-zoom', '_blank')">View
+					Desktop Prototype</button>
+			</div>
+			<div class="col-md-6 center-align">
+				<button class="btnline medbtn transpbtn mob-spaceout" value="view mobile prototype"
+					onclick="window.open('https://www.figma.com/proto/vZs7oXudfgYuRpEq3nDWTv/Pencrumbs?node-id=254%3A3791&viewport=657%2C720%2C0.14145170152187347&scaling=scale-down', '_blank')">View
+					Mobile Prototype</button>
+			</div>
+		</div>
+	</div>
+
 	<!--user insights portion-->
 	<section class="container narrowcontent">
 		<section class="row pt-100 pb-100">
 			<div class="col-md-1"></div>
 			<section class="col-md-10">
 				<h4 class="sec-title mb-30">User Insights</h4>
-				<p class="mb-20">Based on a survey of 27 participants, 15 have used digital tools to help with their writing process; of those 15, 80% get their writing done on their PCs while 20% use their phones. Users have highlighted the following reasons and feature for using such tools:</p>
+				<p class="mb-20">Based on a survey of 27 participants, 15 have used digital tools to help with their writing process. Of those 15, 80% write on their PCs while 20% use their phones. Folks use these tools for the following reasons:</p>
 				<ul class="text-light-bg mb-20">
 					<li>Save and access work across devices (100%)</li>
 					<li>Able to work offline (80%)</li>
@@ -131,7 +133,7 @@
 					<li>Easy to share with others (66.7%)</li>
 					<li>Adding media (photos, audio, video) (33.3%)</li>
 				</ul>
-				<p>Conversely, users have expressed frustration in terms of getting distracted (100%), lack of robust editing features (40%), and sync and accessibility issues (26.7% each). Participants then followed up stating they want a service that features a centralized and comprehensive editing system, passive voice recognition, mobile-friendly layout, and voice recognition, among other features. Upon looking closely at what types of literature people enjoy reading and writing, a majority leaned towards the usual blogs and stories, while other types weren't as popular. I saw an opportunity to concentrate and capitalize on a specific type rather than be a catch-all service like Medium and other platforms.</p>
+				<p>Users expressed frustration in terms of getting distracted (100%), lack of robust editing features (40%), and sync and accessibility issues (26.7% each). They followed up stating they want a product with comprehensive editing tools and a mobile-friendly layout. Upon looking closely at what people enjoy reading and writing, a majority like blogs and stories, while other types weren't as popular. I saw an opportunity to zoom in on a specific literary type rather than directly compete with Medium.</p>
 				<figure>
 					<h5 class="mb-10">What type(s) of literature do you write about? Select all that apply.</h5>
 					<img src="img/pencrumbs/graph_write.svg" alt="writing preferences graph">
@@ -153,25 +155,25 @@
 				<div class="col-md-4">
 					<img src="img/pencrumbs/comp_analysis/medium.png" class="comp-img mb-20" alt="Medium">
 				</div>
-				<p class="col-md-8 text-dark-bg"><a href="https://medium.com/" target="_blank"><b>Medium</b></a> allows anyone to write about and publish whatever they choose while also being able to read and interact with other peoples' works. It provides curated content for each individual user and is displayed cleanly. Users can highlight passages from a reading, and can control how to view their content (text size, dark mode, etc). However, users have very limited free article views before being asked to subscribe for $5 per month. The login process is also rather frustrating; after trying to login with an email address, an email is sent with a link that must then be accessed to complete the login process. This creates unnecessary work.</p>
+				<p class="col-md-8 text-dark-bg"><a href="https://medium.com/" target="_blank"><b>Medium</b></a> allows anyone to write about and publish whatever they choose while also being able to read and interact with other peoples' works. It provides curated content for each user and is displayed cleanly. Users can highlight passages and control how to view their content (text size, dark mode, etc). However, they have 2 free article views before being asked to subscribe for $5 per month. The login process is also inconvenient; after logging in with an email address, an email is sent with a link that must then be accessed to complete the login process. This creates extra work.</p>
 			</div>
 			<div class="row mb-30">
 				<div class="col-md-4">
 					<img src="img/pencrumbs/comp_analysis/tumblr.png" class="comp-img mb-20" alt="tumblr">
 				</div>
-				<p class="col-md-8 text-dark-bg"><a href="https://www.tumblr.com/" target="_blank"><b>Tumblr</b></a> is one of the oldest social networks on the internet and as a result has a very wide audience and recognizable brand. Users can customize their feed's look, share and interact with other posts and users, post whatever they wish, and the onboarding process was very quick. However, dashboard customization isn't as robust (dark mode appears to be the only option). It also suffers from technical issues and bugs too frequently.</p>
+				<p class="col-md-8 text-dark-bg"><a href="https://www.tumblr.com/" target="_blank"><b>Tumblr</b></a> is one of the oldest social networks and thus has a very wide audience and recognizable brand. Users can customize their feed's look, share and interact with content and users, post whatever they wish, and the onboarding process was quick. However, dashboard customization isn't as robust (dark mode appears to be the only option). It also suffers from technical issues and bugs frequently.</p>
 			</div>
 			<div class="row mb-30">
 				<div class="col-md-4">
 					<img src="img/pencrumbs/comp_analysis/fb.png" class="comp-img mb-20" alt="Facebook">
 				</div>
-				<p class="col-md-8 text-dark-bg"><a href="https://www.facebook.com/facebook" target="_blank"><b>Facebook</b></a> is the most dominant social media and messaging platform (having also acquired Instagram and Whatsapp). Because of its wide reach and recognition, it has become its own method of registration for most if not all other web services. Users can create and follow groups and pages based on their own interests, products, and services. Facebook also implements frequent updates to maintain technical integrity. However, it has been scrutinized repeatedly for privacy concerns, and can feel very bloated with all its available features (such as Market and Dating in recent months).</p>
+				<p class="col-md-8 text-dark-bg"><a href="https://www.facebook.com/facebook" target="_blank"><b>Facebook</b></a> is the most dominant social media platform, and has become a method of registration for almost every web service. Users can create and follow groups and pages based on their own interests. Facebook also does frequent updates to maintain technical integrity. However, it can feel very bloated with all its available features (such as Market and Dating in recent months).</p>
 			</div>
 			<div class="row">
 				<div class="col-md-4">
 					<img src="img/pencrumbs/comp_analysis/poetreat.png" class="comp-img mb-20" alt="Poetreat">
 				</div>
-				<p class="col-md-8 text-dark-bg"><a href="https://apps.apple.com/us/app/poetreat-write-quick-and-simple-bites-of-poetry/id636392647" target="_blank"><b>Poetreat</b></a> is a mobile-only app that helps users write poetry based on rhyme scheme while also maintaining a line-by-line word count. Users can set their own rhyme scheme and the app will provide rhyming words based on the scheme, and can share or export their work. The design is minimalistic which means less distraction and more focus on writing. However, the app is technically unstable, typos aren't recognized, projects don't always save, and under the free version only 3 projects can be saved before being asked to upgrade.</p>
+				<p class="col-md-8 text-dark-bg"><a href="https://apps.apple.com/us/app/poetreat-write-quick-and-simple-bites-of-poetry/id636392647" target="_blank"><b>Poetreat</b></a> is an app that helps users write poetry with rhyme schemes while also keeping a line-by-line word count. Users can set their own rhyme scheme and the app will provide rhyming words based on the scheme, and can share or export their work. The design is minimalistic so users can focus on writing. However, the app is unstable, typos aren't recognized, projects don't always save, and under the free version only 3 projects can be saved.</p>
 			</div>
 			<div class="pt-30 center-align"><button class="btnline medbtn transpbtn" value="competitive analysis" onclick="window.open('https://drive.google.com/open?id=1ioJ0FsfgZWigwNujcV18pRa5GXA5QS-16-lhiRpW5OI', '_blank')">View Full Analysis</button></div>
 		</div>
@@ -271,7 +273,7 @@
 			<div class="col-md-1"></div>
 			<div class="col-md-10">
 				<h4 class="sec-title mb-30">User Stories and Flows</h4>
-				<p>It is now time to establish what the minimum viable product can or should do, and how those tasks get done. Enter user flows to lay out the what, and user user flows to map out the way. I created a list of twenty user stories that I felt were most important, with a focus on the most essential stories (e.g. start a new draft or resume an existing one, view featured pieces, establish rhyme schemes, bookmark pieces, etc.). The user flows I created also integrated as many of the listed user stories as possible to test out general functionality, while other stories would be implemented in future iterations.</p><br>
+				<p>It is now time to establish what the minimum viable product can or should do, and how those tasks get done. User stories lay out the what, and user flows map out the how. I created a list of twenty user stories that I felt were most important, with a focus on the most essential stories (e.g. start a new draft or resume an existing one, view featured pieces, establish rhyme schemes, bookmark pieces, etc.). The flows I crated integrated as many of my user stories as possible to test general functionality, while other stories would be implemented in future iterations.</p><br>
 				<div class="pt-30 pb-30 center-align">
 					<button class="btnline medbtn transpbtn" value="user stories and flows" onclick="window.open('https://www.figma.com/file/vZs7oXudfgYuRpEq3nDWTv/Pencrumbs?node-id=0%3A1', '_blank')">View All Stories and Flows</button>
 				</div>
@@ -284,7 +286,7 @@
 	<section class="bg-dark ptb-80">
 		<div class="container narrowcontent">
 			<h4 class="darkbg-title mb-30">Wireframes and Testing</h4>
-			<p class="text-dark-bg mb-10">Knowing now what this service should do and how it should be done, what should it look like? Before fleshing anything out, having a skeleton to work with is also essential. I took pen to paper to brainstorm my vision for this app, then digitized it on Figma and tested its functionality for good measure. Given that 80% of survey participants during the research phase indicated they write on their PCs, I tested my desktop wireframes and applied any applicable changes and suggestions to the mobile version. I noted the following points of feedback from user testing:</p><br><br>
+			<p class="text-dark-bg mb-10">Knowing now what this service should do and how it should be done, what should it look like? Before fleshing anything out, having a skeleton to work with is essential. I took pen to paper to brainstorm my vision for this app, then digitized it on Figma and tested its functionality. Given that 80% of survey participants during the research phase indicated they write on their PCs, I tested my desktop wireframes and made any applicable changes to the mobile version. I noted the following points of feedback from user testing:</p><br><br>
 			<ul class="text-dark-bg">
 				<li>During onboarding, poets' full names should be listed, not just last names</li>
 				<li>It's easier to have a navbar 'New' button so one can start new projects immediately</li>
@@ -316,11 +318,11 @@
 	<!--branding and styling portion-->
 	<section class="container pt-100 narrowcontent">
 		<h4 class="sec-title mb-30">Branding</h4>
-		<p>As early as user stories, I started thinking of possible brand names, and settled on using Pencrumbs. Poems are bits and pieces put together to form an expressive piece, and I wanted the name and logo to represent that. From the ideas I sketched I digitized a few of them, shown here:
+		<p>While crafting user stories, I thought of possible brand names and settled on Pencrumbs. Poems are bits and pieces put together to form an expressive piece, and I wanted the name and logo to represent that. From the ideas I sketched I digitized a few of them, shown here:
 			<br><br>
 			<img src="img/pencrumbs/digitizations.png" alt="digitized logo ideas">
 			<br><br>
-			I was immediately drawn to the fountain pen tip logo and slightly upgraded it with a few dots to capture the ‘crumbs’ portion of my brand name. I had also decided a while back I wanted to use shades of purple as my primary color to capture the wisdom, magic, and royalty of the poetic process. Through much trial and error, I also established a complementary green color palette to offset the purple. I wanted my primary and brand type to be serif, as this is typically associated with writing in general. I opted for Playfair Display. To complement this type, I opted for a sans-serif type to display preview text or supplementary information. Lato gets the job done and balances out Playfair Display.</p>
+			I was drawn to the fountain pen tip logo and added a few dots to represent ‘crumbs’ falling from the pen. I had also decided a while back I wanted to use shades of purple as my primary color to capture the wisdom, magic, and royalty of the poetic process. Through much trial and error, I also established a complementary green color palette. I wanted my brand type to be serif, as this is typically associated with literature. I opted for Playfair Display. To complement this type, I used Lato, a sans-serif type to display preview text or supplementary information.</p>
 		<div class="row mt-30">
 				<a class="col-md-4 center-align" onclick="openModal();currentSlide(1)">
 					<img src="img/pencrumbs/id_ideation.png" class="ideation_img" alt="branding ideation">
@@ -402,7 +404,7 @@
 	<section class="container pb-50 pt-100 narrowcontent">
 		<div class="row hifi-mockups">
 			<h4 class="sec-title mb-30">Mockups and Testing</h4>
-			<p class="mb-20">Time for a fresh coat of paint! I took my branding guide and applied it to my wireframes to create the first iterations of Pencrumbs’ final design. I received feedback from lead designers and mentors, which I then applied to further enhance my design. At this point, I was ready to put it to the test. In the spirit of maintaining consistency, I once again tested my desktop version to get feedback from users since this would be the more popular version. Overall, users enjoyed the look and feel of the app (especially the landing page). However, no design is without fault; the following suggestions were made:</p>
+			<p class="mb-20">Time for a fresh coat of paint! I took my branding guide and applied it to my wireframes to create the first iterations of Pencrumbs’ final design. I received feedback from lead designers and mentors, which I then applied to further enhance my design. At this point, I was ready to put it to the test. In the spirit of maintaining consistency, I once again tested my desktop version to get feedback from users since this would be the more popular version. Overall, users enjoyed the look and feel of the app (especially the landing page). However, no design is perfect, as evidenced by the following feedback:</p>
 			<ul class="text-light-bg mb-20">
 				<li>On the homepage, show poetry types or genres by mood like Spotify does</li>
 				<li>Include a pop-up to confirm successful registration or signup</li>
@@ -429,7 +431,9 @@
 			<div class="col-md-1"></div>
 			<div class="col-md-10">
 				<h4 class="sec-title mb-30">Conclusion</h4>
-				<p class="mb-10">Narrowing down my focus to a subset of literature was a gamble that seemed to pay off. In hindsight, it made more sense to do this rather than design another catch-all service in a space where so many others exist. It was more fruitful to explore a space that hasn’t been given enough attention, especially given the want was there. Spacing was a tricky thing to nail throughout this project despite how confident I felt. I pressed users on their opinions of the layout to gain their insights about spacing, and they liked what they saw. There is plenty of room for improvement and expansion of this prototype to include some of the other core user stories drafted for this project, but as it stands now, Pencrumbs accomplishes its primary goal of breaking into the poetry space and offering users a bold and reliable service in creating and satisfying their poetry wants and needs.
+				<p class="mb-10">Narrowing down my focus to a subset of literature was a gamble that seemed to pay off. In hindsight, it made more sense to do this rather than design another catch-all service in a space where so many others exist. It was more fruitful to explore a space that hasn’t been given enough attention, especially given the want was there. Spacing was tricky to nail throughout this project despite how confident I felt. I encouraged users to give their honest opinions of the layout to gain their insights about spacing, and they liked what they saw. I was originally adamant about using an analagous color palette but found myself struggling more. To solve this, I decided to go with a purple-green complementary palette which I felt worked much better.
+				<br><br>
+				There is plenty of room for improvement and expansion of this prototype to include some of the other core user stories drafted for this project. I would start with implementing the ability to clip or highlight certain lines of a post. That way, readers can build up a collection of inspiration, further customizing their experience. But, as it stands now, Pencrumbs accomplishes its primary goal of breaking into the poetry space and offering users a bold and reliable service in creating and satisfying their poetry wants and needs.
 				</p>
 			</div>
 			<div class="col-md-1"></div>
