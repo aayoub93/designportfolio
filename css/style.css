@@ -61,7 +61,7 @@ p, .text-dark-bg, .text-light-bg, .tag, h5 {
 	line-height: 2.6rem;
 }
 
-.text-dark-bg, .backtop, .quick-abtme,
+.text-dark-bg, .backtop, .quote-subhead,
 .btnline, .f-head, .persona-name, .talk, h5 {font-weight: 500;}
 
 .sec-title, .darkbg-title, .btnline, .f-head,
@@ -76,7 +76,7 @@ h1, .navbar, .moviequote, .talk {font-family: 'Ubuntu', sans-serif;}
 }
 
 h1, .darkbg-title, .text-dark-bg,
-.quick-abtme, footer {color: #FBFBFB;}
+.quote-subhead, footer {color: #FBFBFB;}
 
 h1 {
 	font-weight: bold;
@@ -529,7 +529,7 @@ i.fas.fa-chevron-up.up {color: #C99B57;}
   display: table-cell;
 }
 
-.quick-abtme {
+.quote-subhead {
 	font-size: 1.6rem;
 	line-height: 2.5rem;
 	padding: 3rem 0;
@@ -1116,7 +1116,7 @@ textarea.form-input {height: 20rem;}
 }
 
 @media all and (min-width: 576px) {
-  .container{
+  .container {
     max-width: 90%; /*was originally 540px*/
   }
 }
@@ -1135,6 +1135,9 @@ textarea.form-input {height: 20rem;}
 		display: inline-flex;
 		max-width: 202px;
 	}
+
+	.header-words.shorterlength-header {width: 66%;}
+
 }
 
 @media all and (min-width: 768px) {
@@ -1298,7 +1301,7 @@ textarea.form-input {height: 20rem;}
 	.hero-bg {height: 80rem;}
 	.hero-hook {height: 87rem;}
 
-	.quick-abtme {
+	.quote-subhead {
 	  font-size: 2.4rem;
 	  line-height: 4.2rem;
 	}
@@ -1350,6 +1353,8 @@ textarea.form-input {height: 20rem;}
 
 	.header-hook {height: 67rem !important;}
 
+	.header-words.shorterlength-header {width: 70%;}
+
 	.moviequote {
 	  font-size: 3.6rem;
 	  line-height: 5rem;
@@ -1380,7 +1385,7 @@ textarea.form-input {height: 20rem;}
 }
 
 @media all and (min-width: 768px) and (max-width: 999px) {
-	.shrinkabit {width: 25rem !important;}
+	.shrinkabit {width: 25rem !important;} /*this is for some elements on the BusyBus page*/
 }
 
 @media all and (min-width: 1000px) {
@@ -1462,6 +1467,7 @@ textarea.form-input {height: 20rem;}
 	.colorbox {width: 9rem;}
 	.form-input {width: 40rem;}
 	.poetry-header {background-position: 0% 59%;}
+	.header-words.shorterlength-header {width: 55%;}
 }
 
 /*including this again at the end maintains structural integrity. It only works when written this way*/
