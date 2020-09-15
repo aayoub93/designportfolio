@@ -117,7 +117,7 @@ small, .info-caption {
 .info-caption {
 	opacity: 0.7;
 	font-style: italic;
-	width: 97%;
+	/*width: 97%;*/
 }
 
 a {
@@ -551,6 +551,8 @@ i.fas.downar.fa-chevron-down {
 	letter-spacing: 1px;
 }
 
+.mediumsize-linebreak {display: none;}
+
 @keyframes fadeInUp {
     from {transform: translate3d(0,1.5rem,0);}
     to {
@@ -619,6 +621,8 @@ i.fas.downar.fa-chevron-down {
 	display: block;
 }
 #cloudmindheader {margin-top: -5rem;}
+
+.badge {max-width: 25rem; max-height: auto;}
 
 .intro-hook {text-align: center;}
 
@@ -796,9 +800,13 @@ i.fas.downar.fa-chevron-down {
 /*about me page rules*/
 #leftbgimg, #rightbgimg {background-image: none;}
 
-.breakarea {background-color: rgba(20, 20, 20, 0.85);}
+/*.breakarea {background-color: rgba(20, 20, 20, 0.85);}*/
 
-.minispace, .moviequote {display: inline-flex;}
+.minispace, .moviequote {
+	display: inline-flex;
+	border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
+	border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
+}
 
 .minispace {
 	width: 10%;
@@ -806,8 +814,9 @@ i.fas.downar.fa-chevron-down {
 }
 
 .moviequote {
-	color: #EBDCAD;
+	color: #e2c191;
 	font-size: 2.4rem;
+	font-style: italic;
 	line-height: 3.2rem;
 	padding: 5rem 0.5rem;
 	align-items: center;
@@ -1386,6 +1395,7 @@ textarea.form-input {height: 20rem;}
 
 @media all and (min-width: 768px) and (max-width: 999px) {
 	.shrinkabit {width: 25rem !important;} /*this is for some elements on the BusyBus page*/
+	.mediumsize-linebreak {display: inline;}
 }
 
 @media all and (min-width: 1000px) {
@@ -1403,6 +1413,9 @@ textarea.form-input {height: 20rem;}
 	.narrowcontent {max-width: 84rem !important;}
 
 	.header-words {width: 74%;}
+
+	.home-header {width: 100% !important;}
+	.home-header h1, .home-header p {width: 74%;}
 
 	h2 {font-size: 5rem;}
 
