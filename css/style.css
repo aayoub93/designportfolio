@@ -68,7 +68,7 @@ p, .text-dark-bg, .text-light-bg, .tag, h5 {
 .backtop, .transpbtn, .filledbtn, .persona-name, button,
 h2, h3, h4, h6 {font-family: 'Montserrat', sans-serif;}
 
-h1, .navbar, .myownquote, .talk {font-family: 'Ubuntu', sans-serif;}
+h1, .navbar, .breakquote, .talk {font-family: 'Ubuntu', sans-serif;}
 
 .sec-title, .darkbg-title {
   font-weight: 600;
@@ -432,11 +432,12 @@ i.fas.fa-chevron-up.up {color: #C99B57;}
 }
 
 .hero-bg {
-	background-image: url(../img/header_resized.jpg);
-	height: 60rem;
+	background-image: url(../img/header_resized_smalldimmer.jpg);
+	background-position: center 62%;
+	height: 60rem; /*play around with 100vh !important here later on*/
 }
 
-.hero-bg .container, .other-header .container, .poetry-header .container {
+.poetry-header .container {
 	background:rgba(0,0,0,0.5);
 	} /*reduced brightness for hero image*/
 
@@ -818,7 +819,7 @@ i.fas.downar.fa-chevron-down {
 
 /*.breakarea {background-color: rgba(20, 20, 20, 0.85);}*/
 
-.minispace, .myownquote {
+.minispace, .breakquote {
 	display: inline-flex;
 	border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
 	border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
@@ -829,7 +830,7 @@ i.fas.downar.fa-chevron-down {
 	flex-grow: 1;
 }
 
-.myownquote {
+.breakquote {
 	color: #e2c191;
 	font-size: 2.4rem;
 	font-style: italic;
@@ -1089,7 +1090,8 @@ textarea.form-input {height: 20rem;}
 }
 
 .other-header {
-	background-image: url(../img/header_resized.jpg);
+	background-image: url(../img/header_resized_smalldimmer.jpg);
+	background-position: center 65%;
 	height: 30rem;
 }
 
@@ -1388,7 +1390,7 @@ textarea.form-input {height: 20rem;}
 
 	.header-words.shorterlength-header {width: 70%;}
 
-	.myownquote {
+	.breakquote {
 	  font-size: 3.6rem;
 	  line-height: 5rem;
 		flex-grow: 2;
@@ -1504,6 +1506,7 @@ textarea.form-input {height: 20rem;}
 	.form-input {width: 40rem;}
 	.poetry-header {background-position: 0% 59%;}
 	.header-words.shorterlength-header {width: 55%;}
+	.header-bg h1 {width: 100%;}
 }
 
 /*including this again at the end maintains structural integrity. It only works when written this way*/
