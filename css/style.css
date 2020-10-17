@@ -22,6 +22,7 @@ body {
 	padding: 0;
 	color: #000;
 	background-color: #FBFBFB;
+	cursor: url(../img/my_cursor.png), auto;
 }
 
 .container {
@@ -129,6 +130,7 @@ a {
 a:hover {
   color: #0056b3;
   transition: 0.3s;
+	cursor: url(../img/my_cursor_pointer.png), auto;
 }
 
 .col-md-6 img {
@@ -168,7 +170,7 @@ textarea {
 }
 
 button, input.submission {
-	cursor: pointer;
+	cursor: url(../img/my_cursor_pointer.png), auto;
 	border: 2px solid #E2C191;
 }
 
@@ -276,7 +278,7 @@ button, input.submission {
   padding: 3.2rem 0;
   position: relative;
   float: right;
-  cursor: pointer;
+	cursor: url(../img/my_cursor_pointer.png), auto;
 }
 
 .navbar .menu-icon .nav-icon {
@@ -433,8 +435,7 @@ i.fas.fa-chevron-up.up {color: #C99B57;}
 
 .hero-bg {
 	background-image: url(../img/header_resized_smalldimmer.jpg);
-	background-position: center 62%;
-	height: 60rem; /*play around with 100vh !important here later on*/
+	background-position: center; /*used to be center 62%*/
 }
 
 .poetry-header .container {
@@ -528,14 +529,18 @@ i.fas.fa-chevron-up.up {color: #C99B57;}
 .ptb-50 {padding: 5rem 0;}
 
 /*homepage rules*/
-.hero-hook {
-  height: 70rem;
-  vertical-align: middle;
-  display: table-cell;
+.header-words.home-header {
+	width: 100%;
+	height: 100vh;
+	vertical-align: middle;
+	display: table-cell;
 }
 
-.home-header h1 {margin-bottom: 5rem;}
-.smallertitlelargerres {font-size: 2rem; line-height: 2.9rem;}
+.smallertitlelargerres {
+	font-size: 2rem;
+	line-height: 2.9rem;
+	margin: 5rem 0;
+}
 
 .quote-subhead {
 	font-size: 1.6rem;
@@ -551,6 +556,7 @@ i.fas.downar.fa-chevron-down {
 	padding: 0.5rem 1rem;
 	text-align: center;
 }
+.downarrow {display: none !important;}
 
 #myname {
 	color: #E2C191; /*formerly EBD5B5*/
@@ -794,7 +800,7 @@ i.fas.downar.fa-chevron-down {
 	border: 1px solid rgba(226, 193, 145, 0.66);
 	border-radius: 0.5rem;
 	box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.1);
-	cursor: pointer;
+	cursor: url(../img/my_cursor_pointer.png), auto;
 }
 
 .ideation_img:hover {
@@ -896,7 +902,7 @@ textarea.form-input {height: 20rem;}
   display: block;
   overflow: hidden;
   float: left;
-	cursor: pointer;
+	cursor: url(../img/my_cursor_pointer.png), auto;
 }
 
 .tile.col-md-4-v2 {
@@ -1031,7 +1037,7 @@ textarea.form-input {height: 20rem;}
   color: #E2C191;
   text-decoration: none;
 	transition: 0.3s;
-  cursor: pointer;
+	cursor: url(../img/my_cursor_pointer.png), auto;
 }
 
 .mySlides {
@@ -1043,7 +1049,7 @@ textarea.form-input {height: 20rem;}
 .prev,
 .next {
 	background: rgba(0,0,0,0.6);
-  cursor: pointer;
+	cursor: url(../img/my_cursor_pointer.png), auto;
   position: absolute;
   top: 50%;
   width: auto;
@@ -1214,7 +1220,7 @@ textarea.form-input {height: 20rem;}
 
 	.active,
 	.demo:hover {
-		cursor: pointer;
+		cursor: url(../img/my_cursor_pointer.png), auto;
 	  opacity: 1;
 		transition: 0.5s;
 	}
@@ -1327,19 +1333,34 @@ textarea.form-input {height: 20rem;}
 
 	.smallertitlelargerres {
 		font-size: 3rem;
-		line-height: 4.2rem;
+		line-height: 4.5rem;
 		width: 77%;
 	}
-
-	.hero-bg {height: 80rem;}
-	.hero-hook {height: 87rem;}
 
 	.quote-subhead {
 	  font-size: 2.4rem;
 	  line-height: 4.2rem;
 	}
 
+/*these next few lines come together to create a full viewport height
+on the homepage, as well as the down arrow to scroll to work*/
+	.header-words.home-header {height: 82.7vh;}
+	.hero-hook {padding-top: 16vh;}
+
 	i.fas.downar.fa-chevron-down {display: none;}
+	.downarrow {
+		display: block !important;
+		margin-bottom: 10vh;
+		background: rgba(201, 155, 86, 0.15);
+		border: 2px solid rgba(201, 155, 87, 0.5);/*This is RGB for C99B57 with 0.5 opacity*/
+		border-radius: 100rem;
+		padding: 0.5rem 3rem !important;
+	}
+	.downarrow:hover {
+		background: #C99B57;
+		color: #FBFBFB !important;
+		transition: 0.3s;
+}
 
 	.divequal {
 	  height: 47rem;
@@ -1441,6 +1462,7 @@ textarea.form-input {height: 20rem;}
 	.home-header {width: 100% !important;}
 	.home-header h1, .header-words h1 {width: 74%;}
 	.home-header p {width: 100%;}
+	.smallertitlelargerres {margin: 7.5rem 0;}
 
 	h2 {font-size: 5rem;}
 
