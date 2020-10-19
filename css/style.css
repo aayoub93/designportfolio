@@ -172,6 +172,7 @@ textarea {
 button, input.submission {
 	cursor: url(../img/my_cursor_pointer.png), auto;
 	border: 2px solid #E2C191;
+	border-radius: 1.5rem;
 }
 
 .smallbtn, .medbtn, .lrgbtn {
@@ -619,7 +620,7 @@ i.fas.downar.fa-chevron-down {
 
 .projectlabel {
 	background: rgba(0, 0, 0, 0.07);
-	border-radius: 0.25rem;
+	border-radius: 0.75rem; /*this should be 1/2 of what the button border radius is*/
 	opacity: 0.66;
 	font-style: italic;
 	margin-left: 1rem;
@@ -869,6 +870,7 @@ textarea {resize: none;}
 
 .form-input {
 	border: 1px solid rgba(0, 0, 0, 0.3);
+	border-radius: 1.5rem;
   display: block;
 	font-size: 1.8rem;
   padding: 1rem;
