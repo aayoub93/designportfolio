@@ -11,14 +11,15 @@
 
 		gtag('config', 'UA-164207580-1');
 	</script>
-	<title>BusyBus</title>
+	<title>BusyBus UX Design Project - Ahmed Ayoub</title>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" type="image/png" href="img/favicon_transparent.png">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Overpass:wght@600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 	<!--this style below is to ensure Highway Gothic is pulled and used properly. It isn't being called in style.css-->
 	<style type="text/css">
@@ -88,7 +89,7 @@
 	<section class="container narrowcontent pt-50">	<!--this encapsulates the entire first half up to wf&tsting-->
 		<!--quick details section-->
 		<section class="row">
-			<div class="col-md-4 rightborderdivider">
+			<div class="col-md-4 rightborderdivider" data-aos="fade-up" data-aos-duration="1250"  data-aos-once="true">
 				<h6 class="mb-20">duration</h6>
 				<p>Jul 2019 - Aug 2019</p>
 				<hr>
@@ -103,7 +104,7 @@
 				<p>Google Forms, Figma, Atom, Git/GitHub</p>
 				<div class="mobile_semidiv mb-40 mt-40 no-desk"></div>
 			</div>
-			<div class="col-md-8 nomobile-pad">
+			<div class="col-md-8 nomobile-pad" data-aos="fade-down" data-aos-duration="1250"  data-aos-once="true">
 				<h6 class="mb-20">problem</h6>
 				<p>Transit officials identified a problem they would like to solve. Due to expansion, numerous bus routes were recently added and many of those routes stop at the same bus stop. Riders want to know what the next arriving bus is and how much time they have to get to the bus stop. Riders and residents are frustrated and want to know <b>where their bus is</b>, <b>when it arrives</b>, <b>and how long until it departs</b>.</p>
 				<hr>
@@ -117,13 +118,11 @@
 		<div class="row pt-50">
 			<div class="col-md-6 center-align">
 				<button class="btnline medbtn transpbtn" value="view prototype"
-					onclick="window.open('https://www.figma.com/proto/R2HRSjDUpyvaOUqejTT66A/BusyBus?node-id=8%3A30&viewport=810%2C700%2C0.2200748324394226&scaling=scale-down', '_blank')">View
-					Prototype</button>
+					onclick="window.open('https://www.figma.com/proto/R2HRSjDUpyvaOUqejTT66A/BusyBus?node-id=8%3A30&viewport=810%2C700%2C0.2200748324394226&scaling=scale-down', '_blank')"><div class="text">View Prototype</div></button>
 			</div>
 			<div class="col-md-6 center-align">
 				<button class="btnline medbtn transpbtn mob-spaceout" value="view demo on github"
-					onclick="window.open('https://aayoub93.github.io/frontend-challenge/', '_blank')">View
-					Demo on GitHub</button>
+					onclick="window.open('https://aayoub93.github.io/frontend-challenge/', '_blank')"><div class="text">View Demo on GitHub</div></button>
 			</div>
 		</div>
 	</div>
@@ -133,30 +132,31 @@
 		<section class="row pt-100 pb-100">
 			<div class="col-md-1"></div>
 			<section class="col-md-10">
-				<h4 class="sec-title mb-30">User Insights</h4>
-				<p class="mb-20">From a survey of 32 people, most people do not use the bus as their primary mode of transportation (81.3%), while 18.8% reported that they do. Focusing primarily on bus riders, 50% use it daily while 50% use it a few times a week, mostly for getting to work (100%). Other common reasons were for convenience, price, running errands, and being unable to drive (50% each). Most riders walk no more than 5 minutes from their homes to their stops (83.3%), but time spent waiting for the bus varies; 16.7% spend 0-5 minutes, 66.7% spend 6-15 minutes, and 16.7% spend 16-30 minutes waiting. This is where improvements can and must be made; the graph below shows what ways users' experience using public transportation apps can be enhanced:</p>
-				<figure><img src="img/busybus/graph.svg" alt="paint points graph"></figure>
-				<p>Bus riders will benefit from having real-time updates so they know when to expect buses, but would like to be able to see where their buses are, similar to how apps like Lyft and Uber show their rides on a map. Users also wish to know when to begin heading to their stops, and be notified of any changes in the expected time of their bus. This will reduce wait times, diminishing a major pain point. In the event of a signal failure, users would also like offline access to schedules and routes so they have some idea of when to begin moving. For added convenience, and because not all apps have this feature, an in-app payment option will attract more users.</p>
+				<h4 class="sec-title mb-30">A Day in the Life of a Rider</h4>
+				<p class="mb-20">From a survey of 32 people, most people do not use the bus as their primary mode of transportation (81.3%), while 18.8% reported that they do. Focusing primarily on bus riders, 50% use it daily while 50% use it a few times a week, mostly for getting to work. <!--(100%). Other common reasons were for convenience, price, running errands, and being unable to drive (50% each).--> Most riders walk no more than 5 minutes from their homes to their stops (83.3%), but <b>time spent waiting for the bus varies; 16.7% spend 0-5 minutes, 66.7% spend 6-15 minutes, and 16.7% spend 16-30 minutes waiting.</b> This is where improvements can and must be made; the graph below shows what ways users' experience using public transportation apps can be enhanced:</p>
+				<figure data-aos="fade" data-aos-duration="1250" data-aos-once="true"><img src="img/busybus/graph.svg" alt="paint points graph"></figure>
+				<p>Bus riders will benefit from having real-time updates so they know when to expect buses, and would like to track them in real-time (similar to how Lyft and Uber rides). <b>Users also wish to know when to begin heading to their stops, and be notified of any changes in the expected time of their bus.</b> This will reduce wait times, diminishing a major pain point. In the event of a signal failure, users would also like offline access to schedules and routes so they have some idea of when to begin moving. For added convenience, and because not all apps have this feature, an in-app payment option will attract more users.</p>
 			</section>
 		</section>
 	</section>
 	<!--competitive analysis portion-->
 	<section class="bg-dark pt-100 pb-100">
 		<div class="container narrowcontent">
-			<h4 class="darkbg-title mb-30">Competitive Analysis</h4>
-			<div class="row mb-30">
+			<h4 class="darkbg-title mb-30">Competitive Analysis</h4> <!--consider rewording to "Same Destination, Competing Routes"-->
+			<div class="row mb-30" data-aos="fade-up" data-aos-duration="1250" data-aos-once="true">
 				<div class="col-md-4">
 					<img src="img/busybus/comp_analysis/transit_logo.png" class="comp-img mb-20" alt="Transit App">
 				</div>
-				<p class="col-md-8 text-dark-bg"><a href="https://transitapp.com/" target="_blank"><b>Transit</b></a> is a relatively new dedicated transportation service, providing local real-time route updates and bus stop locations. It is easy to see when local buses are coming, and the next time they will arrive. It plays with colors outside of its branding to distinguish different routes and transportation types (e.g. MTA subway lines). It is mobile-only, and only serves about 200 major cities and transit hubs worldwide, thereby restricting its usability.</p>
+				<p class="col-md-8 text-dark-bg"><a href="https://transitapp.com/" target="_blank"><b>Transit</b></a> provides local real-time route updates and bus stop locations. It is easy to see when local buses are coming, and the next time they will arrive. It plays with colors outside of its branding to distinguish different routes and transportation types (e.g. MTA subway lines). It is mobile-only, and only serves about 200 major cities and transit hubs worldwide, thereby restricting its usability.</p>
 			</div>
-			<div class="row mb-30">
+			<div class="row mb-30" data-aos="fade-up" data-aos-duration="1250" data-aos-once="true">
 				<div class="col-md-4">
 					<img src="img/busybus/comp_analysis/googlemaps_logo.png" class="comp-img mb-20" alt="Google Maps">
 				</div>
-				<p class="col-md-8 text-dark-bg"><a href="https://www.google.com/maps" target="_blank"><b>Google Maps</b></a> is the most widely recognized and used transportation planning service, since it is attached to the Google IP. It is also much more easily accessible wherever you are and on any device. While it does employ color to highlight selected routes, as well as transit iconography (e.g. MTA subway lines and bus routes), the interface itself is more monotone than other competitors. From a technical standpoint, the app also consumes more battery power.</p>
+				<p class="col-md-8 text-dark-bg"><a href="https://www.google.com/maps" target="_blank"><b>Google Maps</b></a> is the most popular transportation planning service, given its name. It is also much more easily accessible wherever you are and on any device. While it does employ color to highlight selected routes, as well as transit iconography (e.g. MTA subway lines and bus routes), the interface itself is more monotone than other competitors.</p>
 			</div>
-			<div class="pt-30 center-align"><button class="btnline medbtn transpbtn" value="competitive analysis" onclick="window.open('https://docs.google.com/document/d/1PTA4Ro5D6TRj7LMf5OoLk3NjxM2TI7ARiB1a2I8BRCE/edit?usp=sharing', '_blank')">View Full Analysis</button></div>
+			<div class="pt-30 center-align" data-aos="fade-up" data-aos-duration="1250" data-aos-once="true" data-aos-anchor-placement="top-bottom">
+				<button class="btnline medbtn transpbtn" value="competitive analysis" onclick="window.open('https://docs.google.com/document/d/1PTA4Ro5D6TRj7LMf5OoLk3NjxM2TI7ARiB1a2I8BRCE/edit?usp=sharing', '_blank')"><div class="text">View Full Analysis</div></button></div>
 		</div>
 	</section>
 
@@ -165,13 +165,13 @@
 		<section class="row pt-100">
 			<div class="col-md-1"></div>
 			<div class="col-md-10">
-				<h4 class="sec-title mb-30">User Stories and Flow</h4>
-				<p>How do we measure success for BusyBus, taking competitors and user requirements into account? I created a list of 12 user stories that were most important in establishing a minimum viable product, including being able to see real-time updates, notifications or approaching buses, and adding items to a 'Favorites' list. From this list, I created a user flow that integrated as much as possible to test out general functionality.</p>
+				<h4 class="sec-title mb-30">Mapping Our Own Route</h4>
+				<p>How do we measure success for BusyBus, taking competitors and user requirements into account? I created a list of 12 user stories that were most important in establishing a minimum viable product, including <b>being able to see real-time updates, notifications or approaching buses, and adding items to a 'Favorites' list.</b> From this list, I created a user flow that integrated as much as possible to test out general functionality.</p>
 				<br>
 				<div class="pt-30 pb-30 center-align">
-					<button class="btnline medbtn transpbtn" value="user stories" onclick="window.open('https://docs.google.com/spreadsheets/d/1-K2NFayIthS-URs-aGQ9Rg6eVFt5TT0HhGLJVtQxG3Q/edit?usp=sharing', '_blank')">View All Stories</button>
+					<button class="btnline medbtn transpbtn" value="user stories" onclick="window.open('https://docs.google.com/spreadsheets/d/1-K2NFayIthS-URs-aGQ9Rg6eVFt5TT0HhGLJVtQxG3Q/edit?usp=sharing', '_blank')"><div class="text">View All Stories</div></button>
 				</div>
-				<img src="img/busybus/userflow.svg" class="mt-20" alt="user flow">
+				<img src="img/busybus/userflow.svg" class="mt-20" alt="user flow" data-aos="zoom-out" data-aos-duration="1250" data-aos-once="true">
 			</div>
 		</section>
 	</section>
@@ -179,26 +179,29 @@
 	<!--wireframe sketching and testing portion-->
 	<section class="bg-dark ptb-80">
 		<div class="container narrowcontent">
-			<h4 class="darkbg-title mb-30">Ideation and Testing</h4>
-			<p class="text-dark-bg mb-10">Time to sketch and test! Using a templated worksheet, I sketched out three screens that adhere to my user flow and performed usability testing on this paper prototype with three subjects. I experimented with including other forms of transportation for users who may want to explore those options, similar to Google Maps and Transit. They were each asked to select and confirm a bus route of their choice. They each had varying levels of technological proficiency, allowing for broader perspectives on what could be improved. I noted the following points of feedback:</p><br><br>
+			<h4 class="darkbg-title mb-30">Going for a Test Drive</h4>
+			<p class="text-dark-bg mb-10">Time to sketch and test! Using a templated worksheet, I sketched out three screens that adhere to my user flow and performed usability testing on this paper prototype with three subjects. I experimented with including other forms of transportation for users who may want to explore those options, similar to Google Maps and Transit. I asked them to select and confirm a bus route. They each had varying levels of technological proficiency, allowing for broader perspectives on what could be improved. I noted the following points of feedback:</p><br><br>
 			<ul class="text-dark-bg">
-				<li>Having two train-looking icons confused users; one was intended for rail and the other for subway</li>
-				<li>When opening the app, it should be clearer that you can input your destination</li>
-				<li>Would be nice to show bus locations on the map</li>
-				<li>General confusion about what the gear icon represents, given its placement</li>
+				<li><b>Having two train-looking icons confused users</b>; one was intended for rail and the other for subway</li>
+				<br class="no-desk">
+				<li>When opening the app, <b>it should be clearer that you can input your destination</b></li>
+				<br class="no-desk">
+				<li>Would be nice to <b>show bus locations on the map</b></li>
+				<br class="no-desk">
+				<li><b>General confusion about the gear icon</b>, given its placement</li>
 			</ul>
 		</div>
 	</section>
 	<!--images of sketches-->
 	<div class="container">
-		<img src="img/busybus/sketches.png" alt="sketches">
+		<img src="img/busybus/sketches.png" alt="BusyBus wireframe sketches" data-aos="fade-down" data-aos-duration="1250" data-aos-once="true">
 	</div>
 	<!--branding and styling portion-->
 	<section class="container pt-100 narrowcontent">
-		<h4 class="sec-title mb-30">Branding</h4>
-		<p>What’s in an identity? I wanted to convey to riders that they can trust and be excited about public transportation. I therefore used shades of blue as my primary color palette (blue denotes trust and security) and shades of yellow for my secondary palette to emphasize enthusiasm. I used a combination of Highway Gothic for my brand type and Oswald as its complement. Highway Gothic is used for US highway signs, and thus felt appropriate to use for this project. I applied this type to the search field text, route numbers, and the times' numerical displays. All other text used Oswald with 5% letter spacing.
+		<h4 class="sec-title mb-30">Painting the Bus</h4>
+		<p>I wanted to convey to riders that they can trust and be excited about public transportation. I therefore used <b>shades of blue as my primary color palette (blue denotes trust and security) and shades of yellow for my secondary palette to emphasize enthusiasm</b>. I used a Highway Gothic for my brand type and Oswald as its complement. Highway Gothic is used for US highway signs, and thus felt appropriate to use for this project. I applied this type to the search field text, route numbers, and the times' numerical displays. All other text used Oswald with 5% letter spacing.
 		<br><br>
-		In designing the logo, I utilized the front portion of the bus icon I drafted for the selection button in the app. The word "busy" can be associated with "buzzing about," moving from one point to another to get a task done. This train of thought led me to include three triangles tailing the bus to symbolize moving to a destination. However, when it came time to code, the Overpass type functioned as a very close alternative to Highway Gothic. It is available on Google Fonts and so was easier to implement.</p>
+		In designing the logo, I utilized the front portion of the bus icon I drafted for the in-app selection button. The word "busy" can be associated with "buzzing about," moving from one point to another to accomplish a task. This led me to include three triangles tailing the bus to symbolize movement. When it came time to code, the Overpass type on Google Fonts functioned as a very close alternative to Highway Gothic, which was local to my device.</p>
 		<div class="row mt-30">
 			<a class="col-md-4 center-align" onclick="openModal();currentSlide(1)">
 				<img src="img/busybus/id_ideation.png" class="ideation_img" alt="branding ideation">
@@ -220,32 +223,32 @@
 
 			<div class="col-md-8 brandings">
 				<h6 class="mb-20">colors</h6>
-				<div class="colors-selected pb-10">
+				<div class="colors-selected pb-10" data-aos="flip-left" data-aos-duration="1250" data-aos-once="true">
 					<div class="bbpc1 colorbox"></div>
 					<p>074C9C</p>
 				</div>
-				<div class="colors-selected pb-10">
+				<div class="colors-selected pb-10" data-aos="flip-left" data-aos-duration="1250" data-aos-once="true" data-aos-delay="200">
 					<div class="bbpc2 colorbox"></div>
 					<p>095AB8</p>
 				</div>
-				<div class="colors-selected pb-10">
+				<div class="colors-selected pb-10" data-aos="flip-left" data-aos-duration="1250" data-aos-once="true" data-aos-delay="400">
 					<div class="bbpc3 colorbox"></div>
 					<p>D8F1F6</p>
 				</div>
 				<div class="mb-10">
-					<div class="colors-selected">
+					<div class="colors-selected" data-aos="flip-left" data-aos-duration="1250" data-aos-once="true" data-aos-delay="100">
 						<div class="bbsc1 colorbox"></div>
 						<p>B38B29</p>
 					</div>
-					<div class="colors-selected">
+					<div class="colors-selected" data-aos="flip-left" data-aos-duration="1250" data-aos-once="true" data-aos-delay="300">
 						<div class="bbsc2 colorbox"></div>
 						<p>FFCD54</p>
 					</div>
-					<div class="colors-selected">
+					<div class="colors-selected" data-aos="flip-left" data-aos-duration="1250" data-aos-once="true" data-aos-delay="500">
 						<div class="bbsc3 colorbox"></div>
 						<p>FAEED2</p>
 					</div>
-					<div class="colors-selected">
+					<div class="colors-selected" data-aos="flip-left" data-aos-duration="1250" data-aos-once="true" data-aos-delay="700">
 						<div class="bbsc4 colorbox"></div>
 						<p>FFF5DB</p>
 					</div>
@@ -260,11 +263,10 @@
 				</table>
 			</div>
 			<div class="col-md-12 mt-50 mb-50 center-align">
-				<button class="btnline medbtn transpbtn" value="style guide" onclick="window.open('https://www.figma.com/proto/R2HRSjDUpyvaOUqejTT66A/BusyBus?node-id=6%3A424&viewport=763%2C121%2C0.12856562435626984&scaling=min-zoom', '_blank')">View Style
-					Guide</button>
+				<button class="btnline medbtn transpbtn" value="style guide" onclick="window.open('https://www.figma.com/proto/R2HRSjDUpyvaOUqejTT66A/BusyBus?node-id=6%3A424&viewport=763%2C121%2C0.12856562435626984&scaling=min-zoom', '_blank')"><div class="text">View Style	Guide</div></button>
 			</div>
 			<div class="col-md-12 center-align">
-				<img src="img/busybus/busybus_brand.png" class="mb-10 solologo" alt="logo iterations">
+				<img src="img/busybus/busybus_brand.png" class="mb-10 solologo" alt="logo iterations" data-aos="flip-down" data-aos-duration="1250" data-aos-once="true">
 				<p class="info-caption">BusyBus brand favicon and app icon wouldn't include the name.</p>
 			</div>
 		</div>
@@ -273,28 +275,31 @@
 	<section class="container pb-100 pt-100 narrowcontent">
 		<div class="row hifi-mockups">
 			<h4 class="sec-title mb-30">Visual Design</h4>
-			<p class="mb-20">When creating the visual prototype, I combined the subway and train buttons into one button for simplicity. On my sketches, I reserved space for route names to be next to their numbers, but I quickly realized it won’t be feasible here. I therefore placed the route name under the number, and above the stop name I opted for a darker background with lighter text, rather than the usual dark text over a light background. Some aspects of my sketches did not translate as well to the visual design as I anticipated, and thus the design underwent a second iteration. Some points of feedback from other designers were as follows:</p>
+			<p class="mb-20">When creating the visual prototype, <b>I combined the subway and train buttons into one button based on user feedback.</b> On my sketches, I reserved space for route names to be next to their numbers, but I realized it won’t be feasible here. I instead placed the route name under the number, and above the stop name I applied a darker background with lighter text. Some aspects of my sketches did not translate as well to the visual design as I anticipated, and thus the design underwent a second iteration. Some points of feedback from other designers were as follows:</p>
 			<ul class="text-light-bg mb-20">
-				<li>Move the search field to the top so it sticks with the status bar and is more noticeable</li>
-				<li>Add labels to the bus, rail, and cab icons to make it clear what these items are to users</li>
-				<li>Reduce the scale of the star/favorite icons, as they aren't super important</li>
-				<li>Add more weight to some of the text; it is difficult to read at 100% zoom</li>
-				<li>Break up bus route 77’s list into individual items as with the rest of the list</li>
+				<li><b>Move the search field to the top</b> so it sticks with the status bar and is more noticeable</li>
+				<br class="no-desk">
+				<li><b>Add labels to the bus, rail, and cab icons</b> to make it clear what these items are to users</li>
+				<br class="no-desk">
+				<li><b>Reduce the scale of the star/favorite icons</b>, as they aren't super important</li>
+				<br class="no-desk">
+				<li><b>Add more weight to some of the text</b>; it is difficult to read at 100% zoom</li>
+				<br class="no-desk">
+				<li><b>Break up bus route 77’s list</b> into individual items as with the rest of the list</li>
 			</ul>
-			<div class="col-md-12">
-				<div class="pt-30 center-align">
-					<button class="btnline medbtn transpbtn" value="view prototype"
-						onclick="window.open('https://www.figma.com/proto/R2HRSjDUpyvaOUqejTT66A/BusyBus?node-id=8%3A30&viewport=810%2C700%2C0.2200748324394226&scaling=scale-down', '_blank')">View
-						Prototype</button>
-				</div>
-			</div>
-			<div class="col-md-6 mt-50 mb-20 center-align">
+			<div class="col-md-6 mt-50 mb-20 center-align" data-aos="fade-up" data-aos-duration="1250" data-aos-once="true" data-aos-anchor-placement="center-bottom">
 				<p class="info-caption mb-20">Iteration 1</p>
 				<img src="img/busybus/landing_screen_v1.png" class="busybusmockup" alt="iteration 1">
 			</div>
-			<div class="col-md-6 mt-50 center-align">
+			<div class="col-md-6 mt-50 mb-30 center-align" data-aos="fade-up" data-aos-duration="1250" data-aos-once="true" data-aos-anchor-placement="center-bottom" data-aos-delay="500">
 				<p class="info-caption mb-20">Iteration 2</p>
 				<img src="img/busybus/landing_screen_v2.png" class="busybusmockup" alt="iteration 2">
+			</div>
+			<div class="col-md-12">
+				<div class="pt-30 center-align">
+					<button class="btnline medbtn transpbtn" value="view prototype"
+						onclick="window.open('https://www.figma.com/proto/R2HRSjDUpyvaOUqejTT66A/BusyBus?node-id=8%3A30&viewport=810%2C700%2C0.2200748324394226&scaling=scale-down', '_blank')"><div class="text">View Prototype</div></button>
+				</div>
 			</div>
 		</div>
 	</section>
@@ -304,17 +309,15 @@
 			<div class="col-md-1"></div>
 			<div class="col-md-10">
 				<h4 class="sec-title mb-30">Frontend Development</h4>
-				<p class="mb-30">I wanted to see how well my design would translate into code. Using Atom, I coded the HTML and CSS for BusyBus' homepage. When looking back to the design in Figma, it was noted that the settings icon bled into the map, making it difficult to spot. In the frontend rendition, I altered the color and look of the icon, coloring it dark blue, with a light blue background, dark blue outline, and drop shadow. I felt that it was unnecessary to label the bus, rail, and taxi buttons, as they are self-explanatory. The given route data was also restructured to display based on direction, with reroutes and out of service lines shown at the bottom of the list. I added in a cap on the page width to see how everything would expand from mobile to tablet to desktop widths.</p>
+				<p class="mb-30">I wanted to see how well my design would translate into code. Using Atom, I coded the HTML and CSS for BusyBus' homepage. When looking back to my design in Figma, <b>I noted that the settings icon bled into the map</b>, making it difficult to spot. As a result, I <b>altered the color and look of the icon</b>, using blues for the background and outline, and a drop shadow. I felt it was unnecessary to add labels to the buttons; they are self-explanatory. <b>The route data was also restructured to display based on direction</b>, with reroutes and out of service lines at the bottom of the list. I added a cap on the page width to see how everything would expand from mobile to larger displays.</p>
 				<div class="row">
 					<div class="col-md-6 center-align">
 						<button class="btnline medbtn transpbtn mob-spaceout shrinkabit" value="view code"
-							onclick="window.open('https://github.com/aayoub93/frontend-challenge', '_blank')">View
-							code on GitHub</button>
+							onclick="window.open('https://github.com/aayoub93/frontend-challenge', '_blank')"><div class="text">View code on GitHub</div></button>
 					</div>
 					<div class="col-md-6 center-align">
 						<button class="btnline medbtn transpbtn mob-spaceout shrinkabit" value="view demo"
-							onclick="window.open('https://aayoub93.github.io/frontend-challenge/', '_blank')">View
-							Demo on GitHub</button>
+							onclick="window.open('https://aayoub93.github.io/frontend-challenge/', '_blank')"><div class="text">View Demo on GitHub</div></button>
 					</div>
 				</div>
 			</div>
@@ -325,10 +328,10 @@
 		<div class="row">
 			<div class="col-md-1"></div>
 			<div class="col-md-10">
-				<h4 class="sec-title mb-30">Conclusion</h4>
-				<p class="mb-10">Spacing and font manipulation were among the biggest challenges going into the visual design of BusyBus. This demonstrated the importance and value of iterative feedback. This project felt different from others in that it was very focused on a very specific issue, requiring only one task to be tested. Spacing was also a challenge during frontend development, and coding the transit type buttons to invert colors on hover/tap presented an entirely new challenge in itself. It required use of .SVG files that I was able to download from my Figma project and slightly manipulating the source code to allow for color manipulation.
+				<h4 class="sec-title mb-30">Looking in the Rear View Mirror</h4>
+				<p class="mb-10"><b>Spacing and font manipulation were among the biggest challenges</b> going into the visual design of BusyBus. This demonstrated the importance and value of iterative feedback. This project felt different from others in that it was very focused on a very specific issue, requiring only one task to be tested. <b>Manipulating space was also a challenge during frontend development, and coding the transit type buttons to invert colors on hover/tap presented an entirely new challenge</b> in itself. It required use of .SVG files that I was able to download from my Figma project and manipulating the source code to get the desired effects.
 				<br><br>
-				For future consideration, I would build in a feature that lets users switch between dark and light mode, giving them more control of their viewing experience. I would also continue experimenting with typography to see if there are better hierarchies I can apply. Ultimately, BusyBus does answer the problem statement by giving users accurate and real-time updates for local routes, assuaging any concerns they have about missing their bus.
+				For future consideration, I would build in a toggle between dark and light mode, giving riders more control of their viewing experience. I would also continue experimenting with typography to see if there are better hierarchies I can apply. Ultimately, BusyBus does answer the problem statement by giving users accurate and real-time updates for local routes, assuaging any concerns they have about missing their bus.
 				</p>
 			</div>
 			<div class="col-md-1"></div>
@@ -360,9 +363,13 @@
 			</div>
 		</div>
 	</footer>
-	<script src="zenscroll.js"></script>
+
 	<script src="js/modaloverlayv2.js"></script>
 
+		<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	  <script>
+	    AOS.init();
+	  </script>
 
 </body>
 

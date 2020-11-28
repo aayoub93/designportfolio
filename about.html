@@ -17,7 +17,8 @@
 	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="icon" type="image/png" href="img/favicon_transparent.png">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 
@@ -90,7 +91,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="minispace"></div>
-				<div class="col-md-8 breakquote">"Always remember, your focus determines your reality." - Qui-Gon Jinn</div>
+				<div class="col-md-8 breakquote"><div data-aos="fade-up" data-aos-duration="1250" data-aos-once="true">"Always remember, your focus determines your reality." - Qui-Gon Jinn</div></div>
 				<!--<div class="col-md-8 breakquote">"The human experience is not monolithic [...] I love connecting with people through design and art!"</div>-->
 				<div class="minispace"></div>
 			</div>
@@ -109,10 +110,10 @@
 			<div class="row ptb-50">
 				<div class="col-md-1 center-align"></div>
 				<div class="col-md-5 center-align">
-					<button class="btnline smallbtn transpbtn mob-spaceout" value="View Resume" onclick="window.open('https://drive.google.com/file/d/1zzb851rQfB7nCjQuwvqakvlmZVW_i326/view', '_blank')">View Resume</button>
+					<button class="btnline smallbtn transpbtn mob-spaceout" value="View Resume" onclick="window.open('https://drive.google.com/file/d/1zzb851rQfB7nCjQuwvqakvlmZVW_i326/view', '_blank')"><div class="text">View Resume</div></button>
 				</div>
 				<div class="col-md-5 center-align">
-					<button class="btnline smallbtn transpbtn mob-spaceout" value="link to contact page" onclick="window.location.href = 'contact.html';">Let’s Talk</button>
+					<button class="btnline smallbtn transpbtn mob-spaceout" value="link to contact page" onclick="window.location.href = 'contact.html';"><div class="text">Let’s Talk</div></button>
 				</div>
 				<div class="col-md-1 center-align"></div>
 			</div>
@@ -139,6 +140,11 @@
 			</div>
 		</div>
 	</footer>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
 
 </body>
 

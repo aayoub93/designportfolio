@@ -1,7 +1,5 @@
-/*Although stylesheet links are in each HTML, ave these here just in case.
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,500&display=swap');
+/*Although stylesheet links are in each HTML, have this here just in case.
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:wght@400;500;700&display=swap');
 */
 
 * {box-sizing: border-box;}
@@ -23,6 +21,8 @@ body {
 	color: #000;
 	background-color: #FBFBFB;
 	cursor: url(../img/my_cursor.png), auto;
+	-webkit-overflow-scrolling: touch;
+	overflow-y: scroll;
 }
 
 .container {
@@ -92,12 +92,14 @@ h2 {font-size: 3.6rem;}
 
 h3 {
   font-size: 3.6rem;
+	font-weight: bold;
   text-align: center;
 }
 
 h4 {
   font-size: 2.8rem;
   text-align: center;
+	line-height: 3.6rem;
 }
 
 h6 {
@@ -105,11 +107,13 @@ h6 {
 	font-weight: bolder;
 	font-variant: small-caps;
 }
-
+/*bold text*/
 b {
   font-weight: bolder;
 	font-style: italic;
 }
+
+.text-dark-bg li, .text-light-bg li {line-height: 3.3rem;}
 
 small, .info-caption {
   font-size: 1.4rem;
@@ -129,8 +133,7 @@ a {
 
 a:hover {
   color: #0056b3;
-  transition: 0.3s;
-	cursor: url(../img/my_cursor_pointer.png), auto;
+	cursor: pointer;
 }
 
 .col-md-6 img {
@@ -170,9 +173,9 @@ textarea {
 }
 
 button, input.submission {
-	cursor: url(../img/my_cursor_pointer.png), auto;
+	cursor: pointer;
 	border: 2px solid #E2C191;
-	border-radius: 1.5rem;
+	border-radius: 1.15rem;
 }
 
 .smallbtn, .medbtn, .lrgbtn {
@@ -185,32 +188,38 @@ button, input.submission {
 .medbtn {width: 28.5rem !important;}
 .lrgbtn {width: 30.5rem;}
 
-.transpbtn:hover {
-  background-color: #C99B57;
-  border: 2px solid #C99B57;
-  color: #FBFBFB;
-  transition: 0.3s;
-  text-decoration: none;
-}
-
 .btnline {
   line-height: 2.2rem;
-  color: #E2C191;
   text-decoration: none;
   border: 2px solid #E2C191;
-  background-color: transparent;
+	background: linear-gradient(to right, #C99B57 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+.text {
+	color: #E2C191;
+	transition: all ease-out 0.4s;
+	-webkit-transition: all ease-out 0.4s;
+	-moz-transition: all ease-out 0.4s;
+}
+
+.transpbtn:hover, .filledbtn:hover {
+  border: 2px solid #C99B57;
+	background-position: left bottom;
+}
+.transpbtn:hover > .text, .transpbtn.text:hover {color: #FBFBFB;}
+
+input.submission:hover {
+	box-shadow: inset 40rem 0 0 0 #C99B57;
 }
 
 .filledbtn {
-	background: #C99B57;
 	border: 2px solid #C99B57;
 	box-sizing: border-box;
 	color: #FBFBFB;
-}
-.filledbtn:hover {
-	background: #E2C191;
-	transition: 0.3s;
-	color: #FFF;
+	background: linear-gradient(to right, #E2C191 50%, #C99B57 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
 }
 
 /*NAVBAR SETUP W/ HAMBURGER MENU AND ANIMATING X*/
@@ -243,7 +252,9 @@ button, input.submission {
 .navbar ul a:hover {
   color: #E2C191;
   background-color: #141414;
-  transition: all .3s ease;
+  transition: all 0.5s ease;
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
 }
 
 .navbar .logo {
@@ -265,13 +276,12 @@ button, input.submission {
 
 .logo:hover + .navbar-name h1, .navbar h1:hover {
 	color: #E2C191;
-	transition: all .3s ease;
 }
 
 .navbar .menu {
   clear: both;
   max-height: 0; /*menu essentially doesn't exist*/
-  transition: max-height .3s ease-out; /*this would expand out the menu upon click*/
+  transition: max-height 0.5s ease-out; /*this would expand out the menu upon click*/
 }
 
 /*checkbox will now be listed to the right and will be transformed from burger menu to X*/
@@ -279,7 +289,7 @@ button, input.submission {
   padding: 3.2rem 0;
   position: relative;
   float: right;
-	cursor: url(../img/my_cursor_pointer.png), auto;
+	cursor: pointer;
 }
 
 .navbar .menu-icon .nav-icon {
@@ -290,6 +300,8 @@ button, input.submission {
   width: 3.3rem;
   position: relative;
   transition: background 0.3s ease-out;
+	-webkit-transition: background 0.3s ease-out;
+	-moz-transition: background 0.3s ease-out;
 }
 
 .navbar .menu-icon .nav-icon:before,
@@ -301,7 +313,9 @@ button, input.submission {
   width: 100%;
   position: absolute;
   top: 1.2rem;
-  transition: all .3s ease-out;
+  transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
 }
 
 .navbar .menu-icon .nav-icon:after {top: -1.2rem;}
@@ -361,11 +375,9 @@ button.dropbtn {width: 100%;}
 .dropdown:hover .dropbtn {
   background-color: transparent;
   color: #E2C191;
-  transition: 0.3s;
 }
 
 .dropdown-content a:hover {
-  transition: 0.3s;
   color: black;
 }
 
@@ -393,7 +405,6 @@ footer {
 }
 
 .f-social i:hover {
-  transition: 0.3s;
   color: #E2C191;
 }
 
@@ -405,7 +416,7 @@ footer {
 }
 .copr {text-align: center; opacity: 0.5;}
 
-.no-mob, img.cars_miscpic {display: none;}
+.no-mob {display: none;}
 
 /*these rules are for chevrons*/
 .large-flex, .small-flex {
@@ -426,7 +437,7 @@ i.fas.fa-chevron-up.up {color: #C99B57;}
   line-height: 2.4rem;
   text-align: center;
 }
-.backtop:hover {color: #E2C191; text-decoration: none; transition: 0.3s;}
+.backtop:hover {color: #E2C191; text-decoration: none;}
 
 .hero-bg, .header-bg, .header-art, .poetry-header, .other-header {
 	background-size: cover;
@@ -435,7 +446,7 @@ i.fas.fa-chevron-up.up {color: #C99B57;}
 }
 
 .hero-bg {
-	background-image: url(../img/header_resized_smalldimmer.jpg);
+	background-image: url(../img/header_resized_smalldimmer-min.jpg);
 	background-position: center; /*used to be center 62%*/
 }
 
@@ -444,7 +455,7 @@ i.fas.fa-chevron-up.up {color: #C99B57;}
 	} /*reduced brightness for hero image*/
 
 .header-bg {
-	background-image: url(../img/me.png);
+	background-image: url(../img/me-min.png);
 	background-position: 60% 50%;
 	height: 36rem;
 }
@@ -567,6 +578,7 @@ i.fas.downar.fa-chevron-down {
 
 .mediumsize-linebreak {display: none;}
 
+/*Animations*/
 @keyframes fadeInUp {
     from {transform: translate3d(0,1.5rem,0);}
     to {
@@ -602,6 +614,22 @@ i.fas.downar.fa-chevron-down {
     opacity: 0;
     animation-name: fadeInUp;
     -webkit-animation-name: fadeInUp;
+}
+
+a,
+.btnline,
+.filledbtn,
+.navbar-name h1,
+.dropdown:hover .dropbtn,
+.dropdown-content a:hover,
+.f-social i,
+.backtop,
+.ideation_img,
+.badge,
+.close {
+	transition: all ease 0.5s;
+	-webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
 }
 
 .divequal {
@@ -797,19 +825,19 @@ i.fas.downar.fa-chevron-down {
 #overpass {font-family: 'Overpass', sans-serif; font-size: 2.2rem;}
 #oswald {font-family: 'Oswald', sans-serif; font-size: 2.2rem;}
 
-.ideation_img {
+.ideation_img, .badge {
 	border: 1px solid rgba(226, 193, 145, 0.66);
-	border-radius: 0.5rem;
+	border-radius: 0.75rem;
 	box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 0.1);
-	cursor: url(../img/my_cursor_pointer.png), auto;
+	cursor: pointer;
 }
 
-.ideation_img:hover {
+.ideation_img:hover, .badge:hover {
 	border: 1px solid #C99B57;
 	box-shadow: 0 0 1.5rem 0 rgba(0, 0, 0, 0.15);
-	transition: 0.3s;
-	-webkit-transition: 0.3s;
 }
+
+.ideation_img:hover {cursor: zoom-in;}
 
 .busybusmockup {
 	max-width: 375px !important;
@@ -870,7 +898,7 @@ textarea {resize: none;}
 
 .form-input {
 	border: 1px solid rgba(0, 0, 0, 0.3);
-	border-radius: 1.5rem;
+	border-radius: 1.15rem;
   display: block;
 	font-size: 1.8rem;
   padding: 1rem;
@@ -888,13 +916,13 @@ textarea.form-input {height: 20rem;}
 
 /*ART PAGE*/
 .header-art {
-	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../photos/DSC_1123_cover.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../photos/DSC_1123_cover-min.jpg);
 	background-position: 60% 50%;
 	height: 40rem;
 }
 .header-art .header-hook {height: 47rem;}
 
-.instabtn {margin-top: 3rem;}
+.instabtn {margin-top: 3rem; color: #E2C191;}
 
 .tile {
   width: 100%;
@@ -904,7 +932,7 @@ textarea.form-input {height: 20rem;}
   display: block;
   overflow: hidden;
   float: left;
-	cursor: url(../img/my_cursor_pointer.png), auto;
+	cursor: pointer;
 }
 
 .tile.col-md-4-v2 {
@@ -1038,8 +1066,7 @@ textarea.form-input {height: 20rem;}
 .close:focus {
   color: #E2C191;
   text-decoration: none;
-	transition: 0.3s;
-	cursor: url(../img/my_cursor_pointer.png), auto;
+	cursor: pointer;
 }
 
 .mySlides {
@@ -1051,7 +1078,7 @@ textarea.form-input {height: 20rem;}
 .prev,
 .next {
 	background: rgba(0,0,0,0.6);
-	cursor: url(../img/my_cursor_pointer.png), auto;
+	cursor: pointer;
   position: absolute;
   top: 50%;
   width: auto;
@@ -1098,7 +1125,7 @@ textarea.form-input {height: 20rem;}
 }
 
 .other-header {
-	background-image: url(../img/header_resized_smalldimmer.jpg);
+	background-image: url(../img/header_resized_smalldimmer-min.jpg);
 	background-position: center 65%;
 	height: 30rem;
 }
@@ -1222,7 +1249,7 @@ textarea.form-input {height: 20rem;}
 
 	.active,
 	.demo:hover {
-		cursor: url(../img/my_cursor_pointer.png), auto;
+		cursor: pointer;
 	  opacity: 1;
 		transition: 0.5s;
 	}
@@ -1357,11 +1384,13 @@ on the homepage, as well as the down arrow to scroll to work*/
 		border: 2px solid rgba(201, 155, 87, 0.5);/*This is RGB for C99B57 with 0.5 opacity*/
 		border-radius: 100rem;
 		padding: 0.5rem 3rem !important;
+		transition: all ease 0.5s;
+		-webkit-transition: all ease 0.5s;
+		-moz-transition: all ease 0.5s;
 	}
 	.downarrow:hover {
 		background: #C99B57;
 		color: #FBFBFB !important;
-		transition: 0.3s;
 }
 
 	.divequal {
@@ -1430,15 +1459,6 @@ on the homepage, as well as the down arrow to scroll to work*/
 	.contact-statement {
 		max-width: 45rem;
 		text-align: left;
-	}
-
-	img.cars_miscpic {
-		display: block;
-	  float: left;
-	  width: 20rem;
-	  margin-top: -20rem;
-		-webkit-filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
-		filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
 	}
 }
 
