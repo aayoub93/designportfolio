@@ -377,9 +377,7 @@ button.dropbtn {width: 100%;}
   color: #E2C191;
 }
 
-.dropdown-content a:hover {
-  color: black;
-}
+.dropdown-content a:hover {color: black;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
@@ -393,9 +391,7 @@ footer {
 	padding: 4rem 0;
 }
 
-.f-head {
-  font-size: 2.4rem;
-}
+.f-head {font-size: 2.4rem;}
 
 .f-social {font-size: 3rem;}
 
@@ -404,9 +400,7 @@ footer {
   padding: 0.65rem 0.9rem;
 }
 
-.f-social i:hover {
-  color: #E2C191;
-}
+.f-social i:hover {color: #E2C191;}
 
 .byme {
 	display: flex;
@@ -686,7 +680,8 @@ a,
 .comp-img {
 	filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
 	-webkit-filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
-	width: 100%;
+	text-align: center;
+	width: 20rem;
 }
 
 .persona-img {
@@ -1377,9 +1372,9 @@ on the homepage, as well as the down arrow to scroll to work*/
 	.hero-hook {padding-top: 16vh;}
 
 	i.fas.downar.fa-chevron-down {display: none;}
+
 	.downarrow {
 		display: block !important;
-		margin-bottom: 10vh;
 		background: rgba(201, 155, 86, 0.15);
 		border: 2px solid rgba(201, 155, 87, 0.5);/*This is RGB for C99B57 with 0.5 opacity*/
 		border-radius: 100rem;
@@ -1388,10 +1383,12 @@ on the homepage, as well as the down arrow to scroll to work*/
 		-webkit-transition: all ease 0.5s;
 		-moz-transition: all ease 0.5s;
 	}
+	.downarrowpadding {padding-bottom: 10vh;}
+
 	.downarrow:hover {
 		background: #C99B57;
 		color: #FBFBFB !important;
-}
+	}
 
 	.divequal {
 	  height: 47rem;
@@ -1412,6 +1409,8 @@ on the homepage, as well as the down arrow to scroll to work*/
 	#cloudmindhook {margin-bottom: 1rem;}
 
 	#cloudmindheader {margin-top: -14rem;}
+
+	.comp-img {width: 100%;}
 
 	.rightborderdivider {border-right: 1px solid #DBDBDB;}
 
