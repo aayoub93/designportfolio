@@ -102,6 +102,14 @@ h4 {
 	line-height: 3.6rem;
 }
 
+.pre-sec-title {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+	font-size: 2rem;
+	opacity: 0.3;
+}
+.pre-sec-title.darkbg-title {opacity: 0.55;}
+
 h6 {
   font-size: 2.25rem;
 	font-weight: bolder;
@@ -527,6 +535,8 @@ i.fas.fa-chevron-up.up {color: #C99B57;}
 .pt-60 {padding-top: 6rem;}
 
 .pt-70 {padding-top: 7rem;}
+
+.pt-80 {padding-top: 8rem;}
 
 .pt-100 {padding-top: 10rem;}
 
@@ -1435,7 +1445,7 @@ on the homepage, as well as the down arrow to scroll to work*/
 
 	.home-header p {width: 70%;}
 
-	.poetry-header, .other-header, .header-hook-short {height: 50rem;}
+	.poetry-header, .other-header, .header-hook-short {height: 60rem;}
 
 	.header-hook {height: 67rem !important;}
 

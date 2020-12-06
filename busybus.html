@@ -132,6 +132,7 @@
 		<section class="row pt-100 pb-100">
 			<div class="col-md-1"></div>
 			<section class="col-md-10">
+				<h5 class="mb-10 pre-sec-title">User Insights</h5>
 				<h4 class="sec-title mb-30">A Day in the Life of a Rider</h4>
 				<p class="mb-20">From a survey of 32 people, most people do not use the bus as their primary mode of transportation (81.3%), while 18.8% reported that they do. Focusing primarily on bus riders, 50% use it daily while 50% use it a few times a week, mostly for getting to work. <!--(100%). Other common reasons were for convenience, price, running errands, and being unable to drive (50% each).--> Most riders walk no more than 5 minutes from their homes to their stops (83.3%), but <b>time spent waiting for the bus varies; 16.7% spend 0-5 minutes, 66.7% spend 6-15 minutes, and 16.7% spend 16-30 minutes waiting.</b> This is where improvements can and must be made; the graph below shows what ways users' experience using public transportation apps can be enhanced:</p>
 				<figure data-aos="fade" data-aos-duration="1250" data-aos-once="true"><img src="img/busybus/graph.svg" alt="paint points graph"></figure>
@@ -142,7 +143,8 @@
 	<!--competitive analysis portion-->
 	<section class="bg-dark pt-100 pb-100">
 		<div class="container narrowcontent">
-			<h4 class="darkbg-title mb-30">Competitive Analysis</h4> <!--consider rewording to "Same Destination, Competing Routes"-->
+			<h5 class="mb-10 pre-sec-title darkbg-title">Competitive Analysis</h5>
+			<h4 class="darkbg-title mb-30">Same Destination, Competing Routes</h4>
 			<!--Transit App comp analysis-->
 			<div class="row mb-30" data-aos="fade-up" data-aos-duration="1250" data-aos-once="true">
 				<div class="col-md-4 no-mob">
@@ -181,6 +183,7 @@
 		<section class="row pt-100">
 			<div class="col-md-1"></div>
 			<div class="col-md-10">
+				<h5 class="mb-10 pre-sec-title">User Stories and Flow</h5>
 				<h4 class="sec-title mb-30">Mapping Our Own Route</h4>
 				<p>How do we measure success for BusyBus, taking competitors and user requirements into account? I created a list of 12 user stories that were most important in establishing a minimum viable product, including <b>being able to see real-time updates, notifications or approaching buses, and adding items to a 'Favorites' list.</b> From this list, I created a user flow that integrated as much as possible to test out general functionality.</p>
 				<br>
@@ -195,6 +198,7 @@
 	<!--wireframe sketching and testing portion-->
 	<section class="bg-dark ptb-80">
 		<div class="container narrowcontent">
+			<h5 class="mb-10 pre-sec-title darkbg-title">Wireframes and Testing</h5>
 			<h4 class="darkbg-title mb-30">Going for a Test Drive</h4>
 			<p class="text-dark-bg mb-10">Time to sketch and test! Using a templated worksheet, I sketched out three screens that adhere to my user flow and performed usability testing on this paper prototype with three subjects. I experimented with including other forms of transportation for users who may want to explore those options, similar to Google Maps and Transit. I asked them to select and confirm a bus route. They each had varying levels of technological proficiency, allowing for broader perspectives on what could be improved. I noted the following points of feedback:</p><br><br>
 			<ul class="text-dark-bg">
@@ -214,16 +218,19 @@
 	</div>
 	<!--branding and styling portion-->
 	<section class="container pt-100 narrowcontent">
-		<h4 class="sec-title mb-30">Painting the Bus</h4>
+		<h5 class="mb-10 pre-sec-title">Branding</h5>
+		<h4 class="sec-title mb-30">Picking Route Colors</h4>
 		<p>I wanted to convey to riders that they can trust and be excited about public transportation. I therefore used <b>shades of blue as my primary color palette (blue denotes trust and security) and shades of yellow for my secondary palette to emphasize enthusiasm</b>. I used a Highway Gothic for my brand type and Oswald as its complement. Highway Gothic is used for US highway signs, and thus felt appropriate to use for this project. I applied this type to the search field text, route numbers, and the times' numerical displays. All other text used Oswald with 5% letter spacing.
 		<br><br>
 		In designing the logo, I utilized the front portion of the bus icon I drafted for the in-app selection button. The word "busy" can be associated with "buzzing about," moving from one point to another to accomplish a task. This led me to include three triangles tailing the bus to symbolize movement. When it came time to code, the Overpass type on Google Fonts functioned as a very close alternative to Highway Gothic, which was local to my device.</p>
 		<div class="row mt-30">
-			<a class="col-md-4 center-align" onclick="openModal();currentSlide(1)">
-				<img src="img/busybus/id_ideation.png" class="ideation_img" alt="branding ideation">
-				<span class="tile__content">Branding Ideation</span>
-				<p class="mt-10 info-caption">Click to enlarge</p>
-			</a>
+			<div class="col-md-4 center-align">
+				<a onclick="openModal();currentSlide(1)">
+					<img src="img/busybus/id_ideation.png" class="ideation_img" alt="branding ideation">
+					<span class="tile__content">Branding Ideation</span>
+					<p class="mt-10 info-caption">Click to enlarge</p>
+				</a>
+			</div>
 		 <div id="myModal" class="modal">
 			<div class="closebg" onclick="closeModal()"&times;></div>
 			<span class="close" onclick="closeModal()">&times;</span>
@@ -289,8 +296,9 @@
 	</section>
 	<!--hifi Visual Design portion-->
 	<section class="container pb-100 pt-100 narrowcontent">
+		<h5 class="mb-10 pre-sec-title">Visual Design</h5>
+		<h4 class="sec-title mb-30">Painting the Bus</h4>
 		<div class="row hifi-mockups">
-			<h4 class="sec-title mb-30">Visual Design</h4>
 			<p class="mb-20">When creating the visual prototype, <b>I combined the subway and train buttons into one button based on user feedback.</b> On my sketches, I reserved space for route names to be next to their numbers, but I realized it won’t be feasible here. I instead placed the route name under the number, and above the stop name I applied a darker background with lighter text. Some aspects of my sketches did not translate as well to the visual design as I anticipated, and thus the design underwent a second iteration. Some points of feedback from other designers were as follows:</p>
 			<ul class="text-light-bg mb-20">
 				<li><b>Move the search field to the top</b> so it sticks with the status bar and is more noticeable</li>
@@ -324,7 +332,8 @@
 		<section class="row pt-50">
 			<div class="col-md-1"></div>
 			<div class="col-md-10">
-				<h4 class="sec-title mb-30">Frontend Development</h4>
+				<h5 class="mb-10 pre-sec-title">Frontend Development</h5>
+				<h4 class="sec-title mb-30">Up to Code</h4>
 				<p class="mb-30">I wanted to see how well my design would translate into code. Using Atom, I coded the HTML and CSS for BusyBus' homepage. When looking back to my design in Figma, <b>I noted that the settings icon bled into the map</b>, making it difficult to spot. As a result, I <b>altered the color and look of the icon</b>, using blues for the background and outline, and a drop shadow. I felt it was unnecessary to add labels to the buttons; they are self-explanatory. <b>The route data was also restructured to display based on direction</b>, with reroutes and out of service lines at the bottom of the list. I added a cap on the page width to see how everything would expand from mobile to larger displays.</p>
 				<div class="row">
 					<div class="col-md-6 center-align">
@@ -344,6 +353,7 @@
 		<div class="row">
 			<div class="col-md-1"></div>
 			<div class="col-md-10">
+				<h5 class="mb-10 pre-sec-title">Conclusion</h5>
 				<h4 class="sec-title mb-30">Looking in the Rear View Mirror</h4>
 				<p class="mb-10"><b>Spacing and font manipulation were among the biggest challenges</b> going into the visual design of BusyBus. This demonstrated the importance and value of iterative feedback. This project felt different from others in that it was very focused on a very specific issue, requiring only one task to be tested. <b>Manipulating space was also a challenge during frontend development, and coding the transit type buttons to invert colors on hover/tap presented an entirely new challenge</b> in itself. It required use of .SVG files that I was able to download from my Figma project and manipulating the source code to get the desired effects.
 				<br><br>
@@ -374,7 +384,7 @@
 					</div>
 				</div>
 				<div class="col-md-3 byme">
-					<small class="copr">&#169; 2020 Ayoubience<br>Designed by Ahmed Ayoub</small>
+					<small class="copr">&#169; 2021 Ayoubience<br>Designed by Ahmed Ayoub</small>
 				</div>
 			</div>
 		</div>
