@@ -418,7 +418,7 @@ footer {
 }
 .copr {text-align: center; opacity: 0.5;}
 
-.no-mob {display: none;}
+.no-mob, .no-lowres {display: none;}
 
 /*these rules are for chevrons*/
 .large-flex, .small-flex {
@@ -1531,6 +1531,9 @@ on the homepage, as well as the down arrow to scroll to work*/
 	}
 
 	.trifold .persona-details {width: 90%;}
+
+	.no-lowres {display: block;}
+	.no-highres {display: none;}
 }
 
 @media all and (min-width: 1100px) {
