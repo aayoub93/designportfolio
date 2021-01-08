@@ -765,10 +765,10 @@ a,
 	padding: 15rem 0;
 }
 
-#cloudmind-sketch {background: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.1)), url(../img/cloudmind/wireframes/sketches.png); background-size: cover;}
+#cloudmind-sketch {background: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.1)), url(../img/cloudmind/wireframes/sketches-min.png); background-size: cover;}
 #cloudmind-digital {background: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.1)), url(../img/cloudmind/wireframes/wireframes.png); background-size: cover;}
 
-#pencrumbs-sketch {background: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.1)), url(../img/pencrumbs/wireframes/sketches.png); background-size: cover;}
+#pencrumbs-sketch {background: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.1)), url(../img/pencrumbs/wireframes/sketches-min.png); background-size: cover;}
 #pencrumbs-digital {background: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.1)), url(../img/pencrumbs/wireframes/wireframes.png); background-size: cover;}
 
 .brandings {margin-top: 2rem;}
