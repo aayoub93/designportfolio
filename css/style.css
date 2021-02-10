@@ -18,7 +18,7 @@ html {
 body {
   margin: 0;
 	padding: 0;
-	color: #000;
+	color: #141414;
 	background-color: #FBFBFB;
 	cursor: url(../img/my_cursor.png), auto;
 	-webkit-overflow-scrolling: touch;
@@ -57,7 +57,7 @@ hr {
 }
 
 p, .text-dark-bg, .text-light-bg, .tag, h5 {
-	color: black;
+	color: #141414;
 	font-size: 1.8rem;
 	line-height: 2.6rem;
 }
@@ -428,18 +428,30 @@ footer {
 	justify-content: center;
 	flex-direction: row;
 }
-.large-flex {flex-grow: 6;}
+.large-flex {flex-grow: 90;}
 .small-flex {flex-grow: 1;}
 
 /*back to top underneath Conclusion section*/
-i.fas.fa-chevron-up.up {color: #C99B57;}
+/*i.fas.fa-chevron-up.up {color: #C99B57;}*/
 
-.backtop {
+.backtop, .goleft, .goright {
   font-size: 2rem;
   line-height: 2.4rem;
   text-align: center;
+	font-weight: 500;
 }
-.backtop:hover {color: #E2C191; text-decoration: none;}
+
+.backtop {
+	border: 2px solid #C99B57;
+	border-radius: 50%;
+	color: #C99B57;
+	padding: 11px 14.25px;
+}
+
+.goleft, .goright {letter-spacing: 0.1rem;}
+
+.backtop:hover {color: #FBFBFB; background: #C99B57;}
+.goleft:hover, .goright:hover {color: #E2C191; text-decoration: none;}
 
 .hero-bg, .header-bg, .header-art, .poetry-header, .other-header {
 	background-size: cover;
@@ -575,10 +587,12 @@ i.fas.downar.fa-chevron-down {
 .downarrow {display: none !important;}
 
 #myname {
-	color: #E2C191; /*formerly EBD5B5*/
+	/*color: #E2C191; /*formerly EBD5B5*/
 	font-weight: 700;
 	letter-spacing: 1px;
 }
+
+.mando_hashtag {font-weight: normal; font-style: italic; opacity: 0.4;}
 
 .mediumsize-linebreak {display: none;}
 
@@ -702,14 +716,12 @@ a,
 .persona-name {
   font-size: 2.8rem;
 	font-variant: small-caps;
-  color: #141414;
   text-align: center;
 	margin: 1rem 0;
 }
 
 .persona-demog {
   text-align: center;
-  color: #141414;
 }
 
 .tag {
@@ -723,7 +735,6 @@ a,
 .quote {
   font-size: 1.8rem;
   line-height: 2.6rem;
-  color: #141414;
 }
 
 .quote:before, .quote:after {
