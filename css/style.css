@@ -443,7 +443,7 @@ footer {
 
 .backtop {
 	border: 2px solid #C99B57;
-	border-radius: 50%;
+	border-radius: 100%;
 	color: #C99B57;
 	padding: 11px 14.25px;
 }
