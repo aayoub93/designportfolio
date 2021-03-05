@@ -25,10 +25,11 @@ body {
 	overflow-y: scroll;
 }
 
-.container {
+.container, .container-maximum {
   width: 100%;
 	margin: 0 auto;
 }
+.container-maximum {margin: 0 !important;}
 
 article,
 aside,
@@ -134,17 +135,18 @@ small, .info-caption {
 }
 
 a {
-  color: #e2c191;
+  color: #C99B57; /*here was E2C191*/
   text-decoration: none;
   background-color: transparent;
 }
+.lighterlink {color: #E2C191;}
 
 a:hover {
   color: #0056b3;
 	cursor: pointer;
 }
 
-.col-md-6 img {
+.col-md-6 img, .col-md-5 img, .mobilescreens {
 	-webkit-filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.1));
 	filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.1));
 }
@@ -182,7 +184,7 @@ textarea {
 
 button, input.submission {
 	cursor: pointer;
-	border: 2px solid #E2C191;
+	border: 2px solid #C99B57; /*here was E2C191*/
 	border-radius: 1.15rem;
 }
 
@@ -199,17 +201,20 @@ button, input.submission {
 .btnline {
   line-height: 2.2rem;
   text-decoration: none;
-  border: 2px solid #E2C191;
+  border: 2px solid #C99B57; /*here was E2C191*/
 	background: linear-gradient(to right, #C99B57 50%, transparent 50%);
   background-size: 200% 100%;
   background-position: right bottom;
 }
 .text {
-	color: #E2C191;
+	color: #C99B57; /*here was E2C191*/
 	transition: all ease-out 0.4s;
 	-webkit-transition: all ease-out 0.4s;
 	-moz-transition: all ease-out 0.4s;
 }
+
+.darkbg-btn {border: 2px solid #E2C191;}
+.darkbg-btn .text {color: #E2C191;}
 
 .transpbtn:hover, .filledbtn:hover {
   border: 2px solid #C99B57;
@@ -418,7 +423,7 @@ footer {
 }
 .copr {text-align: center; opacity: 0.5;}
 
-.no-mob, .no-lowres {display: none;}
+.no-mob {display: none;}
 
 /*these rules are for chevrons*/
 .large-flex, .small-flex {
@@ -514,6 +519,8 @@ footer {
 
 .mb-50 {margin-bottom: 5rem;}
 
+.mb-100 {margin-bottom: 10rem;}
+
 .mt-10 {margin-top: 1rem;}
 
 .mt-20 {margin-top: 2rem;}
@@ -523,6 +530,10 @@ footer {
 .mt-40 {margin-top: 4rem;}
 
 .mt-50 {margin-top: 5rem;}
+
+.mt-100 {margin-top: 10rem;}
+
+.mtb-50 {margin: 5rem 0;}
 
 .pb-10 {padding-bottom: 1rem;}
 
@@ -551,6 +562,8 @@ footer {
 .pt-80 {padding-top: 8rem;}
 
 .pt-100 {padding-top: 10rem;}
+
+.ptb-100 {padding: 10rem 0;}
 
 .ptb-80 {padding: 8rem 0;}
 
@@ -690,7 +703,6 @@ a,
 	width: 100%;
 	display: block;
 }
-#cloudmindheader {margin-top: -5rem;}
 
 .badge {max-width: 25rem; max-height: auto;}
 
@@ -707,6 +719,26 @@ a,
 	text-align: center;
 	width: 20rem;
 }
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+	margin: 3rem 0;
+}
+
+.flex-container > div {
+  margin: 1rem;
+  text-align: center;
+  /*line-height: 75px;
+  font-size: 30px;*/
+}
+
+.flex-container img {max-height: 15rem;} /*width = auto?*/
+
+.bi-flex {width: 50%;}
+.tri-flex {width: 33.33333333%;}
+.quad-flex {width: 25%;}
+
 
 .persona-img {
 	width: 15rem;
@@ -773,7 +805,8 @@ a,
 
 .wireframebg {
 	background-size: cover;
-	padding: 15rem 0;
+	padding: 22.5rem 0;
+	height: 50rem;
 }
 
 #cloudmind-sketch {background: linear-gradient(rgba(0,0,0,0.2), rgba(0, 0, 0, 0.1)), url(../img/cloudmind/wireframes/sketches-min.png); background-size: cover;}
@@ -859,6 +892,8 @@ a,
 	max-width: 375px !important;
 	height: auto !important;
 }
+
+.container-maximum .iterative-img {max-width: 75%;}
 
 .hifi-mockups {padding: 0 1.5rem;}
 
@@ -1427,11 +1462,9 @@ on the homepage, as well as the down arrow to scroll to work*/
 		padding-top: 0;
 	}
 
-	#cloudmindhook {margin-bottom: 1rem;}
-
-	#cloudmindheader {margin-top: -14rem;}
-
 	.comp-img {width: 100%;}
+
+	.container-maximum .iterative-img, .container-maximum .mobilescreens {max-width: 90%;}
 
 	.rightborderdivider {border-right: 1px solid #DBDBDB;}
 
@@ -1516,10 +1549,8 @@ on the homepage, as well as the down arrow to scroll to work*/
 	.imgmax {max-height: 47rem;}
 
 	.project-header {
-		width: 70%;
 		margin: auto;
 		text-align: center;
-		max-width: 115rem;
 		height: auto;
 	}
 
@@ -1542,9 +1573,6 @@ on the homepage, as well as the down arrow to scroll to work*/
 	}
 
 	.trifold .persona-details {width: 90%;}
-
-	.no-lowres {display: block;}
-	.no-highres {display: none;}
 }
 
 @media all and (min-width: 1100px) {
@@ -1568,7 +1596,6 @@ on the homepage, as well as the down arrow to scroll to work*/
 	.narrowcontent {max-width: 94rem !important;}
 	.narrowmore {max-width: 80rem !important;}
 	.persona-details.bifold {width: 72%;}
-	#cloudmindheader {margin-top: -16rem;}
 	.colorbox {width: 9rem;}
 	.form-input {width: 40rem;}
 	.poetry-header {background-position: 0% 59%;}
