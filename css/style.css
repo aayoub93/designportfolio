@@ -63,6 +63,8 @@ p, .text-dark-bg, .text-light-bg, .tag, h5 {
 	line-height: 2.6rem;
 }
 
+em {font-style: italic;}
+
 .text-dark-bg, .backtop, .quote-subhead,
 .btnline, .f-head, .persona-name, .talk, h5 {font-weight: 500;}
 
@@ -1596,7 +1598,7 @@ on the homepage, as well as the down arrow to scroll to work*/
 	.narrowcontent {max-width: 94rem !important;}
 	.narrowmore {max-width: 80rem !important;}
 	.persona-details.bifold {width: 72%;}
-	.colorbox {width: 9rem;}
+	.colorbox {width: 7.5rem;}
 	.form-input {width: 40rem;}
 	.poetry-header {background-position: 0% 59%;}
 	.header-words.shorterlength-header {width: 55%;}
