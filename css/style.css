@@ -86,7 +86,6 @@ h1 {
 	font-weight: bold;
 	font-size: 2.6rem;
 	line-height: 3.8rem;
-	/*display: flex; /*consider removing*/
 	align-items: center;
 }
 
@@ -133,7 +132,6 @@ small, .info-caption {
 .info-caption {
 	opacity: 0.7;
 	font-style: italic;
-	/*width: 97%;*/
 }
 
 a {
@@ -166,6 +164,20 @@ img {
 	padding-top: 3rem;
 	max-height: 28rem;
 	width: auto;
+}
+
+.minivid {
+	max-height: 55rem;
+	width: auto;
+	border-radius: 2.8rem;
+	/*filter: drop-shadow(0.3rem 0.3rem 0.6rem rgba(0, 0, 0, 0.1));
+	-webkit-filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));*/
+	box-shadow: 0 0 2rem 0rem rgba(0, 0, 0, 0.1);
+}
+
+.padded-text {
+	padding-bottom: 4rem;
+	text-align: left;
 }
 
 table {width: 100%;}
@@ -237,7 +249,7 @@ input.submission:hover {
 	background-position: right bottom;
 }
 
-/*NAVBAR SETUP W/ HAMBURGER MENU AND ANIMATING X*/
+/*NAVBAR RULES SETUP W/ HAMBURGER MENU AND ANIMATING X*/
 .navbar {
   background-color: rgba(0, 0, 0, 0.8);
   box-shadow: 0 .1rem 1rem 0 rgba(0, 0, 0, 0.2);
@@ -396,7 +408,7 @@ button.dropbtn {width: 100%;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
-/*Footer setup*/
+/*Footer rules setup*/
 footer {
   background: #141414;
   background-image: none;
@@ -438,9 +450,6 @@ footer {
 .large-flex {flex-grow: 90;}
 .small-flex {flex-grow: 1;}
 
-/*back to top underneath Conclusion section*/
-/*i.fas.fa-chevron-up.up {color: #C99B57;}*/
-
 .backtop, .goleft, .goright {
   font-size: 2rem;
   line-height: 2.4rem;
@@ -457,10 +466,10 @@ footer {
 
 .goleft, .goright {letter-spacing: 0.1rem;}
 
-.backtop:hover {color: #FBFBFB; background: #C99B57;}
+.backtop:hover, #otherworks-chevron:hover {color: #FBFBFB; background: #C99B57;}
 .goleft:hover, .goright:hover {color: #E2C191; text-decoration: none;}
 
-.hero-bg, .header-bg, .header-art, .poetry-header, .other-header {
+.hero-bg, .header-bg, .header-art, .poetry-header, .other-header, .otherworks-bg {
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -602,7 +611,6 @@ i.fas.downar.fa-chevron-down {
 .downarrow {display: none !important;}
 
 #myname {
-	/*color: #E2C191; /*formerly EBD5B5*/
 	font-weight: 700;
 	letter-spacing: 1px;
 }
@@ -715,13 +723,6 @@ a,
 .rightborderdivider, .trifold {border-right: none;}
 .unbordered-fold {border-right: none !important;}
 
-.comp-img {
-	filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
-	-webkit-filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.1));
-	text-align: center;
-	width: 20rem;
-}
-
 .flex-container {
   display: flex;
   flex-wrap: nowrap;
@@ -731,8 +732,6 @@ a,
 .flex-container > div {
   margin: 1rem;
   text-align: center;
-  /*line-height: 75px;
-  font-size: 30px;*/
 }
 
 .flex-container img {max-height: 15rem;} /*width = auto?*/
@@ -862,6 +861,7 @@ a,
 .bbsc3 {background: #FAEED2;}
 .bbsc4 {background: #FFF5DB;}
 
+/*font rules*/
 #jose-sans {font-family: 'Josefin Sans', sans-serif; font-size: 2.2rem;}
 #aleg-sans {font-family: 'Alegreya Sans', sans-serif; font-size: 2.2rem;}
 
@@ -905,8 +905,6 @@ a,
 /*about me page rules*/
 #leftbgimg, #rightbgimg {background-image: none;}
 
-/*.breakarea {background-color: rgba(20, 20, 20, 0.85);}*/
-
 .minispace, .breakquote {
 	display: inline-flex;
 	border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
@@ -926,10 +924,9 @@ a,
 	padding: 5rem 0.5rem;
 	align-items: center;
 	text-align: center;
-
 }
 
-/*CONTACT page*/
+/*CONTACT page rules*/
 textarea {resize: none;}
 
 .fullbody {padding: 10rem 0;}
@@ -942,7 +939,6 @@ textarea {resize: none;}
 	letter-spacing: 0.15em;
 	text-align: center;
 }
-
 
 .contact-statement {
 	font-size: 1.9rem;
@@ -967,7 +963,7 @@ textarea.form-input {height: 20rem;}
 	width: 100%;
 }
 
-/*ART PAGE*/
+/*ART PAGE rules*/
 .header-art {
 	background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(../photos/DSC_1123_cover-min.jpg);
 	background-position: 60% 50%;
@@ -1200,7 +1196,49 @@ textarea.form-input {height: 20rem;}
 /*adding this in for branding ideations*/
 .modal-content.forbranding {max-width: 80rem;}
 
-/*RESPONSIVE DESIGN (queries here)*/
+/*OTHER WORKS rules*/
+.otherworks-bg {
+	background-image: url(../img/other_works/otherworks_header.jpg);
+	background-position: right;
+}
+
+.header-words.home-header.otherworks-header {height: 85vh;}
+.header-words.home-header.otherworks-header h1,
+.header-words.home-header.otherworks-header p {background: rgba(20,20,20,0.8);}
+
+#otherworks-chevron {background: rgba(20,20,20,0.8); border: 2px solid #C99B57;}
+
+.left-align {text-align: left;}
+
+.minivid.otherworks-vid {
+	max-width: 90%;
+	height: auto;
+}
+
+.colors-used {
+	display: flex;
+	height: 4rem;
+}
+
+.colorbar {
+	border: 1px solid rgba(20,20,20,0.2);
+	flex: 1 1 0;
+	transform: skew(-30deg);
+}
+
+#purp1 {background: #574ae2; border-radius: 1rem 0 0 2rem;}
+#purp2 {background: #222a68; border-left: none;}
+#purp3 {background: #654597; border-left: none; border-right: none;}
+#purp4 {background: #ab81cd; border-radius: 0 2rem 1rem 0;}
+
+#gree1 {background: #14281d; border-radius: 1rem 0 0 2rem;}
+#gree2 {background: #355834; border-left: none; border-right: none;}
+#gree3 {background: #6e633d; border-radius: 0 2rem 1rem 0;}
+
+.mySlides video {max-width: 100%;}
+
+
+/*RESPONSIVE DESIGN RULES (queries here)*/
 /*the bits of code in this query were more convenient to leave as is*/
 @media all and (max-width: 767px) {
 	.previews-column {display: none;}
@@ -1464,8 +1502,6 @@ on the homepage, as well as the down arrow to scroll to work*/
 		padding-top: 0;
 	}
 
-	.comp-img {width: 100%;}
-
 	.container-maximum .iterative-img, .container-maximum .mobilescreens {max-width: 90%;}
 
 	.rightborderdivider {border-right: 1px solid #DBDBDB;}
@@ -1515,11 +1551,19 @@ on the homepage, as well as the down arrow to scroll to work*/
 		max-width: 45rem;
 		text-align: left;
 	}
+
+	.header-words.home-header.otherworks-header {height: 70vh;}
+	.header-words.home-header.otherworks-header h1 {width: 70%;}
+
+	.subsection-text {padding: 0 10%;}
+
+	.minivid.otherworks-vid {max-width: 100%;}
 }
 
 @media all and (min-width: 768px) and (max-width: 999px) {
 	.shrinkabit {width: 25rem !important;} /*this is for some elements on the BusyBus page*/
 	.mediumsize-linebreak {display: inline;}
+	.minivid {max-height: 44rem;}
 }
 
 @media all and (min-width: 1000px) {
@@ -1541,7 +1585,7 @@ on the homepage, as well as the down arrow to scroll to work*/
 	.home-header p {width: 100%;}
 	.smallertitlelargerres {margin: 7.5rem 0;}
 
-	h2 {font-size: 5rem;}
+	h2 {font-size: 4.5rem;}
 
 	.projectinfo {
 	  font-size: 2.2rem;
@@ -1575,6 +1619,16 @@ on the homepage, as well as the down arrow to scroll to work*/
 	}
 
 	.trifold .persona-details {width: 90%;}
+
+	.padded-text {
+		padding: 0 4rem 4rem 4rem;
+		text-align: center;
+	}
+
+	.header-words.home-header.otherworks-header h1 {width: 65% !important;}
+	.header-words.home-header.otherworks-header p {width: 60%;}
+
+	.subsection-text {padding: 0 22%;}
 }
 
 @media all and (min-width: 1100px) {
@@ -1603,6 +1657,8 @@ on the homepage, as well as the down arrow to scroll to work*/
 	.poetry-header {background-position: 0% 59%;}
 	.header-words.shorterlength-header {width: 55%;}
 	.header-bg h1 {width: 100%;}
+	.padded-text {padding: 0 7rem 4rem 7rem;}
+	.subsection-text {margin: 0 4rem;}
 }
 
 /*including this again at the end maintains structural integrity. It only works when written this way*/

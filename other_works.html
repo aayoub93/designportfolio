@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-164207580-1"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+
+  	gtag('config', 'UA-164207580-1');
+	</script>
+	<title>Ahmed Ayoub - UX/UI and Product Designer</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="icon" type="image/png" href="img/favicon_transparent.png">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<script src="https://kit.fontawesome.com/b1245b5baa.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+	<nav class="navbar">
+		<div class="container">
+			<a href="index.html" class="logo"><img src="img/brandlogo.svg" alt="logo"></a>
+			<a href="index.html" class="navbar-name"><h1>AHMED AYOUB</h1></a>
+			<input class="menu-btn" type="checkbox" id="menu-btn"/>
+			<!--checkbox, will allow for hamburger click-->
+			<label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+			<!--this will be turned into the 3 lines that make up the hamburger menu-->
+			<ul class="menu">
+				<li><a href="about.html" id="first-menu-item">About</a></li>
+				<li>
+					<div class="dropdown">
+						<div class="dropbtn">
+							<a href="index.html#work" style="color: #E2C191;">Work</a>
+						</div>
+						<div class="dropdown-content">
+							<a href="pencrumbs.html">Pencrumbs</a>
+							<a href="cloudmind.html">CloudMind</a>
+							<a href="busybus.html">BusyBus</a>
+							<a href="other_works.html" id="last-menu-item" style="color: #E2C191; background: black;">Other Works &#128064;</a>
+						</div>
+					</div>
+				</li>
+				<li><a href="https://drive.google.com/file/d/1zzb851rQfB7nCjQuwvqakvlmZVW_i326/view" target="_blank">Resume</a></li>
+				<li>
+					<div class="dropdown">
+						<div class="dropbtn">
+							<a href="javascript:void(0)">Art</a>
+						</div>
+						<div class="dropdown-content shorter-drop">
+							<a href="art.html">Photos</a>
+							<a href="art.html#poetry">Poetry</a>
+							<a href="art.html#other" id="last-menu-item">Other</a>
+						</div>
+					</div>
+				</li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<header> <!--hero portion-->
+		<div class="otherworks-bg">
+			<div class="container">
+				<div class="header-words home-header otherworks-header">
+					<div class="hero-hook">
+						<h1 class="animated animatedFadeInUp fadeInUp home-header mb-20 delayed">Design Shenanigans! &#127912;</h1>
+						<p class="quote-subhead animated animatedFadeInUp fadeInUp delayed2">Some mini-projects I made to learn and try new tools & tricks out. Enjoy!</p>
+						<div class="large-flex no-desk"></div>
+						<div class="small-flex"><a href="#other-works"><i class="fas downar homedownarrow fa-chevron-down animated animatedFadeInUp fadeInUp delayed2-1"></i></a></div>
+						<div class="large-flex no-desk"></div>
+					</div>
+				</div>
+				<div class="small-flex downarrowpadding"><a href="#other-works"><i class="fas downar downarrow fa-chevron-down animated animatedFadeInUp fadeInUp delayed2-1" id="otherworks-chevron"></i></a></div>
+			</div>
+		</div>
+	</header>
+
+	<section class="pt-50">
+		<div class="container" id="other-works">
+			<h3 class="pt-100 mb-20">Adobe Creative Challenges</h3>
+			<p class="subsection-text left-align">Adobe hosts workshops on creating designs and acclimating designers with Adobe XD's features via creative challenges on Behance. Here are some of my works!</p>
+			<!--
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6">
+					<p>Adobe hosts workshops on creating designs and acclimating designers with Adobe XD's features via creative challenges on Behance (which you can find <a href="https://www.behance.net/challenge/xd" target="_blank"><b>here</b></a>). Here are some of mine!</p>
+					<p>Adobe hosts workshops on creating designs and acclimating designers with Adobe XD's features via creative challenges on Behance. Here are some of my works!</p>
+				</div>
+				<div class="col-md-3"></div>
+			</div>-->
+		</div>
+	</section>
+
+	<section class="container pb-100">
+		<div class="row">
+			<div class="col-md-6 mt-100" data-aos="zoom-in" data-aos-duration="1250" data-aos-once="true">
+				<div class="center-align">
+					<video autoplay loop muted class="minivid">
+						<source src="img/other_works/socialmedia_dcc.mp4" type="video/mp4">
+					</video>
+					<h6 class="pt-30 pb-10">social app (adobe dcc)</h6>
+					<p class="padded-text">Trying a purple-themed dark mode sci-fi social media app for a multi-day Behance Creative Challenge.</p>
+					<button class="btnline smallbtn transpbtn" onclick="window.open('https://www.behance.net/gallery/98497227/SciFinder-A-Sci-fi-Social-Media-App-Concept', '_blank')"><div class="text">View on Behance</div></button>
+				</div>
+			</div>
+			<div class="col-md-6 mt-100" data-aos="zoom-in" data-aos-duration="1250" data-aos-once="true" data-aos-delay="200">
+				<div class="center-align">
+					<video autoplay loop muted class="minivid">
+						<source src="img/other_works/musicplayer_dcc.mp4" type="video/mp4">
+					</video>
+					<h6 class="pt-30 pb-10">music app (adobe dcc)</h6>
+					<p class="padded-text">An experiment in light-mode neumorphism in a music player for a Behance Daily Creative Challenges.</p>
+					<button class="btnline smallbtn transpbtn" onclick="window.open('https://www.behance.net/gallery/97929567/Adobe-XD-Creative-Challenge-Music-Player-Concept', '_blank')"><div class="text">View on Behance</div></button>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 mt-100" data-aos="zoom-in" data-aos-duration="1250" data-aos-once="true">
+				<div class="center-align">
+					<video autoplay loop muted class="minivid">
+						<source src="img/other_works/workoutapp_dcc.mp4" type="video/mp4">
+					</video>
+					<h6 class="pt-30 pb-10">workout app (adobe dcc)</h6>
+					<p class="padded-text">Exploring Adobe XD plugins to speed up designing a workout app for a Behance Daily Creative Challenge.</p>
+					<button class="btnline smallbtn transpbtn" onclick="window.open('https://www.behance.net/gallery/98378617/Adobe-XD-Daily-Creative-Challenge-Workout-App', '_blank')"><div class="text">View on Behance</div></button>
+				</div>
+			</div>
+			<div class="col-md-6 mt-100" data-aos="zoom-in" data-aos-duration="1250" data-aos-once="true" data-aos-delay="200">
+				<div class="center-align">
+					<video autoplay loop muted class="minivid">
+						<source src="img/other_works/sweetsshop_dcc.mp4" type="video/mp4">
+					</video>
+					<h6 class="pt-30 pb-10">sweets shop app (adobe dcc)</h6>
+					<p class="padded-text">Implementing scroll groups to create an interactive map of sweets shops for a Behance Daily Creative Challenge.</p>
+					<button class="btnline smallbtn transpbtn" onclick="window.open('https://www.behance.net/gallery/99977513/Adobe-XD-Creative-Challenge-Treats-Shop-Interface', '_blank')"><div class="text">View on Behance</div></button>
+				</div>
+			</div>
+			</div>
+		</div>
+	 </section>
+
+	 <section class="container" style="border-top: 1px solid rgba(20,20,20,0.05)">
+		 <h3 class="pt-50 mb-20">September Saturations!</h3>
+		 <p class="subsection-text left-align">A couple of friends and I challenged ourselves to use a set of randomly generated colors to create a design. Here are some of mine!</p>
+	 </section>
+
+		<section class="container ptb-100" data-aos="fade-up" data-aos-duration="1250" data-aos-once="true" data-aos-anchor-placement="center-bottom">
+			<div class="row caseinfo">
+				<div class="col-md-6">
+					<div class="divequal">
+						<h2>Sleepy Purples (&#129351;)</h2>
+						<div class="colors-used mtb-50">
+							<div class="colorbar" id="purp1"></div>
+							<div class="colorbar" id="purp2"></div>
+							<div class="colorbar" id="purp3"></div>
+							<div class="colorbar" id="purp4"></div>
+						</div>
+						<p class="left-align">The first thing that came to mind when seeing this color palette was the twilight sky fading into nighttime. So, why not make an app related to nighttime (in)activities? Thus, Sleepify was born, and was voted best design out of all submissions for that round! I experimented with the following tools & tricks:</p>
+						<ul class="text-light-bg left-align mt-20">
+							<li><em>color mixing</em></li>
+							<li><em>GIFs & microanimations</em></li>
+							<li><em>neumorphism</em></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 center-align">
+					<video autoplay loop muted class="minivid otherworks-vid" style="box-shadow: none;">
+ 					 <source src="img/other_works/ss_week3_v2.mp4" type="video/mp4">
+ 				 </video>
+				</div>
+			</div>
+		</section>
+
+		<section class="container pb-100" data-aos="fade-up" data-aos-duration="1250" data-aos-once="true" data-aos-anchor-placement="center-bottom">
+			<div class="row caseinfo">
+				<div class="col-md-6 no-desk">
+					<div class="divequal">
+						<h2>Leafy Greens</h2>
+						<div class="colors-used mtb-50">
+							<div class="colorbar" id="gree1"></div>
+							<div class="colorbar" id="gree2"></div>
+							<div class="colorbar" id="gree3"></div>
+						</div>
+						<p class="left-align">Green is such a nourishing color...and it also happened that I was hungry when starting out this design! So it only made sense that I create something related to green foods.</p>
+						<ul class="text-light-bg left-align mt-20 mb-30">
+							<li><em>section transition</em></li>
+							<li><em>smart animate</em></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md-6 center-align">
+					<!--
+					<video autoplay loop muted class="minivid otherworks-vid" style="box-shadow: none;">
+					 <source src="img/other_works/ss_week2.mp4" type="video/mp4">
+				 </video>
+			 		-->
+					<a onclick="openModal();currentSlide(1)">
+						<video autoplay loop muted class="minivid otherworks-vid" style="box-shadow: none;">
+							<source src="img/other_works/ss_week2.mp4" type="video/mp4">
+						</video>
+						<p class="mt-10 info-caption">Press to enlarge</p>
+					</a>
+					<div id="myModal" class="modal">
+						<div class="closebg" onclick="closeModal()" &times;></div>
+						<span class="close" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+							<div class="mySlides">
+								<video controls muted>
+									<source src="img/other_works/ss_week2.mp4" type="video/mp4">
+								</video>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 no-mob">
+					<div class="divequal">
+						<h2>Leafy Greens</h2>
+						<div class="colors-used mtb-50">
+							<div class="colorbar" id="gree1"></div>
+							<div class="colorbar" id="gree2"></div>
+							<div class="colorbar" id="gree3"></div>
+						</div>
+						<p class="left-align">Green is such a nourishing color...and I happened to be hungry when starting out this design. So it only made sense that I create something related to green foods: green and leafy veggies! I wanted to keep this concept simple while playing around with these techniques:</p>
+						<ul class="text-light-bg left-align mt-20">
+							<li><em>section transition</em></li>
+							<li><em>smart animate</em></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="container" style="border-top: 1px solid rgba(20,20,20,0.05)">
+			<h3 class="pt-50 mb-20">October Optimizations!</h3>
+			<p class="subsection-text left-align">A couple of friends and I challenged ourselves to identify a UX or UI artifact that we could iteratively improve on, and try our skills. Here are some of my works!</p>
+		</section>
+
+		<section class="container ptb-100" data-aos="fade-up" data-aos-duration="1250" data-aos-once="true" data-aos-anchor-placement="center-bottom">
+			<div class="row caseinfo">
+				<div class="col-md-6">
+					<div class="divequal">
+						<h2>Homepage 2.0</h2>
+						<p class="left-align mtb-50">I love Liverpool FC dearly but hate how its homepage looks, Liverpool's <a href="https://www.liverpoolfc.com/" target="_blank"><b>current homepage</b></a> looks outdated, unfocused, and subpar for a 6-time Champion's League winning team. I observed some other teams' sites (Aston Villa, ManC, ManU, and Tottenham) to see what they do well, which inspired my proposed redesign of Liverpool's homepage.</p>
+					</div>
+				</div>
+				<div class="col-md-6 center-align">
+					<!--
+					<video autoplay loop muted class="minivid otherworks-vid" style="box-shadow: none;">
+					 <source src="img/other_works/lfc_redesign.mp4" type="video/mp4">
+				 </video>
+			 -->
+					<a onclick="openModalTwo();currentSlideTwo(2)">
+						<video autoplay loop muted class="minivid otherworks-vid">
+							<source src="img/other_works/lfc_redesign.mp4" type="video/mp4">
+						</video>
+						<p class="mt-10 info-caption">Press to enlarge</p>
+					</a>
+					<div id="myModalTwo" class="modal">
+						<div class="closebg" onclick="closeModalTwo()" &times;></div>
+						<span class="close" onclick="closeModalTwo()">&times;</span>
+						<div class="modal-content">
+							<div class="mySlides">
+								<video controls muted>
+									<source src="img/other_works/lfc_redesign.mp4" type="video/mp4">
+								</video>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="container pb-100" data-aos="fade-up" data-aos-duration="1250" data-aos-once="true" data-aos-anchor-placement="center-bottom">
+			<div class="row caseinfo">
+				<div class="col-md-6 no-desk">
+					<div class="divequal">
+						<h2>A Fresh Rebrand</h2>
+						<p class="left-align mt-50">Upon first seeing World Trade Center's logo, it felt like something was missing in what the organization is about. Seeing a 2-D globe doesn't give too much context; as such I saw room for improvement. I subbed in a simpler globe icon in place of the current more complex globe, to maintain WTC's global presence. I then included a cargo ship to more clearly drive home WTC's expertise in trading throughout the world.</p>
+					</div>
+				</div>
+				<div class="col-md-6 center-align no-mob">
+					<img src="img/other_works/wtc_logos.png" alt="current and redeigned logo for World Trade Center NorCal">
+				</div>
+				<div class="col-md-6 center-align no-desk">
+					<img src="img/other_works/wtc_logos_narrow.png" alt="current and redeigned logo for World Trade Center NorCal">
+				</div>
+				<div class="col-md-6 no-mob">
+					<div class="divequal">
+						<h2>A Fresh Rebrand</h2>
+						<p class="left-align mtb-50">Upon first seeing World Trade Center's logo, it felt like something was missing in what the organization is about. Seeing a 2-D globe doesn't give too much context; as such I saw room for improvement. I subbed in a simpler globe icon in place of the current more complex globe, to maintain WTC's global presence. I then included a cargo ship to more clearly drive home WTC's expertise in trading throughout the world.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3"></div>
+				<div class="col-md-6 center-align">
+					<div class="f-head mb-30">Let’s connect!</div>
+					<div class="f-social">
+						<a href="https://twitter.com/ayoubience" target="_blank"><i class="fab fa-twitter"></i></a>
+						<a href="https://www.linkedin.com/in/aayoub93/" target="_blank"><i class="fab fa-linkedin"></i></a>
+						<a href="https://medium.com/@ayoubience" target="_blank"><i class="fab fa-medium"></i></a>
+						<a href="https://github.com/aayoub93" target="_blank"><i class="fab fa-github"></i></a>
+						<a href="https://www.instagram.com/ayoubience/" target="_blank"><i class="fab fa-instagram"></i></a>
+					</div>
+				</div>
+				<div class="col-md-3 byme">
+					<small class="copr">&#169; 2021 Ayoubience<br>Designed by Ahmed Ayoub</small>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="js/modaloverlayv2.js"></script>
+	<script src="js/modaloverlayv2_2.js"></script> <!--this helps enlarge the LFC redesign video-->
+
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+
+</body>
+
+
+</html>
