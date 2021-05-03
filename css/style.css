@@ -395,7 +395,7 @@ button.dropbtn {width: 100%;}
 
 .dropdown-content a {
   border-bottom: 1px solid #c3a77e;
-	padding: 2rem 5rem !important;
+	padding: 2rem 4rem !important; /*horizontal was 5rem*/
 }
 #last-menu-item {border-bottom: none;}
 
@@ -418,13 +418,11 @@ footer {
 	padding: 4rem 0;
 }
 
-.f-head {font-size: 2.4rem;}
-
-.f-social {font-size: 3rem;}
+.f-head, .f-social {font-size: 2.4rem;}
 
 .f-social i {
 	color: #FBFBFB;
-  padding: 0.65rem 0.9rem;
+  padding: 0.65rem 1rem;
 }
 
 .f-social i:hover {color: #E2C191;}
@@ -707,6 +705,8 @@ a,
 .case1 {z-index: 5;}
 .case2 {z-index: 4;}
 .case3 {z-index: 3;}
+.case4 {z-index: 2;}
+
 
 /*Project/case study specific rules*/
 .project-header {
