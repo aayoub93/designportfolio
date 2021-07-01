@@ -60,7 +60,7 @@ hr {
 p, .text-light-bg, .tag, h5, .quote {
 	color: #141414;
 	font-size: 1.8rem;
-	line-height: 2.8rem;
+	line-height: 3rem;
 }
 
 em {font-style: italic;}
@@ -506,6 +506,12 @@ footer {
 	margin: 0 -1.5rem; /*this lets content line up with left & right edges of navbar content*/
 }
 
+.container-medium .row {
+	margin: 0 !important;
+	padding: 0 5rem !important;
+}
+
+
 .trifold,
 .col-md-1, .col-md-2, .col-md-3, .col-md-4,
 .col-md-5, .col-md-6, .col-md-7, .col-md-8,
@@ -677,6 +683,16 @@ a,
 }
 
 .caseinfo {align-items: center;}
+
+.col-md-6.nomobile-pad.center-align.no-desk {margin-top: 0rem !important;}
+
+.process-flow-mobile {
+	max-width: 30rem;
+	-webkit-filter: none !important;
+	filter: none !important;
+}
+
+.process-flow {margin-top: 4rem; margin-bottom: 2rem;}
 
 .projectlabel {
 	opacity: 0.6;
